@@ -35,9 +35,14 @@
             this.b_tabel = new System.Windows.Forms.Button();
             this.b_otchet = new System.Windows.Forms.Button();
             this.b_grafik = new System.Windows.Forms.Button();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.fermDataSet = new Ferm_V2.fermDataSet();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.b_infirmation = new System.Windows.Forms.Button();
+            this.b_dobavit = new System.Windows.Forms.Button();
+            this.b_redactirovat = new System.Windows.Forms.Button();
+            this.b_udalit = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.b_poisk = new System.Windows.Forms.Button();
+            this.b_obnovit = new System.Windows.Forms.Button();
             this.idcowDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.klichkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.polDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,23 +51,14 @@
             this.inwertnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iddoyarkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.privivkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cowBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cowBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cowBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.fermDataSet = new Ferm_V2.fermDataSet();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cowTableAdapter = new Ferm_V2.fermDataSetTableAdapters.cowTableAdapter();
-            this.b_infirmation = new System.Windows.Forms.Button();
-            this.b_dobavit = new System.Windows.Forms.Button();
-            this.b_redactirovat = new System.Windows.Forms.Button();
-            this.b_udalit = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.b_poisk = new System.Windows.Forms.Button();
-            this.fermDataSet1 = new Ferm_V2.fermDataSet();
-            this.b_obnovit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // b_personal
@@ -129,16 +125,6 @@
             this.b_grafik.Text = "Графики";
             this.b_grafik.UseVisualStyleBackColor = true;
             // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = this.fermDataSet;
-            this.bindingSource1.Position = 0;
-            // 
-            // fermDataSet
-            // 
-            this.fermDataSet.DataSetName = "fermDataSet";
-            this.fermDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
@@ -152,11 +138,81 @@
             this.inwertnumberDataGridViewTextBoxColumn,
             this.iddoyarkaDataGridViewTextBoxColumn,
             this.privivkaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.cowBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(118, 59);
+            this.dataGridView1.DataSource = this.cowBindingSource2;
+            this.dataGridView1.Location = new System.Drawing.Point(118, 60);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(841, 338);
             this.dataGridView1.TabIndex = 9;
+            // 
+            // b_infirmation
+            // 
+            this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_infirmation.Location = new System.Drawing.Point(12, 347);
+            this.b_infirmation.Name = "b_infirmation";
+            this.b_infirmation.Size = new System.Drawing.Size(100, 50);
+            this.b_infirmation.TabIndex = 10;
+            this.b_infirmation.Text = "Информация";
+            this.b_infirmation.UseVisualStyleBackColor = true;
+            // 
+            // b_dobavit
+            // 
+            this.b_dobavit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_dobavit.Location = new System.Drawing.Point(133, 11);
+            this.b_dobavit.Name = "b_dobavit";
+            this.b_dobavit.Size = new System.Drawing.Size(100, 40);
+            this.b_dobavit.TabIndex = 12;
+            this.b_dobavit.Text = "Редактировать";
+            this.b_dobavit.UseVisualStyleBackColor = true;
+            this.b_dobavit.Click += new System.EventHandler(this.b_dobavit_Click);
+            // 
+            // b_redactirovat
+            // 
+            this.b_redactirovat.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_redactirovat.Location = new System.Drawing.Point(239, 11);
+            this.b_redactirovat.Name = "b_redactirovat";
+            this.b_redactirovat.Size = new System.Drawing.Size(100, 40);
+            this.b_redactirovat.TabIndex = 14;
+            this.b_redactirovat.Text = "Добавить";
+            this.b_redactirovat.UseVisualStyleBackColor = true;
+            this.b_redactirovat.Click += new System.EventHandler(this.b_redactirovat_Click);
+            // 
+            // b_udalit
+            // 
+            this.b_udalit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_udalit.Location = new System.Drawing.Point(345, 11);
+            this.b_udalit.Name = "b_udalit";
+            this.b_udalit.Size = new System.Drawing.Size(100, 40);
+            this.b_udalit.TabIndex = 16;
+            this.b_udalit.Text = "Удалить";
+            this.b_udalit.UseVisualStyleBackColor = true;
+            this.b_udalit.Click += new System.EventHandler(this.b_udalit_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(550, 16);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(316, 25);
+            this.textBox1.TabIndex = 17;
+            // 
+            // b_poisk
+            // 
+            this.b_poisk.Location = new System.Drawing.Point(884, 16);
+            this.b_poisk.Name = "b_poisk";
+            this.b_poisk.Size = new System.Drawing.Size(75, 25);
+            this.b_poisk.TabIndex = 18;
+            this.b_poisk.Text = "Поиск";
+            this.b_poisk.UseVisualStyleBackColor = true;
+            // 
+            // b_obnovit
+            // 
+            this.b_obnovit.Location = new System.Drawing.Point(478, 17);
+            this.b_obnovit.Name = "b_obnovit";
+            this.b_obnovit.Size = new System.Drawing.Size(51, 23);
+            this.b_obnovit.TabIndex = 19;
+            this.b_obnovit.Text = "Обновить";
+            this.b_obnovit.UseVisualStyleBackColor = true;
+            this.b_obnovit.Click += new System.EventHandler(this.b_obnovit_Click);
             // 
             // idcowDataGridViewTextBoxColumn
             // 
@@ -206,94 +262,24 @@
             this.privivkaDataGridViewTextBoxColumn.HeaderText = "privivka";
             this.privivkaDataGridViewTextBoxColumn.Name = "privivkaDataGridViewTextBoxColumn";
             // 
-            // cowBindingSource1
+            // cowBindingSource2
             // 
-            this.cowBindingSource1.DataMember = "cow";
-            this.cowBindingSource1.DataSource = this.bindingSource1;
+            this.cowBindingSource2.DataMember = "cow";
+            this.cowBindingSource2.DataSource = this.fermDataSet;
             // 
-            // cowBindingSource
+            // fermDataSet
             // 
-            this.cowBindingSource.DataMember = "cow";
-            this.cowBindingSource.DataSource = this.bindingSource1;
+            this.fermDataSet.DataSetName = "fermDataSet";
+            this.fermDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = this.fermDataSet;
+            this.bindingSource1.Position = 0;
             // 
             // cowTableAdapter
             // 
             this.cowTableAdapter.ClearBeforeFill = true;
-            // 
-            // b_infirmation
-            // 
-            this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_infirmation.Location = new System.Drawing.Point(12, 347);
-            this.b_infirmation.Name = "b_infirmation";
-            this.b_infirmation.Size = new System.Drawing.Size(100, 50);
-            this.b_infirmation.TabIndex = 10;
-            this.b_infirmation.Text = "Информация";
-            this.b_infirmation.UseVisualStyleBackColor = true;
-            // 
-            // b_dobavit
-            // 
-            this.b_dobavit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_dobavit.Location = new System.Drawing.Point(133, 11);
-            this.b_dobavit.Name = "b_dobavit";
-            this.b_dobavit.Size = new System.Drawing.Size(100, 40);
-            this.b_dobavit.TabIndex = 12;
-            this.b_dobavit.Text = "Добавить";
-            this.b_dobavit.UseVisualStyleBackColor = true;
-            this.b_dobavit.Click += new System.EventHandler(this.b_dobavit_Click);
-            // 
-            // b_redactirovat
-            // 
-            this.b_redactirovat.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_redactirovat.Location = new System.Drawing.Point(239, 11);
-            this.b_redactirovat.Name = "b_redactirovat";
-            this.b_redactirovat.Size = new System.Drawing.Size(100, 40);
-            this.b_redactirovat.TabIndex = 14;
-            this.b_redactirovat.Text = "Редактировать";
-            this.b_redactirovat.UseVisualStyleBackColor = true;
-            this.b_redactirovat.Click += new System.EventHandler(this.b_redactirovat_Click);
-            // 
-            // b_udalit
-            // 
-            this.b_udalit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_udalit.Location = new System.Drawing.Point(345, 11);
-            this.b_udalit.Name = "b_udalit";
-            this.b_udalit.Size = new System.Drawing.Size(100, 40);
-            this.b_udalit.TabIndex = 16;
-            this.b_udalit.Text = "Удалить";
-            this.b_udalit.UseVisualStyleBackColor = true;
-            this.b_udalit.Click += new System.EventHandler(this.b_udalit_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(550, 16);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(316, 25);
-            this.textBox1.TabIndex = 17;
-            // 
-            // b_poisk
-            // 
-            this.b_poisk.Location = new System.Drawing.Point(884, 16);
-            this.b_poisk.Name = "b_poisk";
-            this.b_poisk.Size = new System.Drawing.Size(75, 25);
-            this.b_poisk.TabIndex = 18;
-            this.b_poisk.Text = "Поиск";
-            this.b_poisk.UseVisualStyleBackColor = true;
-            // 
-            // fermDataSet1
-            // 
-            this.fermDataSet1.DataSetName = "fermDataSet";
-            this.fermDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // b_obnovit
-            // 
-            this.b_obnovit.Location = new System.Drawing.Point(478, 17);
-            this.b_obnovit.Name = "b_obnovit";
-            this.b_obnovit.Size = new System.Drawing.Size(51, 23);
-            this.b_obnovit.TabIndex = 19;
-            this.b_obnovit.Text = "Обновить";
-            this.b_obnovit.UseVisualStyleBackColor = true;
-            this.b_obnovit.Click += new System.EventHandler(this.b_obnovit_Click);
             // 
             // Hudoba
             // 
@@ -317,12 +303,10 @@
             this.Name = "Hudoba";
             this.Text = "Hudoba";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,7 +323,6 @@
         private System.Windows.Forms.BindingSource bindingSource1;
         private fermDataSet fermDataSet;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource cowBindingSource;
         private System.Windows.Forms.Button b_infirmation;
         private System.Windows.Forms.Button b_dobavit;
         private System.Windows.Forms.Button b_redactirovat;
@@ -347,7 +330,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button b_poisk;
         public fermDataSetTableAdapters.cowTableAdapter cowTableAdapter;
-        private fermDataSet fermDataSet1;
+        private System.Windows.Forms.Button b_obnovit;
         private System.Windows.Forms.DataGridViewTextBoxColumn idcowDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn klichkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn polDataGridViewTextBoxColumn;
@@ -356,8 +339,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn inwertnumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iddoyarkaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn privivkaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource cowBindingSource1;
-        private System.Windows.Forms.Button b_obnovit;
+        private System.Windows.Forms.BindingSource cowBindingSource2;
     }
 }
 

@@ -60,14 +60,14 @@ namespace Ferm_V2
 
         private void b_dobavit_Click(object sender, EventArgs e)
         { 
-            Add_Hudobu dob = new Add_Hudobu();
+            Redactirovanie dob = new Redactirovanie();
             dob.Show();
          
         }
 
         private void b_redactirovat_Click(object sender, EventArgs e)
         {
-            Redactirovanie reda = new Redactirovanie();
+            Dobavlenie reda = new Dobavlenie();
             reda.Show();
             
         }
