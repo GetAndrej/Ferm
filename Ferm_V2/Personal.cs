@@ -62,5 +62,12 @@ namespace Ferm_V2
             hud.Show();
             Hide();
         }
+
+        private void b_otchet_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            f.Show();
+
+        }
     }
 }

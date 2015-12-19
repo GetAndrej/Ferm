@@ -97,5 +97,12 @@ namespace Ferm_V2
             cowTableAdapter.Fill(fermDataSet.cow);
             fermDataSet.AcceptChanges();
         }
+
+        private void b_otchet_Click(object sender, EventArgs e)
+        {
+            Form2 otchet = new Form2();
+            otchet.Show();
+            Hide();
+        }
     }
 }

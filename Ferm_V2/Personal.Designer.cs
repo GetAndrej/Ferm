@@ -167,6 +167,7 @@
             this.b_otchet.TabIndex = 15;
             this.b_otchet.Text = "Отчет";
             this.b_otchet.UseVisualStyleBackColor = true;
+            this.b_otchet.Click += new System.EventHandler(this.b_otchet_Click);
             // 
             // b_tabel
             // 

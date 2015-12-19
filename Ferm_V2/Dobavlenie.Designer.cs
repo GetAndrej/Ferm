@@ -63,7 +63,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 23);
+            this.label1.Location = new System.Drawing.Point(15, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(19, 13);
             this.label1.TabIndex = 0;
@@ -72,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 49);
+            this.label2.Location = new System.Drawing.Point(15, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 1;
@@ -81,7 +81,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 75);
+            this.label3.Location = new System.Drawing.Point(15, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 2;
@@ -90,7 +90,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 102);
+            this.label4.Location = new System.Drawing.Point(15, 96);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 3;
@@ -99,7 +99,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(34, 128);
+            this.label5.Location = new System.Drawing.Point(15, 122);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 13);
             this.label5.TabIndex = 4;
@@ -108,7 +108,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(34, 154);
+            this.label6.Location = new System.Drawing.Point(15, 148);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 13);
             this.label6.TabIndex = 5;
@@ -117,7 +117,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(34, 180);
+            this.label7.Location = new System.Drawing.Point(15, 174);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 13);
             this.label7.TabIndex = 6;
@@ -126,7 +126,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(34, 207);
+            this.label8.Location = new System.Drawing.Point(15, 201);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 13);
             this.label8.TabIndex = 7;
@@ -134,14 +134,14 @@
             // 
             // id_cow
             // 
-            this.id_cow.Location = new System.Drawing.Point(146, 23);
+            this.id_cow.Location = new System.Drawing.Point(127, 17);
             this.id_cow.Name = "id_cow";
             this.id_cow.Size = new System.Drawing.Size(200, 20);
             this.id_cow.TabIndex = 8;
             // 
             // klichka
             // 
-            this.klichka.Location = new System.Drawing.Point(146, 49);
+            this.klichka.Location = new System.Drawing.Point(127, 43);
             this.klichka.Name = "klichka";
             this.klichka.Size = new System.Drawing.Size(200, 20);
             this.klichka.TabIndex = 9;
@@ -152,28 +152,28 @@
             this.pol.Items.AddRange(new object[] {
             "Корова",
             "Бык"});
-            this.pol.Location = new System.Drawing.Point(146, 75);
+            this.pol.Location = new System.Drawing.Point(127, 69);
             this.pol.Name = "pol";
             this.pol.Size = new System.Drawing.Size(200, 21);
             this.pol.TabIndex = 10;
             // 
             // data_birthday
             // 
-            this.data_birthday.Location = new System.Drawing.Point(146, 102);
+            this.data_birthday.Location = new System.Drawing.Point(127, 96);
             this.data_birthday.Name = "data_birthday";
             this.data_birthday.Size = new System.Drawing.Size(200, 20);
             this.data_birthday.TabIndex = 11;
             // 
             // kod
             // 
-            this.kod.Location = new System.Drawing.Point(146, 128);
+            this.kod.Location = new System.Drawing.Point(127, 122);
             this.kod.Name = "kod";
             this.kod.Size = new System.Drawing.Size(200, 20);
             this.kod.TabIndex = 12;
             // 
             // inwert_number
             // 
-            this.inwert_number.Location = new System.Drawing.Point(146, 154);
+            this.inwert_number.Location = new System.Drawing.Point(127, 148);
             this.inwert_number.Name = "inwert_number";
             this.inwert_number.Size = new System.Drawing.Size(200, 20);
             this.inwert_number.TabIndex = 13;
@@ -182,7 +182,7 @@
             // 
             this.id_doyarka.DisplayMember = "id";
             this.id_doyarka.FormattingEnabled = true;
-            this.id_doyarka.Location = new System.Drawing.Point(146, 180);
+            this.id_doyarka.Location = new System.Drawing.Point(127, 174);
             this.id_doyarka.Name = "id_doyarka";
             this.id_doyarka.Size = new System.Drawing.Size(200, 21);
             this.id_doyarka.TabIndex = 14;
@@ -190,14 +190,14 @@
             // 
             // privivka
             // 
-            this.privivka.Location = new System.Drawing.Point(146, 207);
+            this.privivka.Location = new System.Drawing.Point(127, 201);
             this.privivka.Name = "privivka";
             this.privivka.Size = new System.Drawing.Size(200, 20);
             this.privivka.TabIndex = 15;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(37, 252);
+            this.button1.Location = new System.Drawing.Point(18, 246);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 23);
             this.button1.TabIndex = 16;
@@ -207,7 +207,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(208, 252);
+            this.button2.Location = new System.Drawing.Point(189, 246);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(138, 23);
             this.button2.TabIndex = 17;
@@ -257,7 +257,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 304);
+            this.ClientSize = new System.Drawing.Size(336, 277);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.privivka);
