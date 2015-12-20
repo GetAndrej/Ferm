@@ -59,7 +59,8 @@ namespace Ferm_V2
         }
 
         private void b_dobavit_Click(object sender, EventArgs e)
-        { 
+        {
+           
             Redactirovanie dob = new Redactirovanie();
             dob.Show();
          
@@ -67,6 +68,7 @@ namespace Ferm_V2
 
         private void b_redactirovat_Click(object sender, EventArgs e)
         {
+           
             Dobavlenie reda = new Dobavlenie();
             reda.Show();
             
@@ -100,9 +102,14 @@ namespace Ferm_V2
 
         private void b_otchet_Click(object sender, EventArgs e)
         {
-            Form2 otchet = new Form2();
+            Otchets otchet = new Otchets();
             otchet.Show();
-            Hide();
+        }
+
+        private void b_grafik_Click(object sender, EventArgs e)
+        {
+            Graphics grap = new Graphics();
+            grap.Show();
         }
     }
 }

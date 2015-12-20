@@ -125,6 +125,7 @@
             this.b_grafik.TabIndex = 8;
             this.b_grafik.Text = "Графики";
             this.b_grafik.UseVisualStyleBackColor = true;
+            this.b_grafik.Click += new System.EventHandler(this.b_grafik_Click);
             // 
             // dataGridView1
             // 

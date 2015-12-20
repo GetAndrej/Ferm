@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ferm_V2
 {
-    public partial class Form2 : Form
+    public partial class Otchet_Hudoba : Form
     {
-        public Form2()
+        public Otchet_Hudoba()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Ferm_V2
 {
-    partial class Form2
+    partial class Otchet_Hudoba
     {
       
         private System.ComponentModel.IContainer components = null;

@@ -65,7 +65,7 @@ namespace Ferm_V2
 
         private void b_otchet_Click(object sender, EventArgs e)
         {
-            Form2 f = new Form2();
+            Otchet_Hudoba f = new Otchet_Hudoba();
             f.Show();
 
         }

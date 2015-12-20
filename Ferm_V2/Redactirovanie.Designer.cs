@@ -415,7 +415,7 @@
             this.Controls.Add(this.privivkaT);
             this.Controls.Add(this.cowBindingNavigator);
             this.Name = "Redactirovanie";
-            this.Text = "Add_Hudobu";
+            this.Text = "Редактирование";
             this.Load += new System.EventHandler(this.Add_Hudobu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).EndInit();

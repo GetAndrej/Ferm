@@ -10,7 +10,7 @@ namespace Ferm_V2
         {
             InitializeComponent();
             this.cowTableAdapter.Fill(this.fermDataSet.cow);
-
+            
         }
 
         private void cowBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -31,6 +31,7 @@ namespace Ferm_V2
         {
             // позже сделать полностью проверку
             if (id_cowT.Text != "") {
+               
                 cowTableAdapter.UpdateQu(Convert.ToInt32(id_cowT.Text), klichkaT.Text, Convert.ToInt32(polT.Text), data_birthdayT.Text, Convert.ToInt32(kodT.Text), Convert.ToInt32(inwert_numberT.Text), Convert.ToInt32(id_doyarkaT.Text), privivkaT.Text);
 
               
