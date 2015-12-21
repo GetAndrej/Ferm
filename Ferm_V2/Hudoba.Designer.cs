@@ -213,6 +213,7 @@
             this.b_infirmation.TabIndex = 10;
             this.b_infirmation.Text = "Информация";
             this.b_infirmation.UseVisualStyleBackColor = true;
+            this.b_infirmation.Click += new System.EventHandler(this.b_infirmation_Click);
             // 
             // b_dobavit
             // 

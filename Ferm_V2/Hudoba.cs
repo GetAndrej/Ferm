@@ -111,5 +111,11 @@ namespace Ferm_V2
             Graphics grap = new Graphics();
             grap.Show();
         }
+
+        private void b_infirmation_Click(object sender, EventArgs e)
+        {
+            Contact con = new Contact();
+            con.Show();
+        }
     }
 }

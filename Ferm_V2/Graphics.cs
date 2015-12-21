@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
+
 namespace Ferm_V2
 {
     public partial class Graphics : Form
@@ -16,6 +17,7 @@ namespace Ferm_V2
         public Graphics()
         {
             InitializeComponent();
+            
             
         }
 
@@ -39,10 +41,11 @@ namespace Ferm_V2
                 {
                     this.chart1.Series["Series1"].Points.AddXY(myReader.GetString("name"), myReader.GetUInt32("zarplata"));
                 }
+                conDataBase.Close();
             }
             catch (Exception)
             {
-                MessageBox.Show("ne prokonalo");
+                MessageBox.Show("Не удается подключить соединение с Базой Данных");
             }
         }
 
