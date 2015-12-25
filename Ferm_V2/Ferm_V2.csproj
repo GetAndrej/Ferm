@@ -66,6 +66,11 @@
     <Compile Include="Contact.Designer.cs">
       <DependentUpon>Contact.cs</DependentUpon>
     </Compile>
+    <Compile Include="fermDataSetEasy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fermDataSetEasy.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Graphics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,12 +88,6 @@
     </Compile>
     <Compile Include="Otchets.Designer.cs">
       <DependentUpon>Otchets.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Redactirovanie.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Redactirovanie.Designer.cs">
-      <DependentUpon>Redactirovanie.cs</DependentUpon>
     </Compile>
     <Compile Include="fermDataSet.cs">
       <DependentUpon>fermDataSet.xsd</DependentUpon>
@@ -132,6 +131,12 @@
     <Compile Include="Dobavlenie.Designer.cs">
       <DependentUpon>Dobavlenie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Red_Hud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Red_Hud.Designer.cs">
+      <DependentUpon>Red_Hud.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tabel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,9 +154,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Otchets.resx">
       <DependentUpon>Otchets.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Redactirovanie.resx">
-      <DependentUpon>Redactirovanie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hudoba.resx">
       <DependentUpon>Hudoba.cs</DependentUpon>
@@ -173,6 +175,9 @@
     </Compile>
     <EmbeddedResource Include="Dobavlenie.resx">
       <DependentUpon>Dobavlenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Red_Hud.resx">
+      <DependentUpon>Red_Hud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Tabel.resx">
@@ -199,6 +204,17 @@
     </None>
     <None Include="fermDataSet1.xss">
       <DependentUpon>fermDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="fermDataSetEasy.xsc">
+      <DependentUpon>fermDataSetEasy.xsd</DependentUpon>
+    </None>
+    <None Include="fermDataSetEasy.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fermDataSetEasy.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fermDataSetEasy.xss">
+      <DependentUpon>fermDataSetEasy.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

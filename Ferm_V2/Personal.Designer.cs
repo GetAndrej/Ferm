@@ -147,6 +147,7 @@
             this.b_infirmation.TabIndex = 17;
             this.b_infirmation.Text = "Информация";
             this.b_infirmation.UseVisualStyleBackColor = true;
+            this.b_infirmation.Click += new System.EventHandler(this.b_infirmation_Click);
             // 
             // b_grafik
             // 
@@ -157,6 +158,7 @@
             this.b_grafik.TabIndex = 16;
             this.b_grafik.Text = "Графики";
             this.b_grafik.UseVisualStyleBackColor = true;
+            this.b_grafik.Click += new System.EventHandler(this.b_grafik_Click);
             // 
             // b_otchet
             // 
@@ -178,6 +180,7 @@
             this.b_tabel.TabIndex = 14;
             this.b_tabel.Text = "Табель";
             this.b_tabel.UseVisualStyleBackColor = true;
+            this.b_tabel.Click += new System.EventHandler(this.b_tabel_Click);
             // 
             // b_korm
             // 
@@ -188,6 +191,7 @@
             this.b_korm.TabIndex = 13;
             this.b_korm.Text = "Корм";
             this.b_korm.UseVisualStyleBackColor = true;
+            this.b_korm.Click += new System.EventHandler(this.b_korm_Click);
             // 
             // b_hudoba
             // 
@@ -282,6 +286,7 @@
             this.Controls.Add(this.b_personal);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Personal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Personal";
             this.Load += new System.EventHandler(this.Personal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

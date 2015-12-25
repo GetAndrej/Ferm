@@ -51,9 +51,7 @@ namespace Ferm_V2
 
         private void b_personal_Click(object sender, EventArgs e)
         {
-            Personal pers = new Personal();
-            pers.Show();
-            Hide();
+            MessageBox.Show("Вы находитесь в разделе Персонал");
         }
 
         private void b_hudoba_Click(object sender, EventArgs e)
@@ -68,6 +66,34 @@ namespace Ferm_V2
             Otchet_Hudoba f = new Otchet_Hudoba();
             f.Show();
 
+        }
+
+        private void b_korm_Click(object sender, EventArgs e)
+        {
+            Korm corm = new Korm();
+            corm.Show();
+            Hide();
+        }
+
+        private void b_tabel_Click(object sender, EventArgs e)
+        {
+            Tabel tab = new Tabel();
+            tab.Show();
+            Hide();
+        }
+
+        private void b_grafik_Click(object sender, EventArgs e)
+        {
+            Graphics gr = new Graphics();
+            gr.Show();
+            Hide();
+        }
+
+        private void b_infirmation_Click(object sender, EventArgs e)
+        {
+            Contact contact = new Contact();
+            contact.Show();
+            Hide();
         }
     }
 }

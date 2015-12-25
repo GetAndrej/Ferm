@@ -10,13 +10,13 @@ c:\users\andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\
 c:\users\andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\Ferm_V2.exe
 c:\users\andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\Ferm_V2.pdb
 C:\Users\Andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\Ferm_V2.Hudoba.resources
-C:\Users\Andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\Ferm_V2.Redactirovanie.resources
 C:\Users\Andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\Ferm_V2.Dobavlenie.resources
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\Ferm_V2.Otchets.resources
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\Ferm_V2.Graphics.resources
 C:\Users\Andrej\Documents\Visual Studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\Ferm_V2.Otchet_Hudoba.resources
+C:\Users\Andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\Ferm_V2.Contact.resources
+C:\Users\Andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\Ferm_V2.Red_Hud.resources
 C:\Users\Andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\bin\Debug\Microsoft.AnalysisServices.dll
 C:\Users\Andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\bin\Debug\MySql.Data.dll
 C:\Users\Andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\bin\Debug\Microsoft.SqlServer.Types.dll
 C:\Users\Andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
-C:\Users\Andrej\documents\visual studio 2015\Projects\Ferm_V2\Ferm_V2\obj\Debug\Ferm_V2.Contact.resources

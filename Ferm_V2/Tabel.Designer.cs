@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.fermDataSet = new Ferm_V2.fermDataSet();
-            this.tabelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tabelTableAdapter = new Ferm_V2.fermDataSetTableAdapters.tabelTableAdapter();
             this.порDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.наименованиеИДеталиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.месячныйПланDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +63,9 @@
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fermDataSet = new Ferm_V2.fermDataSet();
+            this.tabelTableAdapter = new Ferm_V2.fermDataSetTableAdapters.tabelTableAdapter();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.b_infirmation = new System.Windows.Forms.Button();
             this.b_grafik = new System.Windows.Forms.Button();
@@ -80,8 +80,8 @@
             this.b_redactirovat = new System.Windows.Forms.Button();
             this.b_dobavit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,20 +128,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(853, 329);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // fermDataSet
-            // 
-            this.fermDataSet.DataSetName = "fermDataSet";
-            this.fermDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tabelBindingSource
-            // 
-            this.tabelBindingSource.DataMember = "tabel";
-            this.tabelBindingSource.DataSource = this.fermDataSet;
-            // 
-            // tabelTableAdapter
-            // 
-            this.tabelTableAdapter.ClearBeforeFill = true;
             // 
             // порDataGridViewTextBoxColumn
             // 
@@ -341,6 +327,20 @@
             this.dataGridViewTextBoxColumn30.HeaderText = "30";
             this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
             // 
+            // tabelBindingSource
+            // 
+            this.tabelBindingSource.DataMember = "tabel";
+            this.tabelBindingSource.DataSource = this.fermDataSet;
+            // 
+            // fermDataSet
+            // 
+            this.fermDataSet.DataSetName = "fermDataSet";
+            this.fermDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tabelTableAdapter
+            // 
+            this.tabelTableAdapter.ClearBeforeFill = true;
+            // 
             // b_infirmation
             // 
             this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -350,6 +350,7 @@
             this.b_infirmation.TabIndex = 17;
             this.b_infirmation.Text = "Информация";
             this.b_infirmation.UseVisualStyleBackColor = true;
+            this.b_infirmation.Click += new System.EventHandler(this.b_infirmation_Click_1);
             // 
             // b_grafik
             // 
@@ -360,6 +361,7 @@
             this.b_grafik.TabIndex = 16;
             this.b_grafik.Text = "Графики";
             this.b_grafik.UseVisualStyleBackColor = true;
+            this.b_grafik.Click += new System.EventHandler(this.b_grafik_Click_1);
             // 
             // b_otchet
             // 
@@ -370,6 +372,7 @@
             this.b_otchet.TabIndex = 15;
             this.b_otchet.Text = "Отчет";
             this.b_otchet.UseVisualStyleBackColor = true;
+            this.b_otchet.Click += new System.EventHandler(this.b_otchet_Click_1);
             // 
             // b_tabel
             // 
@@ -380,6 +383,7 @@
             this.b_tabel.TabIndex = 14;
             this.b_tabel.Text = "Табель";
             this.b_tabel.UseVisualStyleBackColor = true;
+            this.b_tabel.Click += new System.EventHandler(this.b_tabel_Click_1);
             // 
             // b_korm
             // 
@@ -390,6 +394,7 @@
             this.b_korm.TabIndex = 13;
             this.b_korm.Text = "Корм";
             this.b_korm.UseVisualStyleBackColor = true;
+            this.b_korm.Click += new System.EventHandler(this.b_korm_Click_1);
             // 
             // b_hudoba
             // 
@@ -400,6 +405,7 @@
             this.b_hudoba.TabIndex = 12;
             this.b_hudoba.Text = "Худоба";
             this.b_hudoba.UseVisualStyleBackColor = true;
+            this.b_hudoba.Click += new System.EventHandler(this.b_hudoba_Click_1);
             // 
             // b_personal
             // 
@@ -410,6 +416,7 @@
             this.b_personal.TabIndex = 11;
             this.b_personal.Text = "Персонал";
             this.b_personal.UseVisualStyleBackColor = true;
+            this.b_personal.Click += new System.EventHandler(this.b_personal_Click);
             // 
             // b_poisk
             // 
@@ -477,11 +484,12 @@
             this.Controls.Add(this.b_personal);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Tabel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tabel";
             this.Load += new System.EventHandler(this.Tabel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

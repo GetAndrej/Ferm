@@ -24,8 +24,9 @@ namespace Ferm_V2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSet.cow". При необходимости она может быть перемещена или удалена.
-            this.cowTableAdapter.Fill(this.fermDataSet.cow);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetEasy.cow". При необходимости она может быть перемещена или удалена.
+            this.cowTableAdapter.Fill(this.fermDataSetEasy.cow);
+                      
 
         }
 
@@ -38,9 +39,7 @@ namespace Ferm_V2
 
         private void b_hudoba_Click(object sender, EventArgs e)
         {
-            Hudoba hudoba = new Hudoba();
-            hudoba.Show();
-            Hide();
+            MessageBox.Show("Вы находитесь в разделе Худоба");
         }
 
         private void b_korm_Click(object sender, EventArgs e)
@@ -60,10 +59,12 @@ namespace Ferm_V2
 
         private void b_dobavit_Click(object sender, EventArgs e)
         {
-           
-            Redactirovanie dob = new Redactirovanie();
+
+            Red_Hud dob = new Red_Hud();
             dob.Show();
-         
+            cowTableAdapter.Fill(fermDataSetEasy.cow);
+            fermDataSetEasy.AcceptChanges();
+
         }
 
         private void b_redactirovat_Click(object sender, EventArgs e)
@@ -71,7 +72,9 @@ namespace Ferm_V2
            
             Dobavlenie reda = new Dobavlenie();
             reda.Show();
-            
+            cowTableAdapter.Fill(fermDataSetEasy.cow);
+            fermDataSetEasy.AcceptChanges();
+
         }
 
         private void b_udalit_Click(object sender, EventArgs e)
@@ -81,14 +84,14 @@ namespace Ferm_V2
 
                 try
                 {
-                    cowTableAdapter.DeleteQuery1(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
+                    cowTableAdapter.DeleteQuery(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
                 }
                 catch (Exception)
                 {
                     MessageBox.Show("Выберите пожалуйста полностью строку");
                 }
-                cowTableAdapter.Fill(fermDataSet.cow);
-                fermDataSet.AcceptChanges();
+                cowTableAdapter.Fill(fermDataSetEasy.cow);
+                fermDataSetEasy.AcceptChanges();
 
 
             }
@@ -96,8 +99,8 @@ namespace Ferm_V2
 
         private void b_obnovit_Click(object sender, EventArgs e)
         {
-            cowTableAdapter.Fill(fermDataSet.cow);
-            fermDataSet.AcceptChanges();
+            cowTableAdapter.Fill(fermDataSetEasy.cow);
+            fermDataSetEasy.AcceptChanges();
         }
 
         private void b_otchet_Click(object sender, EventArgs e)
@@ -111,7 +114,7 @@ namespace Ferm_V2
             Graphics grap = new Graphics();
             grap.Show();
         }
-
+        
         private void b_infirmation_Click(object sender, EventArgs e)
         {
             Contact con = new Contact();

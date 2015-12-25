@@ -47,17 +47,13 @@
             this.privivka = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.cow2TableAdapter1 = new Ferm_V2.fermDataSet1TableAdapters.cowTableAdapter();
+            this.label9 = new System.Windows.Forms.Label();
+            this.id_mesto = new System.Windows.Forms.ComboBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.fermDataSet1 = new Ferm_V2.fermDataSet1();
-            this.cowBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fermDataSet = new Ferm_V2.fermDataSet();
-            this.cowTableAdapter = new Ferm_V2.fermDataSetTableAdapters.cowTableAdapter();
-            this.tableAdapterManager = new Ferm_V2.fermDataSetTableAdapters.TableAdapterManager();
+            this.fermDataSetEasy = new Ferm_V2.fermDataSetEasy();
+            this.cowTableAdapter1 = new Ferm_V2.fermDataSetEasyTableAdapters.cowTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -126,7 +122,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 201);
+            this.label8.Location = new System.Drawing.Point(15, 228);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 13);
             this.label8.TabIndex = 7;
@@ -149,9 +145,6 @@
             // pol
             // 
             this.pol.FormattingEnabled = true;
-            this.pol.Items.AddRange(new object[] {
-            "Корова",
-            "Бык"});
             this.pol.Location = new System.Drawing.Point(127, 69);
             this.pol.Name = "pol";
             this.pol.Size = new System.Drawing.Size(200, 21);
@@ -190,14 +183,14 @@
             // 
             // privivka
             // 
-            this.privivka.Location = new System.Drawing.Point(127, 201);
+            this.privivka.Location = new System.Drawing.Point(127, 228);
             this.privivka.Name = "privivka";
             this.privivka.Size = new System.Drawing.Size(200, 20);
             this.privivka.TabIndex = 15;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(18, 246);
+            this.button1.Location = new System.Drawing.Point(15, 254);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 23);
             this.button1.TabIndex = 16;
@@ -207,7 +200,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(189, 246);
+            this.button2.Location = new System.Drawing.Point(186, 254);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(138, 23);
             this.button2.TabIndex = 17;
@@ -215,49 +208,46 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // cow2TableAdapter1
+            // label9
             // 
-            this.cow2TableAdapter1.ClearBeforeFill = true;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(15, 201);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 13);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Место";
+            // 
+            // id_mesto
+            // 
+            this.id_mesto.DisplayMember = "id_mest";
+            this.id_mesto.FormattingEnabled = true;
+            this.id_mesto.Location = new System.Drawing.Point(127, 201);
+            this.id_mesto.Name = "id_mesto";
+            this.id_mesto.Size = new System.Drawing.Size(200, 21);
+            this.id_mesto.TabIndex = 19;
+            this.id_mesto.ValueMember = "id_mest";
             // 
             // bindingSource1
             // 
-            this.bindingSource1.DataMember = "cow";
-            this.bindingSource1.DataSource = this.fermDataSet1;
+            this.bindingSource1.DataSource = this.fermDataSetEasy;
+            this.bindingSource1.Position = 0;
             // 
-            // fermDataSet1
+            // fermDataSetEasy
             // 
-            this.fermDataSet1.DataSetName = "fermDataSet1";
-            this.fermDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.fermDataSetEasy.DataSetName = "fermDataSetEasy";
+            this.fermDataSetEasy.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // cowBindingSource
+            // cowTableAdapter1
             // 
-            this.cowBindingSource.DataMember = "cow";
-            // 
-            // fermDataSet
-            // 
-            this.fermDataSet.DataSetName = "fermDataSet";
-            this.fermDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cowTableAdapter
-            // 
-            this.cowTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.cowTableAdapter = this.cowTableAdapter;
-            this.tableAdapterManager.kormTableAdapter = null;
-            this.tableAdapterManager.loginTableAdapter = null;
-            this.tableAdapterManager.personalTableAdapter = null;
-            this.tableAdapterManager.polTableAdapter = null;
-            this.tableAdapterManager.tabelTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Ferm_V2.fermDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.cowTableAdapter1.ClearBeforeFill = true;
             // 
             // Dobavlenie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 277);
+            this.ClientSize = new System.Drawing.Size(336, 296);
+            this.Controls.Add(this.id_mesto);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.privivka);
@@ -278,10 +268,9 @@
             this.Controls.Add(this.label1);
             this.Name = "Dobavlenie";
             this.Text = "Dobavlenie";
+            this.Load += new System.EventHandler(this.Dobavlenie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,12 +296,10 @@
         private System.Windows.Forms.TextBox privivka;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox id_mesto;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private fermDataSet1 fermDataSet1;
-        public fermDataSet1TableAdapters.cowTableAdapter cow2TableAdapter1;
-        private System.Windows.Forms.BindingSource cowBindingSource;
-        private fermDataSet fermDataSet;
-        private fermDataSetTableAdapters.cowTableAdapter cowTableAdapter;
-        private fermDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private fermDataSetEasy fermDataSetEasy;
+        private fermDataSetEasyTableAdapters.cowTableAdapter cowTableAdapter1;
     }
 }

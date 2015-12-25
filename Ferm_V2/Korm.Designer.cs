@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.kormBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kormTableAdapter = new Ferm_V2.fermDataSetTableAdapters.kormTableAdapter();
-            this.fermDataSet = new Ferm_V2.fermDataSet();
             this.idkormDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.makuhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +39,9 @@
             this.yachminDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sinoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.solomaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kormBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fermDataSet = new Ferm_V2.fermDataSet();
+            this.kormTableAdapter = new Ferm_V2.fermDataSetTableAdapters.kormTableAdapter();
             this.b_infirmation = new System.Windows.Forms.Button();
             this.b_grafik = new System.Windows.Forms.Button();
             this.b_otchet = new System.Windows.Forms.Button();
@@ -80,20 +80,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(844, 340);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // kormBindingSource
-            // 
-            this.kormBindingSource.DataMember = "korm";
-            this.kormBindingSource.DataSource = this.fermDataSet;
-            // 
-            // kormTableAdapter
-            // 
-            this.kormTableAdapter.ClearBeforeFill = true;
-            // 
-            // fermDataSet
-            // 
-            this.fermDataSet.DataSetName = "fermDataSet";
-            this.fermDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // idkormDataGridViewTextBoxColumn
             // 
@@ -149,6 +135,20 @@
             this.solomaDataGridViewTextBoxColumn.HeaderText = "soloma";
             this.solomaDataGridViewTextBoxColumn.Name = "solomaDataGridViewTextBoxColumn";
             // 
+            // kormBindingSource
+            // 
+            this.kormBindingSource.DataMember = "korm";
+            this.kormBindingSource.DataSource = this.fermDataSet;
+            // 
+            // fermDataSet
+            // 
+            this.fermDataSet.DataSetName = "fermDataSet";
+            this.fermDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kormTableAdapter
+            // 
+            this.kormTableAdapter.ClearBeforeFill = true;
+            // 
             // b_infirmation
             // 
             this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -158,6 +158,7 @@
             this.b_infirmation.TabIndex = 17;
             this.b_infirmation.Text = "Информация";
             this.b_infirmation.UseVisualStyleBackColor = true;
+            this.b_infirmation.Click += new System.EventHandler(this.b_infirmation_Click);
             // 
             // b_grafik
             // 
@@ -168,6 +169,7 @@
             this.b_grafik.TabIndex = 16;
             this.b_grafik.Text = "Графики";
             this.b_grafik.UseVisualStyleBackColor = true;
+            this.b_grafik.Click += new System.EventHandler(this.b_grafik_Click);
             // 
             // b_otchet
             // 
@@ -178,6 +180,7 @@
             this.b_otchet.TabIndex = 15;
             this.b_otchet.Text = "Отчет";
             this.b_otchet.UseVisualStyleBackColor = true;
+            this.b_otchet.Click += new System.EventHandler(this.b_otchet_Click);
             // 
             // b_tabel
             // 
@@ -188,6 +191,7 @@
             this.b_tabel.TabIndex = 14;
             this.b_tabel.Text = "Табель";
             this.b_tabel.UseVisualStyleBackColor = true;
+            this.b_tabel.Click += new System.EventHandler(this.b_tabel_Click);
             // 
             // b_korm
             // 
@@ -198,6 +202,7 @@
             this.b_korm.TabIndex = 13;
             this.b_korm.Text = "Корм";
             this.b_korm.UseVisualStyleBackColor = true;
+            this.b_korm.Click += new System.EventHandler(this.b_korm_Click);
             // 
             // b_hudoba
             // 
@@ -208,6 +213,7 @@
             this.b_hudoba.TabIndex = 12;
             this.b_hudoba.Text = "Худоба";
             this.b_hudoba.UseVisualStyleBackColor = true;
+            this.b_hudoba.Click += new System.EventHandler(this.b_hudoba_Click);
             // 
             // b_personal
             // 
@@ -218,6 +224,7 @@
             this.b_personal.TabIndex = 11;
             this.b_personal.Text = "Персонал";
             this.b_personal.UseVisualStyleBackColor = true;
+            this.b_personal.Click += new System.EventHandler(this.b_personal_Click);
             // 
             // b_poisk
             // 
@@ -290,6 +297,7 @@
             this.Controls.Add(this.b_personal);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Korm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Korm";
             this.Load += new System.EventHandler(this.Korm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
