@@ -120,5 +120,12 @@ namespace Ferm_V2
             Contact con = new Contact();
             con.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Milk milk = new Milk();
+            milk.Show();
+            Hide();
+        }
     }
 }

@@ -36,6 +36,14 @@
             this.b_otchet = new System.Windows.Forms.Button();
             this.b_grafik = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.b_infirmation = new System.Windows.Forms.Button();
+            this.b_dobavit = new System.Windows.Forms.Button();
+            this.b_redactirovat = new System.Windows.Forms.Button();
+            this.b_udalit = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.b_poisk = new System.Windows.Forms.Button();
+            this.b_obnovit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,21 +53,14 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.b_infirmation = new System.Windows.Forms.Button();
-            this.b_dobavit = new System.Windows.Forms.Button();
-            this.b_redactirovat = new System.Windows.Forms.Button();
-            this.b_udalit = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.b_poisk = new System.Windows.Forms.Button();
-            this.b_obnovit = new System.Windows.Forms.Button();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.fermDataSetEasy = new Ferm_V2.fermDataSetEasy();
             this.cowBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fermDataSetEasy = new Ferm_V2.fermDataSetEasy();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cowTableAdapter = new Ferm_V2.fermDataSetEasyTableAdapters.cowTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // b_personal
@@ -148,6 +149,89 @@
             this.dataGridView1.Size = new System.Drawing.Size(946, 398);
             this.dataGridView1.TabIndex = 9;
             // 
+            // b_infirmation
+            // 
+            this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_infirmation.Location = new System.Drawing.Point(12, 347);
+            this.b_infirmation.Name = "b_infirmation";
+            this.b_infirmation.Size = new System.Drawing.Size(100, 50);
+            this.b_infirmation.TabIndex = 10;
+            this.b_infirmation.Text = "Информация";
+            this.b_infirmation.UseVisualStyleBackColor = true;
+            this.b_infirmation.Click += new System.EventHandler(this.b_infirmation_Click);
+            // 
+            // b_dobavit
+            // 
+            this.b_dobavit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_dobavit.Location = new System.Drawing.Point(259, 11);
+            this.b_dobavit.Name = "b_dobavit";
+            this.b_dobavit.Size = new System.Drawing.Size(100, 40);
+            this.b_dobavit.TabIndex = 12;
+            this.b_dobavit.Text = "Редактировать";
+            this.b_dobavit.UseVisualStyleBackColor = true;
+            this.b_dobavit.Click += new System.EventHandler(this.b_dobavit_Click);
+            // 
+            // b_redactirovat
+            // 
+            this.b_redactirovat.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_redactirovat.Location = new System.Drawing.Point(365, 11);
+            this.b_redactirovat.Name = "b_redactirovat";
+            this.b_redactirovat.Size = new System.Drawing.Size(100, 40);
+            this.b_redactirovat.TabIndex = 14;
+            this.b_redactirovat.Text = "Добавить";
+            this.b_redactirovat.UseVisualStyleBackColor = true;
+            this.b_redactirovat.Click += new System.EventHandler(this.b_redactirovat_Click);
+            // 
+            // b_udalit
+            // 
+            this.b_udalit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_udalit.Location = new System.Drawing.Point(471, 11);
+            this.b_udalit.Name = "b_udalit";
+            this.b_udalit.Size = new System.Drawing.Size(100, 40);
+            this.b_udalit.TabIndex = 16;
+            this.b_udalit.Text = "Удалить";
+            this.b_udalit.UseVisualStyleBackColor = true;
+            this.b_udalit.Click += new System.EventHandler(this.b_udalit_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(693, 19);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(278, 25);
+            this.textBox1.TabIndex = 17;
+            // 
+            // b_poisk
+            // 
+            this.b_poisk.Location = new System.Drawing.Point(989, 19);
+            this.b_poisk.Name = "b_poisk";
+            this.b_poisk.Size = new System.Drawing.Size(75, 25);
+            this.b_poisk.TabIndex = 18;
+            this.b_poisk.Text = "Поиск";
+            this.b_poisk.UseVisualStyleBackColor = true;
+            // 
+            // b_obnovit
+            // 
+            this.b_obnovit.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_obnovit.Location = new System.Drawing.Point(577, 11);
+            this.b_obnovit.Name = "b_obnovit";
+            this.b_obnovit.Size = new System.Drawing.Size(96, 40);
+            this.b_obnovit.TabIndex = 19;
+            this.b_obnovit.Text = "Обновить";
+            this.b_obnovit.UseVisualStyleBackColor = true;
+            this.b_obnovit.Click += new System.EventHandler(this.b_obnovit_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14F);
+            this.button1.Location = new System.Drawing.Point(118, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 46);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Молоко";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "id_cow";
@@ -202,91 +286,20 @@
             this.dataGridViewTextBoxColumn9.HeaderText = "privivka";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
-            // b_infirmation
+            // cowBindingSource
             // 
-            this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_infirmation.Location = new System.Drawing.Point(12, 347);
-            this.b_infirmation.Name = "b_infirmation";
-            this.b_infirmation.Size = new System.Drawing.Size(100, 50);
-            this.b_infirmation.TabIndex = 10;
-            this.b_infirmation.Text = "Информация";
-            this.b_infirmation.UseVisualStyleBackColor = true;
-            this.b_infirmation.Click += new System.EventHandler(this.b_infirmation_Click);
-            // 
-            // b_dobavit
-            // 
-            this.b_dobavit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_dobavit.Location = new System.Drawing.Point(133, 11);
-            this.b_dobavit.Name = "b_dobavit";
-            this.b_dobavit.Size = new System.Drawing.Size(100, 40);
-            this.b_dobavit.TabIndex = 12;
-            this.b_dobavit.Text = "Редактировать";
-            this.b_dobavit.UseVisualStyleBackColor = true;
-            this.b_dobavit.Click += new System.EventHandler(this.b_dobavit_Click);
-            // 
-            // b_redactirovat
-            // 
-            this.b_redactirovat.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_redactirovat.Location = new System.Drawing.Point(239, 11);
-            this.b_redactirovat.Name = "b_redactirovat";
-            this.b_redactirovat.Size = new System.Drawing.Size(100, 40);
-            this.b_redactirovat.TabIndex = 14;
-            this.b_redactirovat.Text = "Добавить";
-            this.b_redactirovat.UseVisualStyleBackColor = true;
-            this.b_redactirovat.Click += new System.EventHandler(this.b_redactirovat_Click);
-            // 
-            // b_udalit
-            // 
-            this.b_udalit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_udalit.Location = new System.Drawing.Point(345, 11);
-            this.b_udalit.Name = "b_udalit";
-            this.b_udalit.Size = new System.Drawing.Size(100, 40);
-            this.b_udalit.TabIndex = 16;
-            this.b_udalit.Text = "Удалить";
-            this.b_udalit.UseVisualStyleBackColor = true;
-            this.b_udalit.Click += new System.EventHandler(this.b_udalit_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(655, 19);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(316, 25);
-            this.textBox1.TabIndex = 17;
-            // 
-            // b_poisk
-            // 
-            this.b_poisk.Location = new System.Drawing.Point(989, 19);
-            this.b_poisk.Name = "b_poisk";
-            this.b_poisk.Size = new System.Drawing.Size(75, 25);
-            this.b_poisk.TabIndex = 18;
-            this.b_poisk.Text = "Поиск";
-            this.b_poisk.UseVisualStyleBackColor = true;
-            // 
-            // b_obnovit
-            // 
-            this.b_obnovit.Location = new System.Drawing.Point(479, 20);
-            this.b_obnovit.Name = "b_obnovit";
-            this.b_obnovit.Size = new System.Drawing.Size(51, 23);
-            this.b_obnovit.TabIndex = 19;
-            this.b_obnovit.Text = "Обновить";
-            this.b_obnovit.UseVisualStyleBackColor = true;
-            this.b_obnovit.Click += new System.EventHandler(this.b_obnovit_Click);
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = this.fermDataSetEasy;
-            this.bindingSource1.Position = 0;
+            this.cowBindingSource.DataMember = "cow";
+            this.cowBindingSource.DataSource = this.fermDataSetEasy;
             // 
             // fermDataSetEasy
             // 
             this.fermDataSetEasy.DataSetName = "fermDataSetEasy";
             this.fermDataSetEasy.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // cowBindingSource
+            // bindingSource1
             // 
-            this.cowBindingSource.DataMember = "cow";
-            this.cowBindingSource.DataSource = this.fermDataSetEasy;
+            this.bindingSource1.DataSource = this.fermDataSetEasy;
+            this.bindingSource1.Position = 0;
             // 
             // cowTableAdapter
             // 
@@ -297,6 +310,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 470);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.b_obnovit);
             this.Controls.Add(this.b_poisk);
             this.Controls.Add(this.textBox1);
@@ -316,9 +330,9 @@
             this.Text = "Hudoba";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,6 +376,7 @@
         private fermDataSetEasy fermDataSetEasy;
         private System.Windows.Forms.BindingSource cowBindingSource;
         private fermDataSetEasyTableAdapters.cowTableAdapter cowTableAdapter;
+        private System.Windows.Forms.Button button1;
     }
 }
 

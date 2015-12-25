@@ -66,6 +66,12 @@
     <Compile Include="Contact.Designer.cs">
       <DependentUpon>Contact.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dob_Milk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dob_Milk.Designer.cs">
+      <DependentUpon>Dob_Milk.cs</DependentUpon>
+    </Compile>
     <Compile Include="fermDataSetEasy.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -76,6 +82,12 @@
     </Compile>
     <Compile Include="Graphics.Designer.cs">
       <DependentUpon>Graphics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Milk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Milk.Designer.cs">
+      <DependentUpon>Milk.cs</DependentUpon>
     </Compile>
     <Compile Include="Otchet_Hudoba.cs">
       <SubType>Form</SubType>
@@ -137,6 +149,12 @@
     <Compile Include="Red_Hud.Designer.cs">
       <DependentUpon>Red_Hud.cs</DependentUpon>
     </Compile>
+    <Compile Include="Red_Milk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Red_Milk.Designer.cs">
+      <DependentUpon>Red_Milk.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tabel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,8 +164,14 @@
     <EmbeddedResource Include="Contact.resx">
       <DependentUpon>Contact.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dob_Milk.resx">
+      <DependentUpon>Dob_Milk.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Graphics.resx">
       <DependentUpon>Graphics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Milk.resx">
+      <DependentUpon>Milk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Otchet_Hudoba.resx">
       <DependentUpon>Otchet_Hudoba.cs</DependentUpon>
@@ -178,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Red_Hud.resx">
       <DependentUpon>Red_Hud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Red_Milk.resx">
+      <DependentUpon>Red_Milk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Tabel.resx">
