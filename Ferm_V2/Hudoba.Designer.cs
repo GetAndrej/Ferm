@@ -53,14 +53,14 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cowBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fermDataSetEasy = new Ferm_V2.fermDataSetEasy();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cowTableAdapter = new Ferm_V2.fermDataSetEasyTableAdapters.cowTableAdapter();
+            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
+            this.cowBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.cowTableAdapter1 = new Ferm_V2.fermDataSetLastVTableAdapters.cowTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // b_personal
@@ -143,7 +143,7 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
-            this.dataGridView1.DataSource = this.cowBindingSource;
+            this.dataGridView1.DataSource = this.cowBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(118, 64);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(946, 398);
@@ -286,24 +286,23 @@
             this.dataGridViewTextBoxColumn9.HeaderText = "privivka";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
-            // cowBindingSource
-            // 
-            this.cowBindingSource.DataMember = "cow";
-            this.cowBindingSource.DataSource = this.fermDataSetEasy;
-            // 
-            // fermDataSetEasy
-            // 
-            this.fermDataSetEasy.DataSetName = "fermDataSetEasy";
-            this.fermDataSetEasy.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // bindingSource1
             // 
-            this.bindingSource1.DataSource = this.fermDataSetEasy;
-            this.bindingSource1.Position = 0;
+            this.bindingSource1.DataSource = this.cowBindingSource1;
             // 
-            // cowTableAdapter
+            // fermDataSetLastV
             // 
-            this.cowTableAdapter.ClearBeforeFill = true;
+            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
+            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cowBindingSource1
+            // 
+            this.cowBindingSource1.DataMember = "cow";
+            this.cowBindingSource1.DataSource = this.fermDataSetLastV;
+            // 
+            // cowTableAdapter1
+            // 
+            this.cowTableAdapter1.ClearBeforeFill = true;
             // 
             // Hudoba
             // 
@@ -330,9 +329,9 @@
             this.Text = "Hudoba";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -373,10 +372,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private fermDataSetEasy fermDataSetEasy;
-        private System.Windows.Forms.BindingSource cowBindingSource;
-        private fermDataSetEasyTableAdapters.cowTableAdapter cowTableAdapter;
         private System.Windows.Forms.Button button1;
+        private fermDataSetLastV fermDataSetLastV;
+        private System.Windows.Forms.BindingSource cowBindingSource1;
+        private fermDataSetLastVTableAdapters.cowTableAdapter cowTableAdapter1;
     }
 }
 

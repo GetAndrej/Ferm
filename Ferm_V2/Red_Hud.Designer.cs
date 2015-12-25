@@ -29,32 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label id_cowLabel1;
-            System.Windows.Forms.Label klichkaLabel1;
-            System.Windows.Forms.Label polLabel1;
-            System.Windows.Forms.Label data_birthdayLabel1;
-            System.Windows.Forms.Label kodLabel1;
-            System.Windows.Forms.Label inwert_numberLabel1;
-            System.Windows.Forms.Label id_doyarkaLabel1;
-            System.Windows.Forms.Label id_mestoLabel1;
-            System.Windows.Forms.Label privivkaLabel1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Red_Hud));
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.fermDataSetEasy = new Ferm_V2.fermDataSetEasy();
+            System.Windows.Forms.Label id_cowLabel;
+            System.Windows.Forms.Label klichkaLabel;
+            System.Windows.Forms.Label polLabel;
+            System.Windows.Forms.Label data_birthdayLabel;
+            System.Windows.Forms.Label kodLabel;
+            System.Windows.Forms.Label inwert_numberLabel;
+            System.Windows.Forms.Label id_doyarkaLabel;
+            System.Windows.Forms.Label id_mestoLabel;
+            System.Windows.Forms.Label privivkaLabel;
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.cowTableAdapter1 = new Ferm_V2.fermDataSetEasyTableAdapters.cowTableAdapter();
-            this.tableAdapterManager1 = new Ferm_V2.fermDataSetEasyTableAdapters.TableAdapterManager();
-            this.cowBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.id_cowTextBox1 = new System.Windows.Forms.TextBox();
-            this.klichkaTextBox1 = new System.Windows.Forms.TextBox();
-            this.polTextBox1 = new System.Windows.Forms.TextBox();
-            this.kodTextBox1 = new System.Windows.Forms.TextBox();
-            this.inwert_numberTextBox1 = new System.Windows.Forms.TextBox();
-            this.id_doyarkaTextBox1 = new System.Windows.Forms.TextBox();
-            this.id_mestoTextBox1 = new System.Windows.Forms.TextBox();
-            this.privivkaTextBox1 = new System.Windows.Forms.TextBox();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
+            this.cowBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cowTableAdapter = new Ferm_V2.fermDataSetLastVTableAdapters.cowTableAdapter();
+            this.tableAdapterManager = new Ferm_V2.fermDataSetLastVTableAdapters.TableAdapterManager();
+            this.cowBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -66,32 +57,30 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            id_cowLabel1 = new System.Windows.Forms.Label();
-            klichkaLabel1 = new System.Windows.Forms.Label();
-            polLabel1 = new System.Windows.Forms.Label();
-            data_birthdayLabel1 = new System.Windows.Forms.Label();
-            kodLabel1 = new System.Windows.Forms.Label();
-            inwert_numberLabel1 = new System.Windows.Forms.Label();
-            id_doyarkaLabel1 = new System.Windows.Forms.Label();
-            id_mestoLabel1 = new System.Windows.Forms.Label();
-            privivkaLabel1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
+            this.cowBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.id_cowTextBox = new System.Windows.Forms.TextBox();
+            this.klichkaTextBox = new System.Windows.Forms.TextBox();
+            this.polTextBox = new System.Windows.Forms.TextBox();
+            this.data_birthdayDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.kodTextBox = new System.Windows.Forms.TextBox();
+            this.inwert_numberTextBox = new System.Windows.Forms.TextBox();
+            this.id_doyarkaTextBox = new System.Windows.Forms.TextBox();
+            this.id_mestoTextBox = new System.Windows.Forms.TextBox();
+            this.privivkaTextBox = new System.Windows.Forms.TextBox();
+            id_cowLabel = new System.Windows.Forms.Label();
+            klichkaLabel = new System.Windows.Forms.Label();
+            polLabel = new System.Windows.Forms.Label();
+            data_birthdayLabel = new System.Windows.Forms.Label();
+            kodLabel = new System.Windows.Forms.Label();
+            inwert_numberLabel = new System.Windows.Forms.Label();
+            id_doyarkaLabel = new System.Windows.Forms.Label();
+            id_mestoLabel = new System.Windows.Forms.Label();
+            privivkaLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cowBindingNavigator)).BeginInit();
+            this.cowBindingNavigator.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = this.fermDataSetEasy;
-            this.bindingSource1.Position = 0;
-            // 
-            // fermDataSetEasy
-            // 
-            this.fermDataSetEasy.DataSetName = "fermDataSetEasy";
-            this.fermDataSetEasy.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -113,181 +102,40 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // cowTableAdapter1
+            // fermDataSetLastV
             // 
-            this.cowTableAdapter1.ClearBeforeFill = true;
+            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
+            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tableAdapterManager1
+            // cowBindingSource
             // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.cowTableAdapter = this.cowTableAdapter1;
-            this.tableAdapterManager1.kormTableAdapter = null;
-            this.tableAdapterManager1.loginTableAdapter = null;
-            this.tableAdapterManager1.mesto_corTableAdapter = null;
-            this.tableAdapterManager1.milkTableAdapter = null;
-            this.tableAdapterManager1.personalTableAdapter = null;
-            this.tableAdapterManager1.polTableAdapter = null;
-            this.tableAdapterManager1.tabelTableAdapter = null;
-            this.tableAdapterManager1.UpdateOrder = Ferm_V2.fermDataSetEasyTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager1.zarplataTableAdapter = null;
+            this.cowBindingSource.DataMember = "cow";
+            this.cowBindingSource.DataSource = this.fermDataSetLastV;
             // 
-            // cowBindingSource2
+            // cowTableAdapter
             // 
-            this.cowBindingSource2.DataMember = "cow";
-            this.cowBindingSource2.DataSource = this.fermDataSetEasy;
+            this.cowTableAdapter.ClearBeforeFill = true;
             // 
-            // id_cowLabel1
+            // tableAdapterManager
             // 
-            id_cowLabel1.AutoSize = true;
-            id_cowLabel1.Location = new System.Drawing.Point(20, 57);
-            id_cowLabel1.Name = "id_cowLabel1";
-            id_cowLabel1.Size = new System.Drawing.Size(41, 13);
-            id_cowLabel1.TabIndex = 21;
-            id_cowLabel1.Text = "id cow:";
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.cowTableAdapter = this.cowTableAdapter;
+            this.tableAdapterManager.kormTableAdapter = null;
+            this.tableAdapterManager.loginTableAdapter = null;
+            this.tableAdapterManager.mesto_corTableAdapter = null;
+            this.tableAdapterManager.milkTableAdapter = null;
+            this.tableAdapterManager.personalTableAdapter = null;
+            this.tableAdapterManager.tabelTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Ferm_V2.fermDataSetLastVTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.zarplataTableAdapter = null;
             // 
-            // id_cowTextBox1
+            // cowBindingNavigator
             // 
-            this.id_cowTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource2, "id_cow", true));
-            this.id_cowTextBox1.Location = new System.Drawing.Point(102, 54);
-            this.id_cowTextBox1.Name = "id_cowTextBox1";
-            this.id_cowTextBox1.Size = new System.Drawing.Size(200, 20);
-            this.id_cowTextBox1.TabIndex = 22;
-            // 
-            // klichkaLabel1
-            // 
-            klichkaLabel1.AutoSize = true;
-            klichkaLabel1.Location = new System.Drawing.Point(20, 83);
-            klichkaLabel1.Name = "klichkaLabel1";
-            klichkaLabel1.Size = new System.Drawing.Size(44, 13);
-            klichkaLabel1.TabIndex = 23;
-            klichkaLabel1.Text = "klichka:";
-            // 
-            // klichkaTextBox1
-            // 
-            this.klichkaTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource2, "klichka", true));
-            this.klichkaTextBox1.Location = new System.Drawing.Point(102, 80);
-            this.klichkaTextBox1.Name = "klichkaTextBox1";
-            this.klichkaTextBox1.Size = new System.Drawing.Size(200, 20);
-            this.klichkaTextBox1.TabIndex = 24;
-            // 
-            // polLabel1
-            // 
-            polLabel1.AutoSize = true;
-            polLabel1.Location = new System.Drawing.Point(20, 109);
-            polLabel1.Name = "polLabel1";
-            polLabel1.Size = new System.Drawing.Size(24, 13);
-            polLabel1.TabIndex = 25;
-            polLabel1.Text = "pol:";
-            // 
-            // polTextBox1
-            // 
-            this.polTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource2, "pol", true));
-            this.polTextBox1.Location = new System.Drawing.Point(102, 106);
-            this.polTextBox1.Name = "polTextBox1";
-            this.polTextBox1.Size = new System.Drawing.Size(200, 20);
-            this.polTextBox1.TabIndex = 26;
-            // 
-            // data_birthdayLabel1
-            // 
-            data_birthdayLabel1.AutoSize = true;
-            data_birthdayLabel1.Location = new System.Drawing.Point(20, 135);
-            data_birthdayLabel1.Name = "data_birthdayLabel1";
-            data_birthdayLabel1.Size = new System.Drawing.Size(71, 13);
-            data_birthdayLabel1.TabIndex = 27;
-            data_birthdayLabel1.Text = "data birthday:";
-            // 
-            // kodLabel1
-            // 
-            kodLabel1.AutoSize = true;
-            kodLabel1.Location = new System.Drawing.Point(20, 161);
-            kodLabel1.Name = "kodLabel1";
-            kodLabel1.Size = new System.Drawing.Size(28, 13);
-            kodLabel1.TabIndex = 29;
-            kodLabel1.Text = "kod:";
-            // 
-            // kodTextBox1
-            // 
-            this.kodTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource2, "kod", true));
-            this.kodTextBox1.Location = new System.Drawing.Point(102, 158);
-            this.kodTextBox1.Name = "kodTextBox1";
-            this.kodTextBox1.Size = new System.Drawing.Size(200, 20);
-            this.kodTextBox1.TabIndex = 30;
-            // 
-            // inwert_numberLabel1
-            // 
-            inwert_numberLabel1.AutoSize = true;
-            inwert_numberLabel1.Location = new System.Drawing.Point(20, 187);
-            inwert_numberLabel1.Name = "inwert_numberLabel1";
-            inwert_numberLabel1.Size = new System.Drawing.Size(76, 13);
-            inwert_numberLabel1.TabIndex = 31;
-            inwert_numberLabel1.Text = "inwert number:";
-            // 
-            // inwert_numberTextBox1
-            // 
-            this.inwert_numberTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource2, "inwert_number", true));
-            this.inwert_numberTextBox1.Location = new System.Drawing.Point(102, 184);
-            this.inwert_numberTextBox1.Name = "inwert_numberTextBox1";
-            this.inwert_numberTextBox1.Size = new System.Drawing.Size(200, 20);
-            this.inwert_numberTextBox1.TabIndex = 32;
-            // 
-            // id_doyarkaLabel1
-            // 
-            id_doyarkaLabel1.AutoSize = true;
-            id_doyarkaLabel1.Location = new System.Drawing.Point(20, 213);
-            id_doyarkaLabel1.Name = "id_doyarkaLabel1";
-            id_doyarkaLabel1.Size = new System.Drawing.Size(59, 13);
-            id_doyarkaLabel1.TabIndex = 33;
-            id_doyarkaLabel1.Text = "id doyarka:";
-            // 
-            // id_doyarkaTextBox1
-            // 
-            this.id_doyarkaTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource2, "id_doyarka", true));
-            this.id_doyarkaTextBox1.Location = new System.Drawing.Point(102, 210);
-            this.id_doyarkaTextBox1.Name = "id_doyarkaTextBox1";
-            this.id_doyarkaTextBox1.Size = new System.Drawing.Size(200, 20);
-            this.id_doyarkaTextBox1.TabIndex = 34;
-            // 
-            // id_mestoLabel1
-            // 
-            id_mestoLabel1.AutoSize = true;
-            id_mestoLabel1.Location = new System.Drawing.Point(20, 239);
-            id_mestoLabel1.Name = "id_mestoLabel1";
-            id_mestoLabel1.Size = new System.Drawing.Size(49, 13);
-            id_mestoLabel1.TabIndex = 35;
-            id_mestoLabel1.Text = "id mesto:";
-            // 
-            // id_mestoTextBox1
-            // 
-            this.id_mestoTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource2, "id_mesto", true));
-            this.id_mestoTextBox1.Location = new System.Drawing.Point(102, 236);
-            this.id_mestoTextBox1.Name = "id_mestoTextBox1";
-            this.id_mestoTextBox1.Size = new System.Drawing.Size(200, 20);
-            this.id_mestoTextBox1.TabIndex = 36;
-            // 
-            // privivkaLabel1
-            // 
-            privivkaLabel1.AutoSize = true;
-            privivkaLabel1.Location = new System.Drawing.Point(20, 265);
-            privivkaLabel1.Name = "privivkaLabel1";
-            privivkaLabel1.Size = new System.Drawing.Size(47, 13);
-            privivkaLabel1.TabIndex = 37;
-            privivkaLabel1.Text = "privivka:";
-            // 
-            // privivkaTextBox1
-            // 
-            this.privivkaTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource2, "privivka", true));
-            this.privivkaTextBox1.Location = new System.Drawing.Point(102, 262);
-            this.privivkaTextBox1.Name = "privivkaTextBox1";
-            this.privivkaTextBox1.Size = new System.Drawing.Size(200, 20);
-            this.privivkaTextBox1.TabIndex = 38;
-            // 
-            // bindingNavigator1
-            // 
-            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator1.BindingSource = this.cowBindingSource2;
-            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cowBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.cowBindingNavigator.BindingSource = this.cowBindingSource;
+            this.cowBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.cowBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.cowBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -298,17 +146,18 @@
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem});
-            this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
-            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(747, 25);
-            this.bindingNavigator1.TabIndex = 39;
-            this.bindingNavigator1.Text = "bindingNavigator1";
+            this.bindingNavigatorDeleteItem,
+            this.cowBindingNavigatorSaveItem});
+            this.cowBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.cowBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.cowBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.cowBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.cowBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.cowBindingNavigator.Name = "cowBindingNavigator";
+            this.cowBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.cowBindingNavigator.Size = new System.Drawing.Size(747, 25);
+            this.cowBindingNavigator.TabIndex = 20;
+            this.cowBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -345,14 +194,14 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 15);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -360,7 +209,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -369,13 +218,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -392,74 +241,218 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
-            // dateTimePicker1
+            // cowBindingNavigatorSaveItem
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(102, 132);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 40;
+            this.cowBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cowBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("cowBindingNavigatorSaveItem.Image")));
+            this.cowBindingNavigatorSaveItem.Name = "cowBindingNavigatorSaveItem";
+            this.cowBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.cowBindingNavigatorSaveItem.Text = "Сохранить данные";
+            this.cowBindingNavigatorSaveItem.Click += new System.EventHandler(this.cowBindingNavigatorSaveItem_Click_1);
+            // 
+            // id_cowLabel
+            // 
+            id_cowLabel.AutoSize = true;
+            id_cowLabel.Location = new System.Drawing.Point(20, 31);
+            id_cowLabel.Name = "id_cowLabel";
+            id_cowLabel.Size = new System.Drawing.Size(41, 13);
+            id_cowLabel.TabIndex = 20;
+            id_cowLabel.Text = "id cow:";
+            // 
+            // id_cowTextBox
+            // 
+            this.id_cowTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource, "id_cow", true));
+            this.id_cowTextBox.Location = new System.Drawing.Point(102, 28);
+            this.id_cowTextBox.Name = "id_cowTextBox";
+            this.id_cowTextBox.Size = new System.Drawing.Size(200, 20);
+            this.id_cowTextBox.TabIndex = 21;
+            // 
+            // klichkaLabel
+            // 
+            klichkaLabel.AutoSize = true;
+            klichkaLabel.Location = new System.Drawing.Point(20, 57);
+            klichkaLabel.Name = "klichkaLabel";
+            klichkaLabel.Size = new System.Drawing.Size(44, 13);
+            klichkaLabel.TabIndex = 22;
+            klichkaLabel.Text = "klichka:";
+            // 
+            // klichkaTextBox
+            // 
+            this.klichkaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource, "klichka", true));
+            this.klichkaTextBox.Location = new System.Drawing.Point(102, 54);
+            this.klichkaTextBox.Name = "klichkaTextBox";
+            this.klichkaTextBox.Size = new System.Drawing.Size(200, 20);
+            this.klichkaTextBox.TabIndex = 23;
+            // 
+            // polLabel
+            // 
+            polLabel.AutoSize = true;
+            polLabel.Location = new System.Drawing.Point(20, 83);
+            polLabel.Name = "polLabel";
+            polLabel.Size = new System.Drawing.Size(24, 13);
+            polLabel.TabIndex = 24;
+            polLabel.Text = "pol:";
+            // 
+            // polTextBox
+            // 
+            this.polTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource, "pol", true));
+            this.polTextBox.Location = new System.Drawing.Point(102, 80);
+            this.polTextBox.Name = "polTextBox";
+            this.polTextBox.Size = new System.Drawing.Size(200, 20);
+            this.polTextBox.TabIndex = 25;
+            // 
+            // data_birthdayLabel
+            // 
+            data_birthdayLabel.AutoSize = true;
+            data_birthdayLabel.Location = new System.Drawing.Point(20, 110);
+            data_birthdayLabel.Name = "data_birthdayLabel";
+            data_birthdayLabel.Size = new System.Drawing.Size(71, 13);
+            data_birthdayLabel.TabIndex = 26;
+            data_birthdayLabel.Text = "data birthday:";
+            // 
+            // data_birthdayDateTimePicker
+            // 
+            this.data_birthdayDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.cowBindingSource, "data_birthday", true));
+            this.data_birthdayDateTimePicker.Location = new System.Drawing.Point(102, 106);
+            this.data_birthdayDateTimePicker.Name = "data_birthdayDateTimePicker";
+            this.data_birthdayDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.data_birthdayDateTimePicker.TabIndex = 27;
+            // 
+            // kodLabel
+            // 
+            kodLabel.AutoSize = true;
+            kodLabel.Location = new System.Drawing.Point(20, 135);
+            kodLabel.Name = "kodLabel";
+            kodLabel.Size = new System.Drawing.Size(28, 13);
+            kodLabel.TabIndex = 28;
+            kodLabel.Text = "kod:";
+            // 
+            // kodTextBox
+            // 
+            this.kodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource, "kod", true));
+            this.kodTextBox.Location = new System.Drawing.Point(102, 132);
+            this.kodTextBox.Name = "kodTextBox";
+            this.kodTextBox.Size = new System.Drawing.Size(200, 20);
+            this.kodTextBox.TabIndex = 29;
+            // 
+            // inwert_numberLabel
+            // 
+            inwert_numberLabel.AutoSize = true;
+            inwert_numberLabel.Location = new System.Drawing.Point(20, 161);
+            inwert_numberLabel.Name = "inwert_numberLabel";
+            inwert_numberLabel.Size = new System.Drawing.Size(76, 13);
+            inwert_numberLabel.TabIndex = 30;
+            inwert_numberLabel.Text = "inwert number:";
+            // 
+            // inwert_numberTextBox
+            // 
+            this.inwert_numberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource, "inwert_number", true));
+            this.inwert_numberTextBox.Location = new System.Drawing.Point(102, 158);
+            this.inwert_numberTextBox.Name = "inwert_numberTextBox";
+            this.inwert_numberTextBox.Size = new System.Drawing.Size(200, 20);
+            this.inwert_numberTextBox.TabIndex = 31;
+            // 
+            // id_doyarkaLabel
+            // 
+            id_doyarkaLabel.AutoSize = true;
+            id_doyarkaLabel.Location = new System.Drawing.Point(20, 187);
+            id_doyarkaLabel.Name = "id_doyarkaLabel";
+            id_doyarkaLabel.Size = new System.Drawing.Size(59, 13);
+            id_doyarkaLabel.TabIndex = 32;
+            id_doyarkaLabel.Text = "id doyarka:";
+            // 
+            // id_doyarkaTextBox
+            // 
+            this.id_doyarkaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource, "id_doyarka", true));
+            this.id_doyarkaTextBox.Location = new System.Drawing.Point(102, 184);
+            this.id_doyarkaTextBox.Name = "id_doyarkaTextBox";
+            this.id_doyarkaTextBox.Size = new System.Drawing.Size(200, 20);
+            this.id_doyarkaTextBox.TabIndex = 33;
+            // 
+            // id_mestoLabel
+            // 
+            id_mestoLabel.AutoSize = true;
+            id_mestoLabel.Location = new System.Drawing.Point(20, 213);
+            id_mestoLabel.Name = "id_mestoLabel";
+            id_mestoLabel.Size = new System.Drawing.Size(49, 13);
+            id_mestoLabel.TabIndex = 34;
+            id_mestoLabel.Text = "id mesto:";
+            // 
+            // id_mestoTextBox
+            // 
+            this.id_mestoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource, "id_mesto", true));
+            this.id_mestoTextBox.Location = new System.Drawing.Point(102, 210);
+            this.id_mestoTextBox.Name = "id_mestoTextBox";
+            this.id_mestoTextBox.Size = new System.Drawing.Size(200, 20);
+            this.id_mestoTextBox.TabIndex = 35;
+            // 
+            // privivkaLabel
+            // 
+            privivkaLabel.AutoSize = true;
+            privivkaLabel.Location = new System.Drawing.Point(20, 239);
+            privivkaLabel.Name = "privivkaLabel";
+            privivkaLabel.Size = new System.Drawing.Size(47, 13);
+            privivkaLabel.TabIndex = 36;
+            privivkaLabel.Text = "privivka:";
+            // 
+            // privivkaTextBox
+            // 
+            this.privivkaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource, "privivka", true));
+            this.privivkaTextBox.Location = new System.Drawing.Point(102, 236);
+            this.privivkaTextBox.Name = "privivkaTextBox";
+            this.privivkaTextBox.Size = new System.Drawing.Size(200, 20);
+            this.privivkaTextBox.TabIndex = 37;
             // 
             // Red_Hud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(747, 366);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.bindingNavigator1);
-            this.Controls.Add(id_cowLabel1);
-            this.Controls.Add(this.id_cowTextBox1);
-            this.Controls.Add(klichkaLabel1);
-            this.Controls.Add(this.klichkaTextBox1);
-            this.Controls.Add(polLabel1);
-            this.Controls.Add(this.polTextBox1);
-            this.Controls.Add(data_birthdayLabel1);
-            this.Controls.Add(kodLabel1);
-            this.Controls.Add(this.kodTextBox1);
-            this.Controls.Add(inwert_numberLabel1);
-            this.Controls.Add(this.inwert_numberTextBox1);
-            this.Controls.Add(id_doyarkaLabel1);
-            this.Controls.Add(this.id_doyarkaTextBox1);
-            this.Controls.Add(id_mestoLabel1);
-            this.Controls.Add(this.id_mestoTextBox1);
-            this.Controls.Add(privivkaLabel1);
-            this.Controls.Add(this.privivkaTextBox1);
+            this.Controls.Add(id_cowLabel);
+            this.Controls.Add(this.id_cowTextBox);
+            this.Controls.Add(klichkaLabel);
+            this.Controls.Add(this.klichkaTextBox);
+            this.Controls.Add(polLabel);
+            this.Controls.Add(this.polTextBox);
+            this.Controls.Add(data_birthdayLabel);
+            this.Controls.Add(this.data_birthdayDateTimePicker);
+            this.Controls.Add(kodLabel);
+            this.Controls.Add(this.kodTextBox);
+            this.Controls.Add(inwert_numberLabel);
+            this.Controls.Add(this.inwert_numberTextBox);
+            this.Controls.Add(id_doyarkaLabel);
+            this.Controls.Add(this.id_doyarkaTextBox);
+            this.Controls.Add(id_mestoLabel);
+            this.Controls.Add(this.id_mestoTextBox);
+            this.Controls.Add(privivkaLabel);
+            this.Controls.Add(this.privivkaTextBox);
+            this.Controls.Add(this.cowBindingNavigator);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Red_Hud";
             this.Text = "Red_Hud";
             this.Load += new System.EventHandler(this.Red_Hud_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cowBindingNavigator)).EndInit();
+            this.cowBindingNavigator.ResumeLayout(false);
+            this.cowBindingNavigator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private fermDataSetEasy fermDataSetEasy;
-        private fermDataSetEasyTableAdapters.cowTableAdapter cowTableAdapter1;
-        private fermDataSetEasyTableAdapters.TableAdapterManager tableAdapterManager1;
-        private System.Windows.Forms.BindingSource cowBindingSource2;
-        private System.Windows.Forms.TextBox id_cowTextBox1;
-        private System.Windows.Forms.TextBox klichkaTextBox1;
-        private System.Windows.Forms.TextBox polTextBox1;
-        private System.Windows.Forms.TextBox kodTextBox1;
-        private System.Windows.Forms.TextBox inwert_numberTextBox1;
-        private System.Windows.Forms.TextBox id_doyarkaTextBox1;
-        private System.Windows.Forms.TextBox id_mestoTextBox1;
-        private System.Windows.Forms.TextBox privivkaTextBox1;
-        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private fermDataSetLastV fermDataSetLastV;
+        private System.Windows.Forms.BindingSource cowBindingSource;
+        private fermDataSetLastVTableAdapters.cowTableAdapter cowTableAdapter;
+        private fermDataSetLastVTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator cowBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -471,6 +464,15 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ToolStripButton cowBindingNavigatorSaveItem;
+        private System.Windows.Forms.TextBox id_cowTextBox;
+        private System.Windows.Forms.TextBox klichkaTextBox;
+        private System.Windows.Forms.TextBox polTextBox;
+        private System.Windows.Forms.DateTimePicker data_birthdayDateTimePicker;
+        private System.Windows.Forms.TextBox kodTextBox;
+        private System.Windows.Forms.TextBox inwert_numberTextBox;
+        private System.Windows.Forms.TextBox id_doyarkaTextBox;
+        private System.Windows.Forms.TextBox id_mestoTextBox;
+        private System.Windows.Forms.TextBox privivkaTextBox;
     }
 }

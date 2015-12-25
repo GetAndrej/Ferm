@@ -30,17 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birthdayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zarplataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.fermDataSet1 = new Ferm_V2.fermDataSet1();
-            this.personalTableAdapter = new Ferm_V2.fermDataSet1TableAdapters.personalTableAdapter();
             this.b_infirmation = new System.Windows.Forms.Button();
             this.b_grafik = new System.Windows.Forms.Button();
             this.b_otchet = new System.Windows.Forms.Button();
@@ -53,10 +42,20 @@
             this.b_udalit = new System.Windows.Forms.Button();
             this.b_redactirovat = new System.Windows.Forms.Button();
             this.b_dobavit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthdayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
+            this.personalTableAdapter = new Ferm_V2.fermDataSetLastVTableAdapters.personalTableAdapter();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -69,74 +68,12 @@
             this.positionDataGridViewTextBoxColumn,
             this.birthdayDataGridViewTextBoxColumn,
             this.addressDataGridViewTextBoxColumn,
-            this.telephoneDataGridViewTextBoxColumn,
-            this.zarplataDataGridViewTextBoxColumn});
+            this.telephoneDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.personalBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(118, 58);
+            this.dataGridView1.Location = new System.Drawing.Point(117, 58);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(847, 330);
+            this.dataGridView1.Size = new System.Drawing.Size(869, 330);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // positionDataGridViewTextBoxColumn
-            // 
-            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
-            this.positionDataGridViewTextBoxColumn.HeaderText = "position";
-            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            // 
-            // birthdayDataGridViewTextBoxColumn
-            // 
-            this.birthdayDataGridViewTextBoxColumn.DataPropertyName = "birthday";
-            this.birthdayDataGridViewTextBoxColumn.HeaderText = "birthday";
-            this.birthdayDataGridViewTextBoxColumn.Name = "birthdayDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = " address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = " address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // telephoneDataGridViewTextBoxColumn
-            // 
-            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
-            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
-            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
-            // 
-            // zarplataDataGridViewTextBoxColumn
-            // 
-            this.zarplataDataGridViewTextBoxColumn.DataPropertyName = "zarplata";
-            this.zarplataDataGridViewTextBoxColumn.HeaderText = "zarplata";
-            this.zarplataDataGridViewTextBoxColumn.Name = "zarplataDataGridViewTextBoxColumn";
-            // 
-            // personalBindingSource
-            // 
-            this.personalBindingSource.DataMember = "personal";
-            this.personalBindingSource.DataSource = this.bindingSource1;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = this.fermDataSet1;
-            this.bindingSource1.Position = 0;
-            // 
-            // fermDataSet1
-            // 
-            this.fermDataSet1.DataSetName = "fermDataSet1";
-            this.fermDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // personalTableAdapter
-            // 
-            this.personalTableAdapter.ClearBeforeFill = true;
             // 
             // b_infirmation
             // 
@@ -227,17 +164,17 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(555, 17);
+            this.textBox1.Location = new System.Drawing.Point(621, 17);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(316, 25);
+            this.textBox1.Size = new System.Drawing.Size(250, 25);
             this.textBox1.TabIndex = 22;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // b_udalit
             // 
             this.b_udalit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_udalit.Location = new System.Drawing.Point(350, 12);
+            this.b_udalit.Location = new System.Drawing.Point(460, 8);
             this.b_udalit.Name = "b_udalit";
             this.b_udalit.Size = new System.Drawing.Size(100, 40);
             this.b_udalit.TabIndex = 21;
@@ -248,7 +185,7 @@
             // b_redactirovat
             // 
             this.b_redactirovat.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_redactirovat.Location = new System.Drawing.Point(244, 12);
+            this.b_redactirovat.Location = new System.Drawing.Point(354, 8);
             this.b_redactirovat.Name = "b_redactirovat";
             this.b_redactirovat.Size = new System.Drawing.Size(100, 40);
             this.b_redactirovat.TabIndex = 20;
@@ -259,7 +196,7 @@
             // b_dobavit
             // 
             this.b_dobavit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_dobavit.Location = new System.Drawing.Point(138, 12);
+            this.b_dobavit.Location = new System.Drawing.Point(248, 8);
             this.b_dobavit.Name = "b_dobavit";
             this.b_dobavit.Size = new System.Drawing.Size(100, 40);
             this.b_dobavit.TabIndex = 19;
@@ -267,11 +204,87 @@
             this.b_dobavit.UseVisualStyleBackColor = true;
             this.b_dobavit.Click += new System.EventHandler(this.b_dobavit_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(128, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 36);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Зарплата";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // positionDataGridViewTextBoxColumn
+            // 
+            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
+            this.positionDataGridViewTextBoxColumn.HeaderText = "position";
+            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
+            // 
+            // birthdayDataGridViewTextBoxColumn
+            // 
+            this.birthdayDataGridViewTextBoxColumn.DataPropertyName = "birthday";
+            this.birthdayDataGridViewTextBoxColumn.HeaderText = "birthday";
+            this.birthdayDataGridViewTextBoxColumn.Name = "birthdayDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = " address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = " address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.Width = 170;
+            // 
+            // telephoneDataGridViewTextBoxColumn
+            // 
+            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
+            this.telephoneDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // personalBindingSource
+            // 
+            this.personalBindingSource.DataMember = "personal";
+            this.personalBindingSource.DataSource = this.fermDataSetLastV;
+            // 
+            // fermDataSetLastV
+            // 
+            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
+            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // personalTableAdapter
+            // 
+            this.personalTableAdapter.ClearBeforeFill = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(579, 19);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(36, 23);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Personal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(998, 470);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.b_poisk);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.b_udalit);
@@ -291,27 +304,14 @@
             this.Load += new System.EventHandler(this.Personal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private fermDataSet1 fermDataSet1;
-        private System.Windows.Forms.BindingSource personalBindingSource;
-        private fermDataSet1TableAdapters.personalTableAdapter personalTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn birthdayDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telephoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zarplataDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button b_infirmation;
         private System.Windows.Forms.Button b_grafik;
         private System.Windows.Forms.Button b_otchet;
@@ -324,5 +324,16 @@
         private System.Windows.Forms.Button b_udalit;
         private System.Windows.Forms.Button b_redactirovat;
         private System.Windows.Forms.Button b_dobavit;
+        private System.Windows.Forms.Button button1;
+        private fermDataSetLastV fermDataSetLastV;
+        private System.Windows.Forms.BindingSource personalBindingSource;
+        private fermDataSetLastVTableAdapters.personalTableAdapter personalTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn birthdayDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telephoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button2;
     }
 }

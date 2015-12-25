@@ -19,14 +19,16 @@ namespace Ferm_V2
 
         private void Personal_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSet1.personal". При необходимости она может быть перемещена или удалена.
-            this.personalTableAdapter.Fill(this.fermDataSet1.personal);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetLastV.personal". При необходимости она может быть перемещена или удалена.
+            this.personalTableAdapter.Fill(this.fermDataSetLastV.personal);
+           
 
         }
 
         private void b_dobavit_Click(object sender, EventArgs e)
         {
-
+            Dob_Pers per = new Dob_Pers();
+            per.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -41,12 +43,29 @@ namespace Ferm_V2
 
         private void b_redactirovat_Click(object sender, EventArgs e)
         {
-
+            Red_Pers red = new Red_Pers();
+            red.Show();
+           
         }
 
         private void b_udalit_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Вы действительно хотите подтвердить удаление?", "Удаление данных", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
 
+                try
+                {
+                    personalTableAdapter.DeleteQuery(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Выберите пожалуйста полностью строку");
+                }
+                personalTableAdapter.Fill(fermDataSetLastV.personal);
+                fermDataSetLastV.AcceptChanges();
+
+
+            }
         }
 
         private void b_personal_Click(object sender, EventArgs e)
@@ -94,6 +113,19 @@ namespace Ferm_V2
             Contact contact = new Contact();
             contact.Show();
             Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Zarplata zar = new Zarplata();
+            zar.Show();
+            Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            personalTableAdapter.Fill(fermDataSetLastV.personal);
+            fermDataSetLastV.AcceptChanges();
         }
     }
 }

@@ -19,9 +19,9 @@ namespace Ferm_V2
 
         private void Milk_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetEasy.milk". При необходимости она может быть перемещена или удалена.
-            this.milkTableAdapter.Fill(this.fermDataSetEasy.milk);
-
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetLastV.milk". При необходимости она может быть перемещена или удалена.
+            this.milkTableAdapter.Fill(this.fermDataSetLastV.milk);
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,14 +38,14 @@ namespace Ferm_V2
 
                 try
                 {
-                    milkTableAdapter.DeleteQuery(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
+                    milkTableAdapter.DeleteQuery();
                 }
                 catch (Exception)
                 {
                     MessageBox.Show("Выберите пожалуйста полностью строку");
                 }
-                milkTableAdapter.Fill(fermDataSetEasy.milk);
-                fermDataSetEasy.AcceptChanges();
+                milkTableAdapter.Fill(fermDataSetLastV.milk);
+                fermDataSetLastV.AcceptChanges();
             }
         }
 
@@ -57,8 +57,8 @@ namespace Ferm_V2
 
         private void button5_Click(object sender, EventArgs e)
         {
-            milkTableAdapter.Fill(fermDataSetEasy.milk);
-            fermDataSetEasy.AcceptChanges();
+            milkTableAdapter.Fill(fermDataSetLastV.milk);
+            fermDataSetLastV.AcceptChanges();
         }
 
         private void button3_Click(object sender, EventArgs e)

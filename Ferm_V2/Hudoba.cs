@@ -24,8 +24,9 @@ namespace Ferm_V2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetEasy.cow". При необходимости она может быть перемещена или удалена.
-            this.cowTableAdapter.Fill(this.fermDataSetEasy.cow);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetLastV.cow". При необходимости она может быть перемещена или удалена.
+            this.cowTableAdapter1.Fill(this.fermDataSetLastV.cow);
+           
                       
 
         }
@@ -62,8 +63,8 @@ namespace Ferm_V2
 
             Red_Hud dob = new Red_Hud();
             dob.Show();
-            cowTableAdapter.Fill(fermDataSetEasy.cow);
-            fermDataSetEasy.AcceptChanges();
+            cowTableAdapter1.Fill(fermDataSetLastV.cow);
+            fermDataSetLastV.AcceptChanges();
 
         }
 
@@ -72,8 +73,8 @@ namespace Ferm_V2
            
             Dobavlenie reda = new Dobavlenie();
             reda.Show();
-            cowTableAdapter.Fill(fermDataSetEasy.cow);
-            fermDataSetEasy.AcceptChanges();
+            cowTableAdapter1.Fill(fermDataSetLastV.cow);
+            fermDataSetLastV.AcceptChanges();
 
         }
 
@@ -84,14 +85,14 @@ namespace Ferm_V2
 
                 try
                 {
-                    cowTableAdapter.DeleteQuery(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
+                    cowTableAdapter1.DeleteQuery(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
                 }
                 catch (Exception)
                 {
                     MessageBox.Show("Выберите пожалуйста полностью строку");
                 }
-                cowTableAdapter.Fill(fermDataSetEasy.cow);
-                fermDataSetEasy.AcceptChanges();
+                cowTableAdapter1.Fill(fermDataSetLastV.cow);
+                fermDataSetLastV.AcceptChanges();
 
 
             }
@@ -99,8 +100,8 @@ namespace Ferm_V2
 
         private void b_obnovit_Click(object sender, EventArgs e)
         {
-            cowTableAdapter.Fill(fermDataSetEasy.cow);
-            fermDataSetEasy.AcceptChanges();
+            cowTableAdapter1.Fill(fermDataSetLastV.cow);
+            fermDataSetLastV.AcceptChanges();
         }
 
         private void b_otchet_Click(object sender, EventArgs e)

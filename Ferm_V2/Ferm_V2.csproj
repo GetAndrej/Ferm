@@ -66,16 +66,39 @@
     <Compile Include="Contact.Designer.cs">
       <DependentUpon>Contact.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dob_Korm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dob_Korm.Designer.cs">
+      <DependentUpon>Dob_Korm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dob_Milk.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dob_Milk.Designer.cs">
       <DependentUpon>Dob_Milk.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dob_Pers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dob_Pers.Designer.cs">
+      <DependentUpon>Dob_Pers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dob_Zarp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dob_Zarp.Designer.cs">
+      <DependentUpon>Dob_Zarp.cs</DependentUpon>
+    </Compile>
     <Compile Include="fermDataSetEasy.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>fermDataSetEasy.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fermDataSetLastV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fermDataSetLastV.xsd</DependentUpon>
     </Compile>
     <Compile Include="Graphics.cs">
       <SubType>Form</SubType>
@@ -149,11 +172,29 @@
     <Compile Include="Red_Hud.Designer.cs">
       <DependentUpon>Red_Hud.cs</DependentUpon>
     </Compile>
+    <Compile Include="Red_Korm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Red_Korm.Designer.cs">
+      <DependentUpon>Red_Korm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Red_Milk.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Red_Milk.Designer.cs">
       <DependentUpon>Red_Milk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Red_Pers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Red_Pers.Designer.cs">
+      <DependentUpon>Red_Pers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Red_Zarp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Red_Zarp.Designer.cs">
+      <DependentUpon>Red_Zarp.cs</DependentUpon>
     </Compile>
     <Compile Include="Tabel.cs">
       <SubType>Form</SubType>
@@ -161,11 +202,26 @@
     <Compile Include="Tabel.Designer.cs">
       <DependentUpon>Tabel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Zarplata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zarplata.Designer.cs">
+      <DependentUpon>Zarplata.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Contact.resx">
       <DependentUpon>Contact.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dob_Korm.resx">
+      <DependentUpon>Dob_Korm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dob_Milk.resx">
       <DependentUpon>Dob_Milk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dob_Pers.resx">
+      <DependentUpon>Dob_Pers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dob_Zarp.resx">
+      <DependentUpon>Dob_Zarp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Graphics.resx">
       <DependentUpon>Graphics.cs</DependentUpon>
@@ -203,12 +259,24 @@
     <EmbeddedResource Include="Red_Hud.resx">
       <DependentUpon>Red_Hud.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Red_Korm.resx">
+      <DependentUpon>Red_Korm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Red_Milk.resx">
       <DependentUpon>Red_Milk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Red_Pers.resx">
+      <DependentUpon>Red_Pers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Red_Zarp.resx">
+      <DependentUpon>Red_Zarp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Tabel.resx">
       <DependentUpon>Tabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zarplata.resx">
+      <DependentUpon>Zarplata.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="fermDataSet.xsc">
       <DependentUpon>fermDataSet.xsd</DependentUpon>
@@ -243,6 +311,17 @@
     <None Include="fermDataSetEasy.xss">
       <DependentUpon>fermDataSetEasy.xsd</DependentUpon>
     </None>
+    <None Include="fermDataSetLastV.xsc">
+      <DependentUpon>fermDataSetLastV.xsd</DependentUpon>
+    </None>
+    <None Include="fermDataSetLastV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fermDataSetLastV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fermDataSetLastV.xss">
+      <DependentUpon>fermDataSetLastV.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -255,6 +334,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataSet\" />
+    <Folder Include="Dobavlenie\" />
+    <Folder Include="Glavnoe\Redact\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

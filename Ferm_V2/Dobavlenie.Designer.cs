@@ -50,10 +50,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.id_mesto = new System.Windows.Forms.ComboBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.fermDataSetEasy = new Ferm_V2.fermDataSetEasy();
-            this.cowTableAdapter1 = new Ferm_V2.fermDataSetEasyTableAdapters.cowTableAdapter();
+            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
+            this.cowTableAdapter1 = new Ferm_V2.fermDataSetLastVTableAdapters.cowTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -144,6 +144,9 @@
             // 
             // pol
             // 
+            this.pol.AutoCompleteCustomSource.AddRange(new string[] {
+            "Корова",
+            "Бык"});
             this.pol.FormattingEnabled = true;
             this.pol.Location = new System.Drawing.Point(127, 69);
             this.pol.Name = "pol";
@@ -186,14 +189,14 @@
             this.privivka.Location = new System.Drawing.Point(127, 228);
             this.privivka.Name = "privivka";
             this.privivka.Size = new System.Drawing.Size(200, 20);
-            this.privivka.TabIndex = 15;
+            this.privivka.TabIndex = 16;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(15, 254);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 23);
-            this.button1.TabIndex = 16;
+            this.button1.TabIndex = 17;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -203,7 +206,7 @@
             this.button2.Location = new System.Drawing.Point(186, 254);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(138, 23);
-            this.button2.TabIndex = 17;
+            this.button2.TabIndex = 18;
             this.button2.Text = "Закрыть";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -224,18 +227,18 @@
             this.id_mesto.Location = new System.Drawing.Point(127, 201);
             this.id_mesto.Name = "id_mesto";
             this.id_mesto.Size = new System.Drawing.Size(200, 21);
-            this.id_mesto.TabIndex = 19;
+            this.id_mesto.TabIndex = 15;
             this.id_mesto.ValueMember = "id_mest";
             // 
             // bindingSource1
             // 
-            this.bindingSource1.DataSource = this.fermDataSetEasy;
+            this.bindingSource1.DataSource = this.fermDataSetLastV;
             this.bindingSource1.Position = 0;
             // 
-            // fermDataSetEasy
+            // fermDataSetLastV
             // 
-            this.fermDataSetEasy.DataSetName = "fermDataSetEasy";
-            this.fermDataSetEasy.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
+            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cowTableAdapter1
             // 
@@ -270,7 +273,7 @@
             this.Text = "Dobavlenie";
             this.Load += new System.EventHandler(this.Dobavlenie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetEasy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,7 +302,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox id_mesto;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private fermDataSetEasy fermDataSetEasy;
-        private fermDataSetEasyTableAdapters.cowTableAdapter cowTableAdapter1;
+        private fermDataSetLastV fermDataSetLastV;
+        private fermDataSetLastVTableAdapters.cowTableAdapter cowTableAdapter1;
     }
 }

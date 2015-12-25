@@ -19,14 +19,17 @@ namespace Ferm_V2
 
         private void Korm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetLastV.korm". При необходимости она может быть перемещена или удалена.
+            this.kormTableAdapter.Fill(this.fermDataSetLastV.korm);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSet.korm". При необходимости она может быть перемещена или удалена.
-            this.kormTableAdapter.Fill(this.fermDataSet.korm);
+            this.kormTableAdapter.Fill(this.fermDataSetLastV.korm);
 
         }
 
         private void b_dobavit_Click(object sender, EventArgs e)
         {
-
+            Dob_Korm d = new Dob_Korm();
+            d.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -41,12 +44,27 @@ namespace Ferm_V2
 
         private void b_redactirovat_Click(object sender, EventArgs e)
         {
+            Red_Korm r = new Red_Korm();
+            r.Show();
 
         }
 
         private void b_udalit_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Вы действительно хотите подтвердить удаление?", "Удаление данных", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
 
+                try
+                {
+                    kormTableAdapter.DeleteQuery(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Выберите пожалуйста полностью строку");
+                }
+                kormTableAdapter.Fill(fermDataSetLastV.korm);
+                fermDataSetLastV.AcceptChanges();
+            }
         }
 
         private void b_personal_Click(object sender, EventArgs e)

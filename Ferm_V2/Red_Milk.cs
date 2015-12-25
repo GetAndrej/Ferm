@@ -21,14 +21,15 @@ namespace Ferm_V2
         {
             this.Validate();
             this.milkBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.fermDataSetEasy);
+            this.tableAdapterManager.UpdateAll(this.fermDataSetLastV);
 
         }
 
         private void Red_Milk_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetEasy.milk". При необходимости она может быть перемещена или удалена.
-            this.milkTableAdapter.Fill(this.fermDataSetEasy.milk);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetLastV.milk". При необходимости она может быть перемещена или удалена.
+            this.milkTableAdapter.Fill(this.fermDataSetLastV.milk);
+           
 
         }
 
@@ -38,7 +39,7 @@ namespace Ferm_V2
             {
 
                 milkBindingSource.EndEdit();
-                milkTableAdapter.UpdateQuery(Convert.ToInt32(dataTextBox.Text), Convert.ToInt32(id_personTextBox.Text), Convert.ToInt32(utroTextBox.Text), Convert.ToInt32(obedTextBox.Text), Convert.ToInt32(vechirTextBox.Text), pogolovTextBox.Text, Convert.ToInt32(tel_telTextBox.Text), obratTextBox.Text, milk_zarplataTextBox.Text, zhirTextBox.Text, Convert.ToInt32(zavodTextBox.Text), Convert.ToInt32(otpravkaTextBox.Text), Convert.ToInt32(vsego_dayTextBox.Text));
+                milkTableAdapter.UpdateQuery(dataDateTimePicker.Value, Convert.ToInt32(id_personTextBox.Text), Convert.ToInt32(utroTextBox.Text), Convert.ToInt32(obedTextBox.Text), Convert.ToInt32(vechirTextBox.Text), pogolovTextBox.Text, Convert.ToInt32(vipoy_telTextBox.Text), obratTextBox.Text, Convert.ToInt32(zhirTextBox.Text), Convert.ToInt32(zavodTextBox.Text), Convert.ToInt32(otpravkaTextBox.Text), Convert.ToInt32(vsego_dayTextBox.Text));
 
                 Hide();
 
@@ -50,6 +51,14 @@ namespace Ferm_V2
         private void button2_Click(object sender, EventArgs e)
         {
             Hide();
+        }
+
+        private void milkBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.milkBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.fermDataSetLastV);
+
         }
     }
 }

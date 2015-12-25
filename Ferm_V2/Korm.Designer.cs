@@ -30,18 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idkormDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.makuhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.otrubDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kukuruzaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ovesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yachminDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sinoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.solomaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kormBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fermDataSet = new Ferm_V2.fermDataSet();
-            this.kormTableAdapter = new Ferm_V2.fermDataSetTableAdapters.kormTableAdapter();
             this.b_infirmation = new System.Windows.Forms.Button();
             this.b_grafik = new System.Windows.Forms.Button();
             this.b_otchet = new System.Windows.Forms.Button();
@@ -54,11 +42,21 @@
             this.b_udalit = new System.Windows.Forms.Button();
             this.b_redactirovat = new System.Windows.Forms.Button();
             this.b_dobavit = new System.Windows.Forms.Button();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
+            this.kormBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kormTableAdapter = new Ferm_V2.fermDataSetLastVTableAdapters.kormTableAdapter();
+            this.idkormDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.makuhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.otrubDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kukuruzaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ovesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yachminDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sinoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solomaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kormBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -76,78 +74,10 @@
             this.sinoDataGridViewTextBoxColumn,
             this.solomaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.kormBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(118, 58);
+            this.dataGridView1.Location = new System.Drawing.Point(118, 65);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(844, 340);
+            this.dataGridView1.Size = new System.Drawing.Size(946, 340);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // idkormDataGridViewTextBoxColumn
-            // 
-            this.idkormDataGridViewTextBoxColumn.DataPropertyName = "id_korm";
-            this.idkormDataGridViewTextBoxColumn.HeaderText = "id_korm";
-            this.idkormDataGridViewTextBoxColumn.Name = "idkormDataGridViewTextBoxColumn";
-            // 
-            // dataDataGridViewTextBoxColumn
-            // 
-            this.dataDataGridViewTextBoxColumn.DataPropertyName = "data";
-            this.dataDataGridViewTextBoxColumn.HeaderText = "data";
-            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
-            // 
-            // makuhaDataGridViewTextBoxColumn
-            // 
-            this.makuhaDataGridViewTextBoxColumn.DataPropertyName = "makuha";
-            this.makuhaDataGridViewTextBoxColumn.HeaderText = "makuha";
-            this.makuhaDataGridViewTextBoxColumn.Name = "makuhaDataGridViewTextBoxColumn";
-            // 
-            // otrubDataGridViewTextBoxColumn
-            // 
-            this.otrubDataGridViewTextBoxColumn.DataPropertyName = "otrub";
-            this.otrubDataGridViewTextBoxColumn.HeaderText = "otrub";
-            this.otrubDataGridViewTextBoxColumn.Name = "otrubDataGridViewTextBoxColumn";
-            // 
-            // kukuruzaDataGridViewTextBoxColumn
-            // 
-            this.kukuruzaDataGridViewTextBoxColumn.DataPropertyName = "kukuruza";
-            this.kukuruzaDataGridViewTextBoxColumn.HeaderText = "kukuruza";
-            this.kukuruzaDataGridViewTextBoxColumn.Name = "kukuruzaDataGridViewTextBoxColumn";
-            // 
-            // ovesDataGridViewTextBoxColumn
-            // 
-            this.ovesDataGridViewTextBoxColumn.DataPropertyName = "oves";
-            this.ovesDataGridViewTextBoxColumn.HeaderText = "oves";
-            this.ovesDataGridViewTextBoxColumn.Name = "ovesDataGridViewTextBoxColumn";
-            // 
-            // yachminDataGridViewTextBoxColumn
-            // 
-            this.yachminDataGridViewTextBoxColumn.DataPropertyName = "yachmin";
-            this.yachminDataGridViewTextBoxColumn.HeaderText = "yachmin";
-            this.yachminDataGridViewTextBoxColumn.Name = "yachminDataGridViewTextBoxColumn";
-            // 
-            // sinoDataGridViewTextBoxColumn
-            // 
-            this.sinoDataGridViewTextBoxColumn.DataPropertyName = "sino";
-            this.sinoDataGridViewTextBoxColumn.HeaderText = "sino";
-            this.sinoDataGridViewTextBoxColumn.Name = "sinoDataGridViewTextBoxColumn";
-            // 
-            // solomaDataGridViewTextBoxColumn
-            // 
-            this.solomaDataGridViewTextBoxColumn.DataPropertyName = "soloma";
-            this.solomaDataGridViewTextBoxColumn.HeaderText = "soloma";
-            this.solomaDataGridViewTextBoxColumn.Name = "solomaDataGridViewTextBoxColumn";
-            // 
-            // kormBindingSource
-            // 
-            this.kormBindingSource.DataMember = "korm";
-            this.kormBindingSource.DataSource = this.fermDataSet;
-            // 
-            // fermDataSet
-            // 
-            this.fermDataSet.DataSetName = "fermDataSet";
-            this.fermDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kormTableAdapter
-            // 
-            this.kormTableAdapter.ClearBeforeFill = true;
             // 
             // b_infirmation
             // 
@@ -278,11 +208,79 @@
             this.b_dobavit.UseVisualStyleBackColor = true;
             this.b_dobavit.Click += new System.EventHandler(this.b_dobavit_Click);
             // 
+            // fermDataSetLastV
+            // 
+            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
+            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kormBindingSource
+            // 
+            this.kormBindingSource.DataMember = "korm";
+            this.kormBindingSource.DataSource = this.fermDataSetLastV;
+            // 
+            // kormTableAdapter
+            // 
+            this.kormTableAdapter.ClearBeforeFill = true;
+            // 
+            // idkormDataGridViewTextBoxColumn
+            // 
+            this.idkormDataGridViewTextBoxColumn.DataPropertyName = "id_korm";
+            this.idkormDataGridViewTextBoxColumn.HeaderText = "id_korm";
+            this.idkormDataGridViewTextBoxColumn.Name = "idkormDataGridViewTextBoxColumn";
+            // 
+            // dataDataGridViewTextBoxColumn
+            // 
+            this.dataDataGridViewTextBoxColumn.DataPropertyName = "data";
+            this.dataDataGridViewTextBoxColumn.HeaderText = "data";
+            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
+            // 
+            // makuhaDataGridViewTextBoxColumn
+            // 
+            this.makuhaDataGridViewTextBoxColumn.DataPropertyName = "makuha";
+            this.makuhaDataGridViewTextBoxColumn.HeaderText = "makuha";
+            this.makuhaDataGridViewTextBoxColumn.Name = "makuhaDataGridViewTextBoxColumn";
+            // 
+            // otrubDataGridViewTextBoxColumn
+            // 
+            this.otrubDataGridViewTextBoxColumn.DataPropertyName = "otrub";
+            this.otrubDataGridViewTextBoxColumn.HeaderText = "otrub";
+            this.otrubDataGridViewTextBoxColumn.Name = "otrubDataGridViewTextBoxColumn";
+            // 
+            // kukuruzaDataGridViewTextBoxColumn
+            // 
+            this.kukuruzaDataGridViewTextBoxColumn.DataPropertyName = "kukuruza";
+            this.kukuruzaDataGridViewTextBoxColumn.HeaderText = "kukuruza";
+            this.kukuruzaDataGridViewTextBoxColumn.Name = "kukuruzaDataGridViewTextBoxColumn";
+            // 
+            // ovesDataGridViewTextBoxColumn
+            // 
+            this.ovesDataGridViewTextBoxColumn.DataPropertyName = "oves";
+            this.ovesDataGridViewTextBoxColumn.HeaderText = "oves";
+            this.ovesDataGridViewTextBoxColumn.Name = "ovesDataGridViewTextBoxColumn";
+            // 
+            // yachminDataGridViewTextBoxColumn
+            // 
+            this.yachminDataGridViewTextBoxColumn.DataPropertyName = "yachmin";
+            this.yachminDataGridViewTextBoxColumn.HeaderText = "yachmin";
+            this.yachminDataGridViewTextBoxColumn.Name = "yachminDataGridViewTextBoxColumn";
+            // 
+            // sinoDataGridViewTextBoxColumn
+            // 
+            this.sinoDataGridViewTextBoxColumn.DataPropertyName = "sino";
+            this.sinoDataGridViewTextBoxColumn.HeaderText = "sino";
+            this.sinoDataGridViewTextBoxColumn.Name = "sinoDataGridViewTextBoxColumn";
+            // 
+            // solomaDataGridViewTextBoxColumn
+            // 
+            this.solomaDataGridViewTextBoxColumn.DataPropertyName = "soloma";
+            this.solomaDataGridViewTextBoxColumn.HeaderText = "soloma";
+            this.solomaDataGridViewTextBoxColumn.Name = "solomaDataGridViewTextBoxColumn";
+            // 
             // Korm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(998, 417);
+            this.ClientSize = new System.Drawing.Size(1076, 417);
             this.Controls.Add(this.b_poisk);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.b_udalit);
@@ -301,30 +299,15 @@
             this.Text = "Korm";
             this.Load += new System.EventHandler(this.Korm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kormBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource kormBindingSource;
-        private fermDataSetTableAdapters.kormTableAdapter kormTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idkormDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn makuhaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn otrubDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kukuruzaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ovesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn yachminDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sinoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn solomaDataGridViewTextBoxColumn;
-        private fermDataSet fermDataSet;
         private System.Windows.Forms.Button b_infirmation;
         private System.Windows.Forms.Button b_grafik;
         private System.Windows.Forms.Button b_otchet;
@@ -337,5 +320,17 @@
         private System.Windows.Forms.Button b_udalit;
         private System.Windows.Forms.Button b_redactirovat;
         private System.Windows.Forms.Button b_dobavit;
+        private fermDataSetLastV fermDataSetLastV;
+        private System.Windows.Forms.BindingSource kormBindingSource;
+        private fermDataSetLastVTableAdapters.kormTableAdapter kormTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idkormDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn makuhaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn otrubDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kukuruzaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ovesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yachminDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sinoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn solomaDataGridViewTextBoxColumn;
     }
 }

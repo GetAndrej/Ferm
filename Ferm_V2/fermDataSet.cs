@@ -7,9 +7,11 @@
     }
 }
 
-namespace Ferm_V2.fermDataSetTableAdapters {
-    
-    
-    public partial class cowTableAdapter {
+namespace Ferm_V2.fermDataSetTableAdapters
+{
+
+
+    public partial class cowTableAdapter
+    {
     }
 }
