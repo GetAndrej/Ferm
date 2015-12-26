@@ -126,6 +126,7 @@
     </Compile>
     <Compile Include="fermDataSet.cs">
       <DependentUpon>fermDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="fermDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -134,6 +135,7 @@
     </Compile>
     <Compile Include="fermDataSet1.cs">
       <DependentUpon>fermDataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="fermDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -151,6 +153,24 @@
     </Compile>
     <Compile Include="Korm.Designer.cs">
       <DependentUpon>Korm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otchet_Milk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otchet_Milk.Designer.cs">
+      <DependentUpon>Otchet_Milk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otchet_Zarplata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otchet_Zarplata.Designer.cs">
+      <DependentUpon>Otchet_Zarplata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otch_Korm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otch_Korm.Designer.cs">
+      <DependentUpon>Otch_Korm.cs</DependentUpon>
     </Compile>
     <Compile Include="Personal.cs">
       <SubType>Form</SubType>
@@ -241,6 +261,15 @@
     <EmbeddedResource Include="Korm.resx">
       <DependentUpon>Korm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Otchet_Milk.resx">
+      <DependentUpon>Otchet_Milk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otchet_Zarplata.resx">
+      <DependentUpon>Otchet_Zarplata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otch_Korm.resx">
+      <DependentUpon>Otch_Korm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Personal.resx">
       <DependentUpon>Personal.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +301,9 @@
       <DependentUpon>Red_Zarp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
     <EmbeddedResource Include="Tabel.resx">
       <DependentUpon>Tabel.cs</DependentUpon>
     </EmbeddedResource>
