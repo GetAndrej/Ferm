@@ -90,6 +90,12 @@
     <Compile Include="Dob_Zarp.Designer.cs">
       <DependentUpon>Dob_Zarp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dov_zapros_DB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dov_zapros_DB.Designer.cs">
+      <DependentUpon>Dov_zapros_DB.cs</DependentUpon>
+    </Compile>
     <Compile Include="fermDataSetLastV.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -227,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dob_Zarp.resx">
       <DependentUpon>Dob_Zarp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dov_zapros_DB.resx">
+      <DependentUpon>Dov_zapros_DB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Graphics.resx">
       <DependentUpon>Graphics.cs</DependentUpon>

@@ -28,8 +28,9 @@ namespace Ferm_V2
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetLastV.cow". При необходимости она может быть перемещена или удалена.
             this.cowTableAdapter1.Fill(this.fermDataSetLastV.cow);
-           
-                      
+
+
+          
 
         }
 
@@ -160,6 +161,27 @@ namespace Ferm_V2
 
 
             con.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Dov_zapros_DB dd = new Dov_zapros_DB();
+            dd.Show();
+        }
+
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                dataGridView1.Sort(dataGridView1.Columns[Convert.ToInt32(textBox2.Text)], ListSortDirection.Ascending);
+            }
+            catch {
+                MessageBox.Show("Ведите от 1 до 9!");
+            }
+                   
         }
     }
 }

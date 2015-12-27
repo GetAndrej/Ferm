@@ -57,6 +57,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cowTableAdapter1 = new Ferm_V2.fermDataSetLastVTableAdapters.cowTableAdapter();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
@@ -144,9 +148,9 @@
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
             this.dataGridView1.DataSource = this.cowBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(118, 64);
+            this.dataGridView1.Location = new System.Drawing.Point(118, 69);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(946, 398);
+            this.dataGridView1.Size = new System.Drawing.Size(946, 393);
             this.dataGridView1.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
@@ -227,7 +231,7 @@
             // b_dobavit
             // 
             this.b_dobavit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_dobavit.Location = new System.Drawing.Point(329, 10);
+            this.b_dobavit.Location = new System.Drawing.Point(332, 15);
             this.b_dobavit.Name = "b_dobavit";
             this.b_dobavit.Size = new System.Drawing.Size(136, 40);
             this.b_dobavit.TabIndex = 12;
@@ -238,7 +242,7 @@
             // b_redactirovat
             // 
             this.b_redactirovat.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_redactirovat.Location = new System.Drawing.Point(223, 11);
+            this.b_redactirovat.Location = new System.Drawing.Point(226, 16);
             this.b_redactirovat.Name = "b_redactirovat";
             this.b_redactirovat.Size = new System.Drawing.Size(100, 40);
             this.b_redactirovat.TabIndex = 14;
@@ -249,7 +253,7 @@
             // b_udalit
             // 
             this.b_udalit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_udalit.Location = new System.Drawing.Point(471, 11);
+            this.b_udalit.Location = new System.Drawing.Point(474, 16);
             this.b_udalit.Name = "b_udalit";
             this.b_udalit.Size = new System.Drawing.Size(100, 40);
             this.b_udalit.TabIndex = 16;
@@ -259,7 +263,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(693, 19);
+            this.textBox1.Location = new System.Drawing.Point(692, 10);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(278, 25);
@@ -267,7 +271,7 @@
             // 
             // b_poisk
             // 
-            this.b_poisk.Location = new System.Drawing.Point(989, 19);
+            this.b_poisk.Location = new System.Drawing.Point(988, 10);
             this.b_poisk.Name = "b_poisk";
             this.b_poisk.Size = new System.Drawing.Size(75, 25);
             this.b_poisk.TabIndex = 18;
@@ -278,7 +282,7 @@
             // b_obnovit
             // 
             this.b_obnovit.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_obnovit.Location = new System.Drawing.Point(577, 11);
+            this.b_obnovit.Location = new System.Drawing.Point(580, 16);
             this.b_obnovit.Name = "b_obnovit";
             this.b_obnovit.Size = new System.Drawing.Size(96, 40);
             this.b_obnovit.TabIndex = 19;
@@ -289,9 +293,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.button1.Location = new System.Drawing.Point(118, 11);
+            this.button1.Location = new System.Drawing.Point(121, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 46);
+            this.button1.Size = new System.Drawing.Size(99, 52);
             this.button1.TabIndex = 20;
             this.button1.Text = "Молоко";
             this.button1.UseVisualStyleBackColor = true;
@@ -305,11 +309,53 @@
             // 
             this.cowTableAdapter1.ClearBeforeFill = true;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.button2.Location = new System.Drawing.Point(12, 403);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 50);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "База Данных";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(692, 38);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 25);
+            this.button3.TabIndex = 23;
+            this.button3.Text = "Сортировка";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(785, 38);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(185, 25);
+            this.textBox2.TabIndex = 22;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(976, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "- от 1 до 9";
+            // 
             // Hudoba
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 470);
+            this.ClientSize = new System.Drawing.Size(1070, 470);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.b_obnovit);
             this.Controls.Add(this.b_poisk);
@@ -377,6 +423,10 @@
         private fermDataSetLastV fermDataSetLastV;
         private System.Windows.Forms.BindingSource cowBindingSource1;
         private fermDataSetLastVTableAdapters.cowTableAdapter cowTableAdapter1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
