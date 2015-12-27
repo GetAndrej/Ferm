@@ -36,14 +36,14 @@
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(830, 335);
+            this.reportViewer1.Size = new System.Drawing.Size(797, 489);
             this.reportViewer1.TabIndex = 0;
             // 
             // Otch_Korm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 335);
+            this.ClientSize = new System.Drawing.Size(797, 489);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Otch_Korm";
             this.Text = "Otch_Korm";

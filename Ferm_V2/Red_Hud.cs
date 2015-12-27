@@ -77,7 +77,7 @@ namespace Ferm_V2
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Hide();
+            Close();
         }
 
         private void cowBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)

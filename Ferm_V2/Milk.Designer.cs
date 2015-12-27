@@ -30,14 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
-            this.milkBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.milkTableAdapter = new Ferm_V2.fermDataSetLastVTableAdapters.milkTableAdapter();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idpersonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.utroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,9 +42,17 @@
             this.zavodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.otpravkaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vsegodayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.milkBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.milkTableAdapter = new Ferm_V2.fermDataSetLastVTableAdapters.milkTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.milkBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -79,70 +79,6 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(1230, 440);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 44);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Назад";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(164, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 44);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Добавить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(291, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(92, 44);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Редактировать";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(407, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(92, 44);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Удалить";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(541, 23);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Обновить";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // fermDataSetLastV
-            // 
-            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
-            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // milkBindingSource
-            // 
-            this.milkBindingSource.DataMember = "milk";
-            this.milkBindingSource.DataSource = this.fermDataSetLastV;
-            // 
-            // milkTableAdapter
-            // 
-            this.milkTableAdapter.ClearBeforeFill = true;
             // 
             // dataDataGridViewTextBoxColumn
             // 
@@ -228,6 +164,75 @@
             this.vsegodayDataGridViewTextBoxColumn.Name = "vsegodayDataGridViewTextBoxColumn";
             this.vsegodayDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // milkBindingSource
+            // 
+            this.milkBindingSource.DataMember = "milk";
+            this.milkBindingSource.DataSource = this.fermDataSetLastV;
+            // 
+            // fermDataSetLastV
+            // 
+            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
+            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 44);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Назад";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(164, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(108, 44);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Добавить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(278, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(139, 44);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Редактировать";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(423, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(108, 44);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Удалить";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Location = new System.Drawing.Point(1092, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(110, 44);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Обновить";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // milkTableAdapter
+            // 
+            this.milkTableAdapter.ClearBeforeFill = true;
+            // 
             // Milk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,8 +248,8 @@
             this.Text = "Milk";
             this.Load += new System.EventHandler(this.Milk_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.milkBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
             this.ResumeLayout(false);
 
         }

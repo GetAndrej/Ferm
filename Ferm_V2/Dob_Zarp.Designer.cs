@@ -57,6 +57,60 @@
             ((System.ComponentModel.ISupportInitialize)(this.zarplataBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
+            // id_zarplataLabel
+            // 
+            id_zarplataLabel.AutoSize = true;
+            id_zarplataLabel.Location = new System.Drawing.Point(12, 23);
+            id_zarplataLabel.Name = "id_zarplataLabel";
+            id_zarplataLabel.Size = new System.Drawing.Size(58, 13);
+            id_zarplataLabel.TabIndex = 1;
+            id_zarplataLabel.Text = "id zarplata:";
+            // 
+            // dataLabel
+            // 
+            dataLabel.AutoSize = true;
+            dataLabel.Location = new System.Drawing.Point(12, 50);
+            dataLabel.Name = "dataLabel";
+            dataLabel.Size = new System.Drawing.Size(31, 13);
+            dataLabel.TabIndex = 3;
+            dataLabel.Text = "data:";
+            // 
+            // id_persLabel
+            // 
+            id_persLabel.AutoSize = true;
+            id_persLabel.Location = new System.Drawing.Point(12, 75);
+            id_persLabel.Name = "id_persLabel";
+            id_persLabel.Size = new System.Drawing.Size(41, 13);
+            id_persLabel.TabIndex = 5;
+            id_persLabel.Text = "id pers:";
+            // 
+            // zarp_milkLabel
+            // 
+            zarp_milkLabel.AutoSize = true;
+            zarp_milkLabel.Location = new System.Drawing.Point(12, 101);
+            zarp_milkLabel.Name = "zarp_milkLabel";
+            zarp_milkLabel.Size = new System.Drawing.Size(51, 13);
+            zarp_milkLabel.TabIndex = 7;
+            zarp_milkLabel.Text = "zarp milk:";
+            // 
+            // zarp_moneyLabel
+            // 
+            zarp_moneyLabel.AutoSize = true;
+            zarp_moneyLabel.Location = new System.Drawing.Point(12, 127);
+            zarp_moneyLabel.Name = "zarp_moneyLabel";
+            zarp_moneyLabel.Size = new System.Drawing.Size(64, 13);
+            zarp_moneyLabel.TabIndex = 9;
+            zarp_moneyLabel.Text = "zarp money:";
+            // 
+            // primechanieLabel
+            // 
+            primechanieLabel.AutoSize = true;
+            primechanieLabel.Location = new System.Drawing.Point(12, 153);
+            primechanieLabel.Name = "primechanieLabel";
+            primechanieLabel.Size = new System.Drawing.Size(67, 13);
+            primechanieLabel.TabIndex = 11;
+            primechanieLabel.Text = "primechanie:";
+            // 
             // fermDataSetLastV
             // 
             this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
@@ -84,15 +138,6 @@
             this.tableAdapterManager.UpdateOrder = Ferm_V2.fermDataSetLastVTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.zarplataTableAdapter = this.zarplataTableAdapter;
             // 
-            // id_zarplataLabel
-            // 
-            id_zarplataLabel.AutoSize = true;
-            id_zarplataLabel.Location = new System.Drawing.Point(12, 23);
-            id_zarplataLabel.Name = "id_zarplataLabel";
-            id_zarplataLabel.Size = new System.Drawing.Size(58, 13);
-            id_zarplataLabel.TabIndex = 1;
-            id_zarplataLabel.Text = "id zarplata:";
-            // 
             // id_zarplataTextBox
             // 
             this.id_zarplataTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.zarplataBindingSource, "id_zarplata", true));
@@ -100,15 +145,6 @@
             this.id_zarplataTextBox.Name = "id_zarplataTextBox";
             this.id_zarplataTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_zarplataTextBox.TabIndex = 2;
-            // 
-            // dataLabel
-            // 
-            dataLabel.AutoSize = true;
-            dataLabel.Location = new System.Drawing.Point(12, 50);
-            dataLabel.Name = "dataLabel";
-            dataLabel.Size = new System.Drawing.Size(31, 13);
-            dataLabel.TabIndex = 3;
-            dataLabel.Text = "data:";
             // 
             // dataDateTimePicker
             // 
@@ -118,15 +154,6 @@
             this.dataDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dataDateTimePicker.TabIndex = 4;
             // 
-            // id_persLabel
-            // 
-            id_persLabel.AutoSize = true;
-            id_persLabel.Location = new System.Drawing.Point(12, 75);
-            id_persLabel.Name = "id_persLabel";
-            id_persLabel.Size = new System.Drawing.Size(41, 13);
-            id_persLabel.TabIndex = 5;
-            id_persLabel.Text = "id pers:";
-            // 
             // id_persTextBox
             // 
             this.id_persTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.zarplataBindingSource, "id_pers", true));
@@ -134,15 +161,6 @@
             this.id_persTextBox.Name = "id_persTextBox";
             this.id_persTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_persTextBox.TabIndex = 6;
-            // 
-            // zarp_milkLabel
-            // 
-            zarp_milkLabel.AutoSize = true;
-            zarp_milkLabel.Location = new System.Drawing.Point(12, 101);
-            zarp_milkLabel.Name = "zarp_milkLabel";
-            zarp_milkLabel.Size = new System.Drawing.Size(51, 13);
-            zarp_milkLabel.TabIndex = 7;
-            zarp_milkLabel.Text = "zarp milk:";
             // 
             // zarp_milkTextBox
             // 
@@ -152,15 +170,6 @@
             this.zarp_milkTextBox.Size = new System.Drawing.Size(200, 20);
             this.zarp_milkTextBox.TabIndex = 8;
             // 
-            // zarp_moneyLabel
-            // 
-            zarp_moneyLabel.AutoSize = true;
-            zarp_moneyLabel.Location = new System.Drawing.Point(12, 127);
-            zarp_moneyLabel.Name = "zarp_moneyLabel";
-            zarp_moneyLabel.Size = new System.Drawing.Size(64, 13);
-            zarp_moneyLabel.TabIndex = 9;
-            zarp_moneyLabel.Text = "zarp money:";
-            // 
             // zarp_moneyTextBox
             // 
             this.zarp_moneyTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.zarplataBindingSource, "zarp_money", true));
@@ -168,15 +177,6 @@
             this.zarp_moneyTextBox.Name = "zarp_moneyTextBox";
             this.zarp_moneyTextBox.Size = new System.Drawing.Size(200, 20);
             this.zarp_moneyTextBox.TabIndex = 10;
-            // 
-            // primechanieLabel
-            // 
-            primechanieLabel.AutoSize = true;
-            primechanieLabel.Location = new System.Drawing.Point(12, 153);
-            primechanieLabel.Name = "primechanieLabel";
-            primechanieLabel.Size = new System.Drawing.Size(67, 13);
-            primechanieLabel.TabIndex = 11;
-            primechanieLabel.Text = "primechanie:";
             // 
             // primechanieTextBox
             // 
@@ -188,28 +188,29 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 206);
+            this.button1.Location = new System.Drawing.Point(15, 188);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(123, 23);
             this.button1.TabIndex = 13;
-            this.button1.Text = "button1";
+            this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(210, 206);
+            this.button2.Location = new System.Drawing.Point(162, 188);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(123, 23);
             this.button2.TabIndex = 14;
-            this.button2.Text = "button2";
+            this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Dob_Zarp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 261);
+            this.ClientSize = new System.Drawing.Size(301, 232);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(id_zarplataLabel);

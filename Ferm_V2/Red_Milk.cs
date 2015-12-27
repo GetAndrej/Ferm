@@ -50,7 +50,7 @@ namespace Ferm_V2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Hide();
+            Close();
         }
 
         private void milkBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)

@@ -66,6 +66,87 @@
             ((System.ComponentModel.ISupportInitialize)(this.kormBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
+            // id_kormLabel
+            // 
+            id_kormLabel.AutoSize = true;
+            id_kormLabel.Location = new System.Drawing.Point(11, 35);
+            id_kormLabel.Name = "id_kormLabel";
+            id_kormLabel.Size = new System.Drawing.Size(44, 13);
+            id_kormLabel.TabIndex = 1;
+            id_kormLabel.Text = "id korm:";
+            // 
+            // dataLabel
+            // 
+            dataLabel.AutoSize = true;
+            dataLabel.Location = new System.Drawing.Point(11, 62);
+            dataLabel.Name = "dataLabel";
+            dataLabel.Size = new System.Drawing.Size(31, 13);
+            dataLabel.TabIndex = 3;
+            dataLabel.Text = "data:";
+            // 
+            // makuhaLabel
+            // 
+            makuhaLabel.AutoSize = true;
+            makuhaLabel.Location = new System.Drawing.Point(11, 87);
+            makuhaLabel.Name = "makuhaLabel";
+            makuhaLabel.Size = new System.Drawing.Size(48, 13);
+            makuhaLabel.TabIndex = 5;
+            makuhaLabel.Text = "makuha:";
+            // 
+            // otrubLabel
+            // 
+            otrubLabel.AutoSize = true;
+            otrubLabel.Location = new System.Drawing.Point(11, 113);
+            otrubLabel.Name = "otrubLabel";
+            otrubLabel.Size = new System.Drawing.Size(34, 13);
+            otrubLabel.TabIndex = 7;
+            otrubLabel.Text = "otrub:";
+            // 
+            // kukuruzaLabel
+            // 
+            kukuruzaLabel.AutoSize = true;
+            kukuruzaLabel.Location = new System.Drawing.Point(11, 139);
+            kukuruzaLabel.Name = "kukuruzaLabel";
+            kukuruzaLabel.Size = new System.Drawing.Size(54, 13);
+            kukuruzaLabel.TabIndex = 9;
+            kukuruzaLabel.Text = "kukuruza:";
+            // 
+            // ovesLabel
+            // 
+            ovesLabel.AutoSize = true;
+            ovesLabel.Location = new System.Drawing.Point(11, 165);
+            ovesLabel.Name = "ovesLabel";
+            ovesLabel.Size = new System.Drawing.Size(33, 13);
+            ovesLabel.TabIndex = 11;
+            ovesLabel.Text = "oves:";
+            // 
+            // yachminLabel
+            // 
+            yachminLabel.AutoSize = true;
+            yachminLabel.Location = new System.Drawing.Point(11, 191);
+            yachminLabel.Name = "yachminLabel";
+            yachminLabel.Size = new System.Drawing.Size(49, 13);
+            yachminLabel.TabIndex = 13;
+            yachminLabel.Text = "yachmin:";
+            // 
+            // sinoLabel
+            // 
+            sinoLabel.AutoSize = true;
+            sinoLabel.Location = new System.Drawing.Point(11, 217);
+            sinoLabel.Name = "sinoLabel";
+            sinoLabel.Size = new System.Drawing.Size(29, 13);
+            sinoLabel.TabIndex = 15;
+            sinoLabel.Text = "sino:";
+            // 
+            // solomaLabel
+            // 
+            solomaLabel.AutoSize = true;
+            solomaLabel.Location = new System.Drawing.Point(11, 243);
+            solomaLabel.Name = "solomaLabel";
+            solomaLabel.Size = new System.Drawing.Size(43, 13);
+            solomaLabel.TabIndex = 17;
+            solomaLabel.Text = "soloma:";
+            // 
             // fermDataSetLastV
             // 
             this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
@@ -93,15 +174,6 @@
             this.tableAdapterManager.UpdateOrder = Ferm_V2.fermDataSetLastVTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.zarplataTableAdapter = null;
             // 
-            // id_kormLabel
-            // 
-            id_kormLabel.AutoSize = true;
-            id_kormLabel.Location = new System.Drawing.Point(11, 35);
-            id_kormLabel.Name = "id_kormLabel";
-            id_kormLabel.Size = new System.Drawing.Size(44, 13);
-            id_kormLabel.TabIndex = 1;
-            id_kormLabel.Text = "id korm:";
-            // 
             // id_kormTextBox
             // 
             this.id_kormTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kormBindingSource, "id_korm", true));
@@ -109,15 +181,6 @@
             this.id_kormTextBox.Name = "id_kormTextBox";
             this.id_kormTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_kormTextBox.TabIndex = 2;
-            // 
-            // dataLabel
-            // 
-            dataLabel.AutoSize = true;
-            dataLabel.Location = new System.Drawing.Point(11, 62);
-            dataLabel.Name = "dataLabel";
-            dataLabel.Size = new System.Drawing.Size(31, 13);
-            dataLabel.TabIndex = 3;
-            dataLabel.Text = "data:";
             // 
             // dataDateTimePicker
             // 
@@ -127,15 +190,6 @@
             this.dataDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dataDateTimePicker.TabIndex = 4;
             // 
-            // makuhaLabel
-            // 
-            makuhaLabel.AutoSize = true;
-            makuhaLabel.Location = new System.Drawing.Point(11, 87);
-            makuhaLabel.Name = "makuhaLabel";
-            makuhaLabel.Size = new System.Drawing.Size(48, 13);
-            makuhaLabel.TabIndex = 5;
-            makuhaLabel.Text = "makuha:";
-            // 
             // makuhaTextBox
             // 
             this.makuhaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kormBindingSource, "makuha", true));
@@ -143,15 +197,6 @@
             this.makuhaTextBox.Name = "makuhaTextBox";
             this.makuhaTextBox.Size = new System.Drawing.Size(200, 20);
             this.makuhaTextBox.TabIndex = 6;
-            // 
-            // otrubLabel
-            // 
-            otrubLabel.AutoSize = true;
-            otrubLabel.Location = new System.Drawing.Point(11, 113);
-            otrubLabel.Name = "otrubLabel";
-            otrubLabel.Size = new System.Drawing.Size(34, 13);
-            otrubLabel.TabIndex = 7;
-            otrubLabel.Text = "otrub:";
             // 
             // otrubTextBox
             // 
@@ -161,15 +206,6 @@
             this.otrubTextBox.Size = new System.Drawing.Size(200, 20);
             this.otrubTextBox.TabIndex = 8;
             // 
-            // kukuruzaLabel
-            // 
-            kukuruzaLabel.AutoSize = true;
-            kukuruzaLabel.Location = new System.Drawing.Point(11, 139);
-            kukuruzaLabel.Name = "kukuruzaLabel";
-            kukuruzaLabel.Size = new System.Drawing.Size(54, 13);
-            kukuruzaLabel.TabIndex = 9;
-            kukuruzaLabel.Text = "kukuruza:";
-            // 
             // kukuruzaTextBox
             // 
             this.kukuruzaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kormBindingSource, "kukuruza", true));
@@ -177,15 +213,6 @@
             this.kukuruzaTextBox.Name = "kukuruzaTextBox";
             this.kukuruzaTextBox.Size = new System.Drawing.Size(200, 20);
             this.kukuruzaTextBox.TabIndex = 10;
-            // 
-            // ovesLabel
-            // 
-            ovesLabel.AutoSize = true;
-            ovesLabel.Location = new System.Drawing.Point(11, 165);
-            ovesLabel.Name = "ovesLabel";
-            ovesLabel.Size = new System.Drawing.Size(33, 13);
-            ovesLabel.TabIndex = 11;
-            ovesLabel.Text = "oves:";
             // 
             // ovesTextBox
             // 
@@ -195,15 +222,6 @@
             this.ovesTextBox.Size = new System.Drawing.Size(200, 20);
             this.ovesTextBox.TabIndex = 12;
             // 
-            // yachminLabel
-            // 
-            yachminLabel.AutoSize = true;
-            yachminLabel.Location = new System.Drawing.Point(11, 191);
-            yachminLabel.Name = "yachminLabel";
-            yachminLabel.Size = new System.Drawing.Size(49, 13);
-            yachminLabel.TabIndex = 13;
-            yachminLabel.Text = "yachmin:";
-            // 
             // yachminTextBox
             // 
             this.yachminTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kormBindingSource, "yachmin", true));
@@ -212,15 +230,6 @@
             this.yachminTextBox.Size = new System.Drawing.Size(200, 20);
             this.yachminTextBox.TabIndex = 14;
             // 
-            // sinoLabel
-            // 
-            sinoLabel.AutoSize = true;
-            sinoLabel.Location = new System.Drawing.Point(11, 217);
-            sinoLabel.Name = "sinoLabel";
-            sinoLabel.Size = new System.Drawing.Size(29, 13);
-            sinoLabel.TabIndex = 15;
-            sinoLabel.Text = "sino:";
-            // 
             // sinoTextBox
             // 
             this.sinoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kormBindingSource, "sino", true));
@@ -228,15 +237,6 @@
             this.sinoTextBox.Name = "sinoTextBox";
             this.sinoTextBox.Size = new System.Drawing.Size(200, 20);
             this.sinoTextBox.TabIndex = 16;
-            // 
-            // solomaLabel
-            // 
-            solomaLabel.AutoSize = true;
-            solomaLabel.Location = new System.Drawing.Point(11, 243);
-            solomaLabel.Name = "solomaLabel";
-            solomaLabel.Size = new System.Drawing.Size(43, 13);
-            solomaLabel.TabIndex = 17;
-            solomaLabel.Text = "soloma:";
             // 
             // solomaTextBox
             // 
@@ -248,22 +248,23 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 287);
+            this.button1.Location = new System.Drawing.Point(12, 290);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(117, 23);
             this.button1.TabIndex = 19;
-            this.button1.Text = "button1";
+            this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(196, 287);
+            this.button2.Location = new System.Drawing.Point(154, 290);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(117, 23);
             this.button2.TabIndex = 20;
-            this.button2.Text = "button2";
+            this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Dob_Korm
             // 

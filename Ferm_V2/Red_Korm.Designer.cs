@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Red_Korm));
             System.Windows.Forms.Label id_kormLabel;
             System.Windows.Forms.Label dataLabel;
             System.Windows.Forms.Label makuhaLabel;
@@ -39,22 +38,23 @@
             System.Windows.Forms.Label yachminLabel;
             System.Windows.Forms.Label sinoLabel;
             System.Windows.Forms.Label solomaLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Red_Korm));
             this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
             this.kormBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kormTableAdapter = new Ferm_V2.fermDataSetLastVTableAdapters.kormTableAdapter();
             this.tableAdapterManager = new Ferm_V2.fermDataSetLastVTableAdapters.TableAdapterManager();
             this.kormBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.kormBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.id_kormTextBox = new System.Windows.Forms.TextBox();
             this.dataDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -81,6 +81,87 @@
             ((System.ComponentModel.ISupportInitialize)(this.kormBindingNavigator)).BeginInit();
             this.kormBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // id_kormLabel
+            // 
+            id_kormLabel.AutoSize = true;
+            id_kormLabel.Location = new System.Drawing.Point(10, 37);
+            id_kormLabel.Name = "id_kormLabel";
+            id_kormLabel.Size = new System.Drawing.Size(44, 13);
+            id_kormLabel.TabIndex = 1;
+            id_kormLabel.Text = "id korm:";
+            // 
+            // dataLabel
+            // 
+            dataLabel.AutoSize = true;
+            dataLabel.Location = new System.Drawing.Point(10, 64);
+            dataLabel.Name = "dataLabel";
+            dataLabel.Size = new System.Drawing.Size(31, 13);
+            dataLabel.TabIndex = 3;
+            dataLabel.Text = "data:";
+            // 
+            // makuhaLabel
+            // 
+            makuhaLabel.AutoSize = true;
+            makuhaLabel.Location = new System.Drawing.Point(10, 89);
+            makuhaLabel.Name = "makuhaLabel";
+            makuhaLabel.Size = new System.Drawing.Size(48, 13);
+            makuhaLabel.TabIndex = 5;
+            makuhaLabel.Text = "makuha:";
+            // 
+            // otrubLabel
+            // 
+            otrubLabel.AutoSize = true;
+            otrubLabel.Location = new System.Drawing.Point(10, 115);
+            otrubLabel.Name = "otrubLabel";
+            otrubLabel.Size = new System.Drawing.Size(34, 13);
+            otrubLabel.TabIndex = 7;
+            otrubLabel.Text = "otrub:";
+            // 
+            // kukuruzaLabel
+            // 
+            kukuruzaLabel.AutoSize = true;
+            kukuruzaLabel.Location = new System.Drawing.Point(10, 141);
+            kukuruzaLabel.Name = "kukuruzaLabel";
+            kukuruzaLabel.Size = new System.Drawing.Size(54, 13);
+            kukuruzaLabel.TabIndex = 9;
+            kukuruzaLabel.Text = "kukuruza:";
+            // 
+            // ovesLabel
+            // 
+            ovesLabel.AutoSize = true;
+            ovesLabel.Location = new System.Drawing.Point(10, 167);
+            ovesLabel.Name = "ovesLabel";
+            ovesLabel.Size = new System.Drawing.Size(33, 13);
+            ovesLabel.TabIndex = 11;
+            ovesLabel.Text = "oves:";
+            // 
+            // yachminLabel
+            // 
+            yachminLabel.AutoSize = true;
+            yachminLabel.Location = new System.Drawing.Point(10, 193);
+            yachminLabel.Name = "yachminLabel";
+            yachminLabel.Size = new System.Drawing.Size(49, 13);
+            yachminLabel.TabIndex = 13;
+            yachminLabel.Text = "yachmin:";
+            // 
+            // sinoLabel
+            // 
+            sinoLabel.AutoSize = true;
+            sinoLabel.Location = new System.Drawing.Point(10, 219);
+            sinoLabel.Name = "sinoLabel";
+            sinoLabel.Size = new System.Drawing.Size(29, 13);
+            sinoLabel.TabIndex = 15;
+            sinoLabel.Text = "sino:";
+            // 
+            // solomaLabel
+            // 
+            solomaLabel.AutoSize = true;
+            solomaLabel.Location = new System.Drawing.Point(10, 245);
+            solomaLabel.Name = "solomaLabel";
+            solomaLabel.Size = new System.Drawing.Size(43, 13);
+            solomaLabel.TabIndex = 17;
+            solomaLabel.Text = "soloma:";
             // 
             // fermDataSetLastV
             // 
@@ -139,6 +220,31 @@
             this.kormBindingNavigator.TabIndex = 0;
             this.kormBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -171,17 +277,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 15);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -189,7 +288,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -198,49 +297,22 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // kormBindingNavigatorSaveItem
             // 
             this.kormBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.kormBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("kormBindingNavigatorSaveItem.Image")));
             this.kormBindingNavigatorSaveItem.Name = "kormBindingNavigatorSaveItem";
-            this.kormBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.kormBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.kormBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.kormBindingNavigatorSaveItem.Click += new System.EventHandler(this.kormBindingNavigatorSaveItem_Click);
-            // 
-            // id_kormLabel
-            // 
-            id_kormLabel.AutoSize = true;
-            id_kormLabel.Location = new System.Drawing.Point(10, 37);
-            id_kormLabel.Name = "id_kormLabel";
-            id_kormLabel.Size = new System.Drawing.Size(44, 13);
-            id_kormLabel.TabIndex = 1;
-            id_kormLabel.Text = "id korm:";
             // 
             // id_kormTextBox
             // 
@@ -250,15 +322,6 @@
             this.id_kormTextBox.Size = new System.Drawing.Size(226, 20);
             this.id_kormTextBox.TabIndex = 2;
             // 
-            // dataLabel
-            // 
-            dataLabel.AutoSize = true;
-            dataLabel.Location = new System.Drawing.Point(10, 64);
-            dataLabel.Name = "dataLabel";
-            dataLabel.Size = new System.Drawing.Size(31, 13);
-            dataLabel.TabIndex = 3;
-            dataLabel.Text = "data:";
-            // 
             // dataDateTimePicker
             // 
             this.dataDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.kormBindingSource, "data", true));
@@ -266,15 +329,6 @@
             this.dataDateTimePicker.Name = "dataDateTimePicker";
             this.dataDateTimePicker.Size = new System.Drawing.Size(226, 20);
             this.dataDateTimePicker.TabIndex = 4;
-            // 
-            // makuhaLabel
-            // 
-            makuhaLabel.AutoSize = true;
-            makuhaLabel.Location = new System.Drawing.Point(10, 89);
-            makuhaLabel.Name = "makuhaLabel";
-            makuhaLabel.Size = new System.Drawing.Size(48, 13);
-            makuhaLabel.TabIndex = 5;
-            makuhaLabel.Text = "makuha:";
             // 
             // makuhaTextBox
             // 
@@ -284,15 +338,6 @@
             this.makuhaTextBox.Size = new System.Drawing.Size(226, 20);
             this.makuhaTextBox.TabIndex = 6;
             // 
-            // otrubLabel
-            // 
-            otrubLabel.AutoSize = true;
-            otrubLabel.Location = new System.Drawing.Point(10, 115);
-            otrubLabel.Name = "otrubLabel";
-            otrubLabel.Size = new System.Drawing.Size(34, 13);
-            otrubLabel.TabIndex = 7;
-            otrubLabel.Text = "otrub:";
-            // 
             // otrubTextBox
             // 
             this.otrubTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kormBindingSource, "otrub", true));
@@ -300,15 +345,6 @@
             this.otrubTextBox.Name = "otrubTextBox";
             this.otrubTextBox.Size = new System.Drawing.Size(226, 20);
             this.otrubTextBox.TabIndex = 8;
-            // 
-            // kukuruzaLabel
-            // 
-            kukuruzaLabel.AutoSize = true;
-            kukuruzaLabel.Location = new System.Drawing.Point(10, 141);
-            kukuruzaLabel.Name = "kukuruzaLabel";
-            kukuruzaLabel.Size = new System.Drawing.Size(54, 13);
-            kukuruzaLabel.TabIndex = 9;
-            kukuruzaLabel.Text = "kukuruza:";
             // 
             // kukuruzaTextBox
             // 
@@ -318,15 +354,6 @@
             this.kukuruzaTextBox.Size = new System.Drawing.Size(226, 20);
             this.kukuruzaTextBox.TabIndex = 10;
             // 
-            // ovesLabel
-            // 
-            ovesLabel.AutoSize = true;
-            ovesLabel.Location = new System.Drawing.Point(10, 167);
-            ovesLabel.Name = "ovesLabel";
-            ovesLabel.Size = new System.Drawing.Size(33, 13);
-            ovesLabel.TabIndex = 11;
-            ovesLabel.Text = "oves:";
-            // 
             // ovesTextBox
             // 
             this.ovesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kormBindingSource, "oves", true));
@@ -334,15 +361,6 @@
             this.ovesTextBox.Name = "ovesTextBox";
             this.ovesTextBox.Size = new System.Drawing.Size(226, 20);
             this.ovesTextBox.TabIndex = 12;
-            // 
-            // yachminLabel
-            // 
-            yachminLabel.AutoSize = true;
-            yachminLabel.Location = new System.Drawing.Point(10, 193);
-            yachminLabel.Name = "yachminLabel";
-            yachminLabel.Size = new System.Drawing.Size(49, 13);
-            yachminLabel.TabIndex = 13;
-            yachminLabel.Text = "yachmin:";
             // 
             // yachminTextBox
             // 
@@ -352,15 +370,6 @@
             this.yachminTextBox.Size = new System.Drawing.Size(226, 20);
             this.yachminTextBox.TabIndex = 14;
             // 
-            // sinoLabel
-            // 
-            sinoLabel.AutoSize = true;
-            sinoLabel.Location = new System.Drawing.Point(10, 219);
-            sinoLabel.Name = "sinoLabel";
-            sinoLabel.Size = new System.Drawing.Size(29, 13);
-            sinoLabel.TabIndex = 15;
-            sinoLabel.Text = "sino:";
-            // 
             // sinoTextBox
             // 
             this.sinoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kormBindingSource, "sino", true));
@@ -368,15 +377,6 @@
             this.sinoTextBox.Name = "sinoTextBox";
             this.sinoTextBox.Size = new System.Drawing.Size(226, 20);
             this.sinoTextBox.TabIndex = 16;
-            // 
-            // solomaLabel
-            // 
-            solomaLabel.AutoSize = true;
-            solomaLabel.Location = new System.Drawing.Point(10, 245);
-            solomaLabel.Name = "solomaLabel";
-            solomaLabel.Size = new System.Drawing.Size(43, 13);
-            solomaLabel.TabIndex = 17;
-            solomaLabel.Text = "soloma:";
             // 
             // solomaTextBox
             // 
@@ -388,22 +388,23 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 289);
+            this.button1.Location = new System.Drawing.Point(13, 285);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(123, 23);
             this.button1.TabIndex = 19;
-            this.button1.Text = "button1";
+            this.button1.Text = "Редактировать";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(221, 289);
+            this.button2.Location = new System.Drawing.Point(173, 285);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(123, 23);
             this.button2.TabIndex = 20;
-            this.button2.Text = "button2";
+            this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Red_Korm
             // 

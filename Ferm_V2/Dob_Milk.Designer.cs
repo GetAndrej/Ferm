@@ -75,23 +75,131 @@
             ((System.ComponentModel.ISupportInitialize)(this.milkBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
+            // dataLabel
+            // 
+            dataLabel.AutoSize = true;
+            dataLabel.Location = new System.Drawing.Point(22, 17);
+            dataLabel.Name = "dataLabel";
+            dataLabel.Size = new System.Drawing.Size(31, 13);
+            dataLabel.TabIndex = 29;
+            dataLabel.Text = "data:";
+            // 
+            // id_personLabel
+            // 
+            id_personLabel.AutoSize = true;
+            id_personLabel.Location = new System.Drawing.Point(22, 42);
+            id_personLabel.Name = "id_personLabel";
+            id_personLabel.Size = new System.Drawing.Size(53, 13);
+            id_personLabel.TabIndex = 31;
+            id_personLabel.Text = "id person:";
+            // 
+            // utroLabel
+            // 
+            utroLabel.AutoSize = true;
+            utroLabel.Location = new System.Drawing.Point(22, 68);
+            utroLabel.Name = "utroLabel";
+            utroLabel.Size = new System.Drawing.Size(28, 13);
+            utroLabel.TabIndex = 33;
+            utroLabel.Text = "utro:";
+            // 
+            // obedLabel
+            // 
+            obedLabel.AutoSize = true;
+            obedLabel.Location = new System.Drawing.Point(22, 94);
+            obedLabel.Name = "obedLabel";
+            obedLabel.Size = new System.Drawing.Size(34, 13);
+            obedLabel.TabIndex = 35;
+            obedLabel.Text = "obed:";
+            // 
+            // vechirLabel
+            // 
+            vechirLabel.AutoSize = true;
+            vechirLabel.Location = new System.Drawing.Point(22, 120);
+            vechirLabel.Name = "vechirLabel";
+            vechirLabel.Size = new System.Drawing.Size(39, 13);
+            vechirLabel.TabIndex = 37;
+            vechirLabel.Text = "vechir:";
+            // 
+            // pogolovLabel
+            // 
+            pogolovLabel.AutoSize = true;
+            pogolovLabel.Location = new System.Drawing.Point(22, 146);
+            pogolovLabel.Name = "pogolovLabel";
+            pogolovLabel.Size = new System.Drawing.Size(48, 13);
+            pogolovLabel.TabIndex = 39;
+            pogolovLabel.Text = "pogolov:";
+            // 
+            // vipoy_telLabel
+            // 
+            vipoy_telLabel.AutoSize = true;
+            vipoy_telLabel.Location = new System.Drawing.Point(22, 172);
+            vipoy_telLabel.Name = "vipoy_telLabel";
+            vipoy_telLabel.Size = new System.Drawing.Size(49, 13);
+            vipoy_telLabel.TabIndex = 41;
+            vipoy_telLabel.Text = "vipoy tel:";
+            // 
+            // obratLabel
+            // 
+            obratLabel.AutoSize = true;
+            obratLabel.Location = new System.Drawing.Point(22, 198);
+            obratLabel.Name = "obratLabel";
+            obratLabel.Size = new System.Drawing.Size(34, 13);
+            obratLabel.TabIndex = 43;
+            obratLabel.Text = "obrat:";
+            // 
+            // zhirLabel
+            // 
+            zhirLabel.AutoSize = true;
+            zhirLabel.Location = new System.Drawing.Point(22, 224);
+            zhirLabel.Name = "zhirLabel";
+            zhirLabel.Size = new System.Drawing.Size(26, 13);
+            zhirLabel.TabIndex = 45;
+            zhirLabel.Text = "zhir:";
+            // 
+            // zavodLabel
+            // 
+            zavodLabel.AutoSize = true;
+            zavodLabel.Location = new System.Drawing.Point(22, 250);
+            zavodLabel.Name = "zavodLabel";
+            zavodLabel.Size = new System.Drawing.Size(39, 13);
+            zavodLabel.TabIndex = 47;
+            zavodLabel.Text = "zavod:";
+            // 
+            // otpravkaLabel
+            // 
+            otpravkaLabel.AutoSize = true;
+            otpravkaLabel.Location = new System.Drawing.Point(22, 276);
+            otpravkaLabel.Name = "otpravkaLabel";
+            otpravkaLabel.Size = new System.Drawing.Size(52, 13);
+            otpravkaLabel.TabIndex = 49;
+            otpravkaLabel.Text = "otpravka:";
+            // 
+            // vsego_dayLabel
+            // 
+            vsego_dayLabel.AutoSize = true;
+            vsego_dayLabel.Location = new System.Drawing.Point(22, 302);
+            vsego_dayLabel.Name = "vsego_dayLabel";
+            vsego_dayLabel.Size = new System.Drawing.Size(59, 13);
+            vsego_dayLabel.TabIndex = 51;
+            vsego_dayLabel.Text = "vsego day:";
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 386);
+            this.button1.Location = new System.Drawing.Point(25, 342);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(116, 23);
             this.button1.TabIndex = 27;
-            this.button1.Text = "button1";
+            this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(269, 386);
+            this.button2.Location = new System.Drawing.Point(171, 342);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(116, 23);
             this.button2.TabIndex = 28;
-            this.button2.Text = "button2";
+            this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -122,206 +230,98 @@
             this.tableAdapterManager.UpdateOrder = Ferm_V2.fermDataSetLastVTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.zarplataTableAdapter = null;
             // 
-            // dataLabel
-            // 
-            dataLabel.AutoSize = true;
-            dataLabel.Location = new System.Drawing.Point(8, 38);
-            dataLabel.Name = "dataLabel";
-            dataLabel.Size = new System.Drawing.Size(31, 13);
-            dataLabel.TabIndex = 29;
-            dataLabel.Text = "data:";
-            // 
             // dataDateTimePicker
             // 
             this.dataDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.milkBindingSource, "data", true));
-            this.dataDateTimePicker.Location = new System.Drawing.Point(73, 34);
+            this.dataDateTimePicker.Location = new System.Drawing.Point(87, 13);
             this.dataDateTimePicker.Name = "dataDateTimePicker";
             this.dataDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dataDateTimePicker.TabIndex = 30;
             // 
-            // id_personLabel
-            // 
-            id_personLabel.AutoSize = true;
-            id_personLabel.Location = new System.Drawing.Point(8, 63);
-            id_personLabel.Name = "id_personLabel";
-            id_personLabel.Size = new System.Drawing.Size(53, 13);
-            id_personLabel.TabIndex = 31;
-            id_personLabel.Text = "id person:";
-            // 
             // id_personTextBox
             // 
             this.id_personTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.milkBindingSource, "id_person", true));
-            this.id_personTextBox.Location = new System.Drawing.Point(73, 60);
+            this.id_personTextBox.Location = new System.Drawing.Point(87, 39);
             this.id_personTextBox.Name = "id_personTextBox";
             this.id_personTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_personTextBox.TabIndex = 32;
             // 
-            // utroLabel
-            // 
-            utroLabel.AutoSize = true;
-            utroLabel.Location = new System.Drawing.Point(8, 89);
-            utroLabel.Name = "utroLabel";
-            utroLabel.Size = new System.Drawing.Size(28, 13);
-            utroLabel.TabIndex = 33;
-            utroLabel.Text = "utro:";
-            // 
             // utroTextBox
             // 
             this.utroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.milkBindingSource, "utro", true));
-            this.utroTextBox.Location = new System.Drawing.Point(73, 86);
+            this.utroTextBox.Location = new System.Drawing.Point(87, 65);
             this.utroTextBox.Name = "utroTextBox";
             this.utroTextBox.Size = new System.Drawing.Size(200, 20);
             this.utroTextBox.TabIndex = 34;
             // 
-            // obedLabel
-            // 
-            obedLabel.AutoSize = true;
-            obedLabel.Location = new System.Drawing.Point(8, 115);
-            obedLabel.Name = "obedLabel";
-            obedLabel.Size = new System.Drawing.Size(34, 13);
-            obedLabel.TabIndex = 35;
-            obedLabel.Text = "obed:";
-            // 
             // obedTextBox
             // 
             this.obedTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.milkBindingSource, "obed", true));
-            this.obedTextBox.Location = new System.Drawing.Point(73, 112);
+            this.obedTextBox.Location = new System.Drawing.Point(87, 91);
             this.obedTextBox.Name = "obedTextBox";
             this.obedTextBox.Size = new System.Drawing.Size(200, 20);
             this.obedTextBox.TabIndex = 36;
             // 
-            // vechirLabel
-            // 
-            vechirLabel.AutoSize = true;
-            vechirLabel.Location = new System.Drawing.Point(8, 141);
-            vechirLabel.Name = "vechirLabel";
-            vechirLabel.Size = new System.Drawing.Size(39, 13);
-            vechirLabel.TabIndex = 37;
-            vechirLabel.Text = "vechir:";
-            // 
             // vechirTextBox
             // 
             this.vechirTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.milkBindingSource, "vechir", true));
-            this.vechirTextBox.Location = new System.Drawing.Point(73, 138);
+            this.vechirTextBox.Location = new System.Drawing.Point(87, 117);
             this.vechirTextBox.Name = "vechirTextBox";
             this.vechirTextBox.Size = new System.Drawing.Size(200, 20);
             this.vechirTextBox.TabIndex = 38;
             // 
-            // pogolovLabel
-            // 
-            pogolovLabel.AutoSize = true;
-            pogolovLabel.Location = new System.Drawing.Point(8, 167);
-            pogolovLabel.Name = "pogolovLabel";
-            pogolovLabel.Size = new System.Drawing.Size(48, 13);
-            pogolovLabel.TabIndex = 39;
-            pogolovLabel.Text = "pogolov:";
-            // 
             // pogolovTextBox
             // 
             this.pogolovTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.milkBindingSource, "pogolov", true));
-            this.pogolovTextBox.Location = new System.Drawing.Point(73, 164);
+            this.pogolovTextBox.Location = new System.Drawing.Point(87, 143);
             this.pogolovTextBox.Name = "pogolovTextBox";
             this.pogolovTextBox.Size = new System.Drawing.Size(200, 20);
             this.pogolovTextBox.TabIndex = 40;
             // 
-            // vipoy_telLabel
-            // 
-            vipoy_telLabel.AutoSize = true;
-            vipoy_telLabel.Location = new System.Drawing.Point(8, 193);
-            vipoy_telLabel.Name = "vipoy_telLabel";
-            vipoy_telLabel.Size = new System.Drawing.Size(49, 13);
-            vipoy_telLabel.TabIndex = 41;
-            vipoy_telLabel.Text = "vipoy tel:";
-            // 
             // vipoy_telTextBox
             // 
             this.vipoy_telTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.milkBindingSource, "vipoy_tel", true));
-            this.vipoy_telTextBox.Location = new System.Drawing.Point(73, 190);
+            this.vipoy_telTextBox.Location = new System.Drawing.Point(87, 169);
             this.vipoy_telTextBox.Name = "vipoy_telTextBox";
             this.vipoy_telTextBox.Size = new System.Drawing.Size(200, 20);
             this.vipoy_telTextBox.TabIndex = 42;
             // 
-            // obratLabel
-            // 
-            obratLabel.AutoSize = true;
-            obratLabel.Location = new System.Drawing.Point(8, 219);
-            obratLabel.Name = "obratLabel";
-            obratLabel.Size = new System.Drawing.Size(34, 13);
-            obratLabel.TabIndex = 43;
-            obratLabel.Text = "obrat:";
-            // 
             // obratTextBox
             // 
             this.obratTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.milkBindingSource, "obrat", true));
-            this.obratTextBox.Location = new System.Drawing.Point(73, 216);
+            this.obratTextBox.Location = new System.Drawing.Point(87, 195);
             this.obratTextBox.Name = "obratTextBox";
             this.obratTextBox.Size = new System.Drawing.Size(200, 20);
             this.obratTextBox.TabIndex = 44;
             // 
-            // zhirLabel
-            // 
-            zhirLabel.AutoSize = true;
-            zhirLabel.Location = new System.Drawing.Point(8, 245);
-            zhirLabel.Name = "zhirLabel";
-            zhirLabel.Size = new System.Drawing.Size(26, 13);
-            zhirLabel.TabIndex = 45;
-            zhirLabel.Text = "zhir:";
-            // 
             // zhirTextBox
             // 
             this.zhirTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.milkBindingSource, "zhir", true));
-            this.zhirTextBox.Location = new System.Drawing.Point(73, 242);
+            this.zhirTextBox.Location = new System.Drawing.Point(87, 221);
             this.zhirTextBox.Name = "zhirTextBox";
             this.zhirTextBox.Size = new System.Drawing.Size(200, 20);
             this.zhirTextBox.TabIndex = 46;
             // 
-            // zavodLabel
-            // 
-            zavodLabel.AutoSize = true;
-            zavodLabel.Location = new System.Drawing.Point(8, 271);
-            zavodLabel.Name = "zavodLabel";
-            zavodLabel.Size = new System.Drawing.Size(39, 13);
-            zavodLabel.TabIndex = 47;
-            zavodLabel.Text = "zavod:";
-            // 
             // zavodTextBox
             // 
             this.zavodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.milkBindingSource, "zavod", true));
-            this.zavodTextBox.Location = new System.Drawing.Point(73, 268);
+            this.zavodTextBox.Location = new System.Drawing.Point(87, 247);
             this.zavodTextBox.Name = "zavodTextBox";
             this.zavodTextBox.Size = new System.Drawing.Size(200, 20);
             this.zavodTextBox.TabIndex = 48;
             // 
-            // otpravkaLabel
-            // 
-            otpravkaLabel.AutoSize = true;
-            otpravkaLabel.Location = new System.Drawing.Point(8, 297);
-            otpravkaLabel.Name = "otpravkaLabel";
-            otpravkaLabel.Size = new System.Drawing.Size(52, 13);
-            otpravkaLabel.TabIndex = 49;
-            otpravkaLabel.Text = "otpravka:";
-            // 
             // otpravkaTextBox
             // 
             this.otpravkaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.milkBindingSource, "otpravka", true));
-            this.otpravkaTextBox.Location = new System.Drawing.Point(73, 294);
+            this.otpravkaTextBox.Location = new System.Drawing.Point(87, 273);
             this.otpravkaTextBox.Name = "otpravkaTextBox";
             this.otpravkaTextBox.Size = new System.Drawing.Size(200, 20);
             this.otpravkaTextBox.TabIndex = 50;
             // 
-            // vsego_dayLabel
-            // 
-            vsego_dayLabel.AutoSize = true;
-            vsego_dayLabel.Location = new System.Drawing.Point(8, 323);
-            vsego_dayLabel.Name = "vsego_dayLabel";
-            vsego_dayLabel.Size = new System.Drawing.Size(59, 13);
-            vsego_dayLabel.TabIndex = 51;
-            vsego_dayLabel.Text = "vsego day:";
-            // 
             // vsego_dayTextBox
             // 
             this.vsego_dayTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.milkBindingSource, "vsego_day", true));
-            this.vsego_dayTextBox.Location = new System.Drawing.Point(73, 320);
+            this.vsego_dayTextBox.Location = new System.Drawing.Point(87, 299);
             this.vsego_dayTextBox.Name = "vsego_dayTextBox";
             this.vsego_dayTextBox.Size = new System.Drawing.Size(200, 20);
             this.vsego_dayTextBox.TabIndex = 52;
@@ -330,7 +330,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 429);
+            this.ClientSize = new System.Drawing.Size(309, 390);
             this.Controls.Add(dataLabel);
             this.Controls.Add(this.dataDateTimePicker);
             this.Controls.Add(id_personLabel);

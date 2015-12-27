@@ -124,14 +124,6 @@
     <Compile Include="Otchets.Designer.cs">
       <DependentUpon>Otchets.cs</DependentUpon>
     </Compile>
-    <Compile Include="fermDataSet.cs">
-      <DependentUpon>fermDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="fermDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>fermDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="fermDataSet1.cs">
       <DependentUpon>fermDataSet1.xsd</DependentUpon>
     </Compile>
@@ -308,17 +300,6 @@
     <EmbeddedResource Include="Zarplata.resx">
       <DependentUpon>Zarplata.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="fermDataSet.xsc">
-      <DependentUpon>fermDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="fermDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>fermDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="fermDataSet.xss">
-      <DependentUpon>fermDataSet.xsd</DependentUpon>
-    </None>
     <None Include="fermDataSet1.xsc">
       <DependentUpon>fermDataSet1.xsd</DependentUpon>
     </None>

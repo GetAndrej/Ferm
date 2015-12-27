@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Ferm_V2
 {
@@ -59,6 +60,24 @@ namespace Ferm_V2
         {
             Red_Zarp red = new Red_Zarp();
             red.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string constring = "server=localhost;user=root;database=ferm;port=3306;password=123456789;";
+            MySqlConnection con = new MySqlConnection(constring);
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from zarplata";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+
+            con.Close();
         }
     }
 }

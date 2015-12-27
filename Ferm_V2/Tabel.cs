@@ -20,8 +20,9 @@ namespace Ferm_V2
 
         private void Tabel_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSet.tabel". При необходимости она может быть перемещена или удалена.
-            this.tabelTableAdapter.Fill(this.fermDataSet.tabel);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetLastV.tabel". При необходимости она может быть перемещена или удалена.
+            this.tabelTableAdapter.Fill(this.fermDataSetLastV.tabel);
+          
 
         }
 

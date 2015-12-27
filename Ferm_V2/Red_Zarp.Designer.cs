@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Red_Zarp));
             System.Windows.Forms.Label id_zarplataLabel;
             System.Windows.Forms.Label dataLabel;
             System.Windows.Forms.Label id_persLabel;
             System.Windows.Forms.Label zarp_milkLabel;
             System.Windows.Forms.Label zarp_moneyLabel;
             System.Windows.Forms.Label primechanieLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Red_Zarp));
             this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
             this.zarplataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.zarplataTableAdapter = new Ferm_V2.fermDataSetLastVTableAdapters.zarplataTableAdapter();
             this.tableAdapterManager = new Ferm_V2.fermDataSetLastVTableAdapters.TableAdapterManager();
             this.zarplataBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.zarplataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.id_zarplataTextBox = new System.Windows.Forms.TextBox();
             this.dataDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -72,6 +72,60 @@
             ((System.ComponentModel.ISupportInitialize)(this.zarplataBindingNavigator)).BeginInit();
             this.zarplataBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // id_zarplataLabel
+            // 
+            id_zarplataLabel.AutoSize = true;
+            id_zarplataLabel.Location = new System.Drawing.Point(9, 40);
+            id_zarplataLabel.Name = "id_zarplataLabel";
+            id_zarplataLabel.Size = new System.Drawing.Size(58, 13);
+            id_zarplataLabel.TabIndex = 1;
+            id_zarplataLabel.Text = "id zarplata:";
+            // 
+            // dataLabel
+            // 
+            dataLabel.AutoSize = true;
+            dataLabel.Location = new System.Drawing.Point(9, 67);
+            dataLabel.Name = "dataLabel";
+            dataLabel.Size = new System.Drawing.Size(31, 13);
+            dataLabel.TabIndex = 3;
+            dataLabel.Text = "data:";
+            // 
+            // id_persLabel
+            // 
+            id_persLabel.AutoSize = true;
+            id_persLabel.Location = new System.Drawing.Point(9, 92);
+            id_persLabel.Name = "id_persLabel";
+            id_persLabel.Size = new System.Drawing.Size(41, 13);
+            id_persLabel.TabIndex = 5;
+            id_persLabel.Text = "id pers:";
+            // 
+            // zarp_milkLabel
+            // 
+            zarp_milkLabel.AutoSize = true;
+            zarp_milkLabel.Location = new System.Drawing.Point(9, 118);
+            zarp_milkLabel.Name = "zarp_milkLabel";
+            zarp_milkLabel.Size = new System.Drawing.Size(51, 13);
+            zarp_milkLabel.TabIndex = 7;
+            zarp_milkLabel.Text = "zarp milk:";
+            // 
+            // zarp_moneyLabel
+            // 
+            zarp_moneyLabel.AutoSize = true;
+            zarp_moneyLabel.Location = new System.Drawing.Point(9, 144);
+            zarp_moneyLabel.Name = "zarp_moneyLabel";
+            zarp_moneyLabel.Size = new System.Drawing.Size(64, 13);
+            zarp_moneyLabel.TabIndex = 9;
+            zarp_moneyLabel.Text = "zarp money:";
+            // 
+            // primechanieLabel
+            // 
+            primechanieLabel.AutoSize = true;
+            primechanieLabel.Location = new System.Drawing.Point(9, 170);
+            primechanieLabel.Name = "primechanieLabel";
+            primechanieLabel.Size = new System.Drawing.Size(67, 13);
+            primechanieLabel.TabIndex = 11;
+            primechanieLabel.Text = "primechanie:";
             // 
             // fermDataSetLastV
             // 
@@ -126,9 +180,34 @@
             this.zarplataBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.zarplataBindingNavigator.Name = "zarplataBindingNavigator";
             this.zarplataBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.zarplataBindingNavigator.Size = new System.Drawing.Size(352, 25);
+            this.zarplataBindingNavigator.Size = new System.Drawing.Size(297, 25);
             this.zarplataBindingNavigator.TabIndex = 0;
             this.zarplataBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -162,17 +241,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 15);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -180,7 +252,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -189,49 +261,22 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // zarplataBindingNavigatorSaveItem
             // 
             this.zarplataBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.zarplataBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("zarplataBindingNavigatorSaveItem.Image")));
             this.zarplataBindingNavigatorSaveItem.Name = "zarplataBindingNavigatorSaveItem";
-            this.zarplataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.zarplataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.zarplataBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.zarplataBindingNavigatorSaveItem.Click += new System.EventHandler(this.zarplataBindingNavigatorSaveItem_Click);
-            // 
-            // id_zarplataLabel
-            // 
-            id_zarplataLabel.AutoSize = true;
-            id_zarplataLabel.Location = new System.Drawing.Point(9, 40);
-            id_zarplataLabel.Name = "id_zarplataLabel";
-            id_zarplataLabel.Size = new System.Drawing.Size(58, 13);
-            id_zarplataLabel.TabIndex = 1;
-            id_zarplataLabel.Text = "id zarplata:";
             // 
             // id_zarplataTextBox
             // 
@@ -241,15 +286,6 @@
             this.id_zarplataTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_zarplataTextBox.TabIndex = 2;
             // 
-            // dataLabel
-            // 
-            dataLabel.AutoSize = true;
-            dataLabel.Location = new System.Drawing.Point(9, 67);
-            dataLabel.Name = "dataLabel";
-            dataLabel.Size = new System.Drawing.Size(31, 13);
-            dataLabel.TabIndex = 3;
-            dataLabel.Text = "data:";
-            // 
             // dataDateTimePicker
             // 
             this.dataDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.zarplataBindingSource, "data", true));
@@ -257,15 +293,6 @@
             this.dataDateTimePicker.Name = "dataDateTimePicker";
             this.dataDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dataDateTimePicker.TabIndex = 4;
-            // 
-            // id_persLabel
-            // 
-            id_persLabel.AutoSize = true;
-            id_persLabel.Location = new System.Drawing.Point(9, 92);
-            id_persLabel.Name = "id_persLabel";
-            id_persLabel.Size = new System.Drawing.Size(41, 13);
-            id_persLabel.TabIndex = 5;
-            id_persLabel.Text = "id pers:";
             // 
             // id_persTextBox
             // 
@@ -275,15 +302,6 @@
             this.id_persTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_persTextBox.TabIndex = 6;
             // 
-            // zarp_milkLabel
-            // 
-            zarp_milkLabel.AutoSize = true;
-            zarp_milkLabel.Location = new System.Drawing.Point(9, 118);
-            zarp_milkLabel.Name = "zarp_milkLabel";
-            zarp_milkLabel.Size = new System.Drawing.Size(51, 13);
-            zarp_milkLabel.TabIndex = 7;
-            zarp_milkLabel.Text = "zarp milk:";
-            // 
             // zarp_milkTextBox
             // 
             this.zarp_milkTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.zarplataBindingSource, "zarp_milk", true));
@@ -292,15 +310,6 @@
             this.zarp_milkTextBox.Size = new System.Drawing.Size(200, 20);
             this.zarp_milkTextBox.TabIndex = 8;
             // 
-            // zarp_moneyLabel
-            // 
-            zarp_moneyLabel.AutoSize = true;
-            zarp_moneyLabel.Location = new System.Drawing.Point(9, 144);
-            zarp_moneyLabel.Name = "zarp_moneyLabel";
-            zarp_moneyLabel.Size = new System.Drawing.Size(64, 13);
-            zarp_moneyLabel.TabIndex = 9;
-            zarp_moneyLabel.Text = "zarp money:";
-            // 
             // zarp_moneyTextBox
             // 
             this.zarp_moneyTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.zarplataBindingSource, "zarp_money", true));
@@ -308,15 +317,6 @@
             this.zarp_moneyTextBox.Name = "zarp_moneyTextBox";
             this.zarp_moneyTextBox.Size = new System.Drawing.Size(200, 20);
             this.zarp_moneyTextBox.TabIndex = 10;
-            // 
-            // primechanieLabel
-            // 
-            primechanieLabel.AutoSize = true;
-            primechanieLabel.Location = new System.Drawing.Point(9, 170);
-            primechanieLabel.Name = "primechanieLabel";
-            primechanieLabel.Size = new System.Drawing.Size(67, 13);
-            primechanieLabel.TabIndex = 11;
-            primechanieLabel.Text = "primechanie:";
             // 
             // primechanieTextBox
             // 
@@ -330,26 +330,27 @@
             // 
             this.button1.Location = new System.Drawing.Point(12, 212);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(124, 23);
             this.button1.TabIndex = 13;
-            this.button1.Text = "button1";
+            this.button1.Text = "Редактировать";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(207, 212);
+            this.button2.Location = new System.Drawing.Point(158, 212);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(124, 23);
             this.button2.TabIndex = 14;
-            this.button2.Text = "button2";
+            this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Red_Zarp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 261);
+            this.ClientSize = new System.Drawing.Size(297, 261);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(id_zarplataLabel);

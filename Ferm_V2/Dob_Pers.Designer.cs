@@ -57,6 +57,60 @@
             ((System.ComponentModel.ISupportInitialize)(this.personalBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
+            // idLabel
+            // 
+            idLabel.AutoSize = true;
+            idLabel.Location = new System.Drawing.Point(8, 41);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(18, 13);
+            idLabel.TabIndex = 1;
+            idLabel.Text = "id:";
+            // 
+            // nameLabel
+            // 
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new System.Drawing.Point(8, 67);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new System.Drawing.Size(36, 13);
+            nameLabel.TabIndex = 3;
+            nameLabel.Text = "name:";
+            // 
+            // positionLabel
+            // 
+            positionLabel.AutoSize = true;
+            positionLabel.Location = new System.Drawing.Point(8, 93);
+            positionLabel.Name = "positionLabel";
+            positionLabel.Size = new System.Drawing.Size(46, 13);
+            positionLabel.TabIndex = 5;
+            positionLabel.Text = "position:";
+            // 
+            // birthdayLabel
+            // 
+            birthdayLabel.AutoSize = true;
+            birthdayLabel.Location = new System.Drawing.Point(8, 120);
+            birthdayLabel.Name = "birthdayLabel";
+            birthdayLabel.Size = new System.Drawing.Size(47, 13);
+            birthdayLabel.TabIndex = 7;
+            birthdayLabel.Text = "birthday:";
+            // 
+            // _addressLabel
+            // 
+            _addressLabel.AutoSize = true;
+            _addressLabel.Location = new System.Drawing.Point(8, 145);
+            _addressLabel.Name = "_addressLabel";
+            _addressLabel.Size = new System.Drawing.Size(50, 13);
+            _addressLabel.TabIndex = 9;
+            _addressLabel.Text = " address:";
+            // 
+            // telephoneLabel
+            // 
+            telephoneLabel.AutoSize = true;
+            telephoneLabel.Location = new System.Drawing.Point(8, 171);
+            telephoneLabel.Name = "telephoneLabel";
+            telephoneLabel.Size = new System.Drawing.Size(57, 13);
+            telephoneLabel.TabIndex = 11;
+            telephoneLabel.Text = "telephone:";
+            // 
             // fermDataSetLastV
             // 
             this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
@@ -84,15 +138,6 @@
             this.tableAdapterManager.UpdateOrder = Ferm_V2.fermDataSetLastVTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.zarplataTableAdapter = null;
             // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(8, 41);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(18, 13);
-            idLabel.TabIndex = 1;
-            idLabel.Text = "id:";
-            // 
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personalBindingSource, "id", true));
@@ -100,15 +145,6 @@
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(200, 20);
             this.idTextBox.TabIndex = 2;
-            // 
-            // nameLabel
-            // 
-            nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(8, 67);
-            nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(36, 13);
-            nameLabel.TabIndex = 3;
-            nameLabel.Text = "name:";
             // 
             // nameTextBox
             // 
@@ -118,15 +154,6 @@
             this.nameTextBox.Size = new System.Drawing.Size(200, 20);
             this.nameTextBox.TabIndex = 4;
             // 
-            // positionLabel
-            // 
-            positionLabel.AutoSize = true;
-            positionLabel.Location = new System.Drawing.Point(8, 93);
-            positionLabel.Name = "positionLabel";
-            positionLabel.Size = new System.Drawing.Size(46, 13);
-            positionLabel.TabIndex = 5;
-            positionLabel.Text = "position:";
-            // 
             // positionTextBox
             // 
             this.positionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personalBindingSource, "position", true));
@@ -134,15 +161,6 @@
             this.positionTextBox.Name = "positionTextBox";
             this.positionTextBox.Size = new System.Drawing.Size(200, 20);
             this.positionTextBox.TabIndex = 6;
-            // 
-            // birthdayLabel
-            // 
-            birthdayLabel.AutoSize = true;
-            birthdayLabel.Location = new System.Drawing.Point(8, 120);
-            birthdayLabel.Name = "birthdayLabel";
-            birthdayLabel.Size = new System.Drawing.Size(47, 13);
-            birthdayLabel.TabIndex = 7;
-            birthdayLabel.Text = "birthday:";
             // 
             // birthdayDateTimePicker
             // 
@@ -152,15 +170,6 @@
             this.birthdayDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.birthdayDateTimePicker.TabIndex = 8;
             // 
-            // _addressLabel
-            // 
-            _addressLabel.AutoSize = true;
-            _addressLabel.Location = new System.Drawing.Point(8, 145);
-            _addressLabel.Name = "_addressLabel";
-            _addressLabel.Size = new System.Drawing.Size(50, 13);
-            _addressLabel.TabIndex = 9;
-            _addressLabel.Text = " address:";
-            // 
             // _addressTextBox
             // 
             this._addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.personalBindingSource, " address", true));
@@ -168,15 +177,6 @@
             this._addressTextBox.Name = "_addressTextBox";
             this._addressTextBox.Size = new System.Drawing.Size(200, 20);
             this._addressTextBox.TabIndex = 10;
-            // 
-            // telephoneLabel
-            // 
-            telephoneLabel.AutoSize = true;
-            telephoneLabel.Location = new System.Drawing.Point(8, 171);
-            telephoneLabel.Name = "telephoneLabel";
-            telephoneLabel.Size = new System.Drawing.Size(57, 13);
-            telephoneLabel.TabIndex = 11;
-            telephoneLabel.Text = "telephone:";
             // 
             // telephoneTextBox
             // 
@@ -190,20 +190,21 @@
             // 
             this.button1.Location = new System.Drawing.Point(12, 203);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(112, 23);
             this.button1.TabIndex = 13;
-            this.button1.Text = "button1";
+            this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(196, 203);
+            this.button2.Location = new System.Drawing.Point(159, 203);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(112, 23);
             this.button2.TabIndex = 14;
-            this.button2.Text = "button2";
+            this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Dob_Pers
             // 

@@ -30,6 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthdayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
             this.b_infirmation = new System.Windows.Forms.Button();
             this.b_grafik = new System.Windows.Forms.Button();
             this.b_otchet = new System.Windows.Forms.Button();
@@ -43,14 +51,6 @@
             this.b_redactirovat = new System.Windows.Forms.Button();
             this.b_dobavit = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.birthdayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
             this.personalTableAdapter = new Ferm_V2.fermDataSetLastVTableAdapters.personalTableAdapter();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -72,17 +72,67 @@
             this.dataGridView1.DataSource = this.personalBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(117, 58);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(869, 330);
+            this.dataGridView1.Size = new System.Drawing.Size(869, 400);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // positionDataGridViewTextBoxColumn
+            // 
+            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
+            this.positionDataGridViewTextBoxColumn.HeaderText = "position";
+            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
+            // 
+            // birthdayDataGridViewTextBoxColumn
+            // 
+            this.birthdayDataGridViewTextBoxColumn.DataPropertyName = "birthday";
+            this.birthdayDataGridViewTextBoxColumn.HeaderText = "birthday";
+            this.birthdayDataGridViewTextBoxColumn.Name = "birthdayDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = " address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = " address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.Width = 170;
+            // 
+            // telephoneDataGridViewTextBoxColumn
+            // 
+            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
+            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
+            this.telephoneDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // personalBindingSource
+            // 
+            this.personalBindingSource.DataMember = "personal";
+            this.personalBindingSource.DataSource = this.fermDataSetLastV;
+            // 
+            // fermDataSetLastV
+            // 
+            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
+            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // b_infirmation
             // 
-            this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 13F);
             this.b_infirmation.Location = new System.Drawing.Point(12, 348);
             this.b_infirmation.Name = "b_infirmation";
-            this.b_infirmation.Size = new System.Drawing.Size(100, 40);
+            this.b_infirmation.Size = new System.Drawing.Size(100, 49);
             this.b_infirmation.TabIndex = 17;
-            this.b_infirmation.Text = "Информация";
+            this.b_infirmation.Text = "Претензия";
             this.b_infirmation.UseVisualStyleBackColor = true;
             this.b_infirmation.Click += new System.EventHandler(this.b_infirmation_Click);
             // 
@@ -154,7 +204,7 @@
             // 
             // b_poisk
             // 
-            this.b_poisk.Location = new System.Drawing.Point(889, 17);
+            this.b_poisk.Location = new System.Drawing.Point(911, 17);
             this.b_poisk.Name = "b_poisk";
             this.b_poisk.Size = new System.Drawing.Size(75, 25);
             this.b_poisk.TabIndex = 23;
@@ -164,7 +214,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(621, 17);
+            this.textBox1.Location = new System.Drawing.Point(655, 17);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(250, 25);
@@ -184,7 +234,7 @@
             // 
             // b_redactirovat
             // 
-            this.b_redactirovat.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_redactirovat.Font = new System.Drawing.Font("Times New Roman", 10F);
             this.b_redactirovat.Location = new System.Drawing.Point(354, 8);
             this.b_redactirovat.Name = "b_redactirovat";
             this.b_redactirovat.Size = new System.Drawing.Size(100, 40);
@@ -206,6 +256,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.button1.Location = new System.Drawing.Point(128, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 36);
@@ -214,67 +265,18 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // positionDataGridViewTextBoxColumn
-            // 
-            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
-            this.positionDataGridViewTextBoxColumn.HeaderText = "position";
-            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            // 
-            // birthdayDataGridViewTextBoxColumn
-            // 
-            this.birthdayDataGridViewTextBoxColumn.DataPropertyName = "birthday";
-            this.birthdayDataGridViewTextBoxColumn.HeaderText = "birthday";
-            this.birthdayDataGridViewTextBoxColumn.Name = "birthdayDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = " address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = " address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            this.addressDataGridViewTextBoxColumn.Width = 170;
-            // 
-            // telephoneDataGridViewTextBoxColumn
-            // 
-            this.telephoneDataGridViewTextBoxColumn.DataPropertyName = "telephone";
-            this.telephoneDataGridViewTextBoxColumn.HeaderText = "telephone";
-            this.telephoneDataGridViewTextBoxColumn.Name = "telephoneDataGridViewTextBoxColumn";
-            this.telephoneDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // personalBindingSource
-            // 
-            this.personalBindingSource.DataMember = "personal";
-            this.personalBindingSource.DataSource = this.fermDataSetLastV;
-            // 
-            // fermDataSetLastV
-            // 
-            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
-            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // personalTableAdapter
             // 
             this.personalTableAdapter.ClearBeforeFill = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(579, 19);
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 11F);
+            this.button2.Location = new System.Drawing.Point(566, 8);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 23);
+            this.button2.Size = new System.Drawing.Size(83, 40);
             this.button2.TabIndex = 25;
-            this.button2.Text = "button2";
+            this.button2.Text = "Обновить";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

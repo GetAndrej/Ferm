@@ -44,5 +44,10 @@ namespace Ferm_V2
                 MessageBox.Show("Проверьте на правильность ввода");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
             this.milkBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.milkTableAdapter = new Ferm_V2.fermDataSetLastVTableAdapters.milkTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.milkBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
             this.SuspendLayout();
+            // 
+            // milkBindingSource
+            // 
+            this.milkBindingSource.DataMember = "milk";
+            this.milkBindingSource.DataSource = this.fermDataSetLastV;
+            // 
+            // fermDataSetLastV
+            // 
+            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
+            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -47,18 +57,8 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Ferm_V2.Report2.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(700, 348);
+            this.reportViewer1.Size = new System.Drawing.Size(919, 425);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // fermDataSetLastV
-            // 
-            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
-            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // milkBindingSource
-            // 
-            this.milkBindingSource.DataMember = "milk";
-            this.milkBindingSource.DataSource = this.fermDataSetLastV;
             // 
             // milkTableAdapter
             // 
@@ -68,13 +68,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 348);
+            this.ClientSize = new System.Drawing.Size(919, 425);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Otchet_Milk";
             this.Text = "Otchet_Milk";
             this.Load += new System.EventHandler(this.Otchet_Milk_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.milkBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
             this.ResumeLayout(false);
 
         }

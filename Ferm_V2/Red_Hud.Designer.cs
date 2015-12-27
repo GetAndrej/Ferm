@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Red_Hud));
             System.Windows.Forms.Label id_cowLabel;
             System.Windows.Forms.Label klichkaLabel;
             System.Windows.Forms.Label polLabel;
@@ -39,6 +38,7 @@
             System.Windows.Forms.Label id_doyarkaLabel;
             System.Windows.Forms.Label id_mestoLabel;
             System.Windows.Forms.Label privivkaLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Red_Hud));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
@@ -46,17 +46,17 @@
             this.cowTableAdapter = new Ferm_V2.fermDataSetLastVTableAdapters.cowTableAdapter();
             this.tableAdapterManager = new Ferm_V2.fermDataSetLastVTableAdapters.TableAdapterManager();
             this.cowBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.cowBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.id_cowTextBox = new System.Windows.Forms.TextBox();
             this.klichkaTextBox = new System.Windows.Forms.TextBox();
@@ -82,23 +82,104 @@
             this.cowBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
+            // id_cowLabel
+            // 
+            id_cowLabel.AutoSize = true;
+            id_cowLabel.Location = new System.Drawing.Point(20, 31);
+            id_cowLabel.Name = "id_cowLabel";
+            id_cowLabel.Size = new System.Drawing.Size(41, 13);
+            id_cowLabel.TabIndex = 20;
+            id_cowLabel.Text = "id cow:";
+            // 
+            // klichkaLabel
+            // 
+            klichkaLabel.AutoSize = true;
+            klichkaLabel.Location = new System.Drawing.Point(20, 57);
+            klichkaLabel.Name = "klichkaLabel";
+            klichkaLabel.Size = new System.Drawing.Size(44, 13);
+            klichkaLabel.TabIndex = 22;
+            klichkaLabel.Text = "klichka:";
+            // 
+            // polLabel
+            // 
+            polLabel.AutoSize = true;
+            polLabel.Location = new System.Drawing.Point(20, 83);
+            polLabel.Name = "polLabel";
+            polLabel.Size = new System.Drawing.Size(24, 13);
+            polLabel.TabIndex = 24;
+            polLabel.Text = "pol:";
+            // 
+            // data_birthdayLabel
+            // 
+            data_birthdayLabel.AutoSize = true;
+            data_birthdayLabel.Location = new System.Drawing.Point(20, 110);
+            data_birthdayLabel.Name = "data_birthdayLabel";
+            data_birthdayLabel.Size = new System.Drawing.Size(71, 13);
+            data_birthdayLabel.TabIndex = 26;
+            data_birthdayLabel.Text = "data birthday:";
+            // 
+            // kodLabel
+            // 
+            kodLabel.AutoSize = true;
+            kodLabel.Location = new System.Drawing.Point(20, 135);
+            kodLabel.Name = "kodLabel";
+            kodLabel.Size = new System.Drawing.Size(28, 13);
+            kodLabel.TabIndex = 28;
+            kodLabel.Text = "kod:";
+            // 
+            // inwert_numberLabel
+            // 
+            inwert_numberLabel.AutoSize = true;
+            inwert_numberLabel.Location = new System.Drawing.Point(20, 161);
+            inwert_numberLabel.Name = "inwert_numberLabel";
+            inwert_numberLabel.Size = new System.Drawing.Size(76, 13);
+            inwert_numberLabel.TabIndex = 30;
+            inwert_numberLabel.Text = "inwert number:";
+            // 
+            // id_doyarkaLabel
+            // 
+            id_doyarkaLabel.AutoSize = true;
+            id_doyarkaLabel.Location = new System.Drawing.Point(20, 187);
+            id_doyarkaLabel.Name = "id_doyarkaLabel";
+            id_doyarkaLabel.Size = new System.Drawing.Size(59, 13);
+            id_doyarkaLabel.TabIndex = 32;
+            id_doyarkaLabel.Text = "id doyarka:";
+            // 
+            // id_mestoLabel
+            // 
+            id_mestoLabel.AutoSize = true;
+            id_mestoLabel.Location = new System.Drawing.Point(20, 213);
+            id_mestoLabel.Name = "id_mestoLabel";
+            id_mestoLabel.Size = new System.Drawing.Size(49, 13);
+            id_mestoLabel.TabIndex = 34;
+            id_mestoLabel.Text = "id mesto:";
+            // 
+            // privivkaLabel
+            // 
+            privivkaLabel.AutoSize = true;
+            privivkaLabel.Location = new System.Drawing.Point(20, 239);
+            privivkaLabel.Name = "privivkaLabel";
+            privivkaLabel.Size = new System.Drawing.Size(47, 13);
+            privivkaLabel.TabIndex = 36;
+            privivkaLabel.Text = "privivka:";
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(23, 288);
+            this.button1.Location = new System.Drawing.Point(23, 270);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 23);
+            this.button1.Size = new System.Drawing.Size(120, 23);
             this.button1.TabIndex = 18;
-            this.button1.Text = "button1";
+            this.button1.Text = "Редактировать";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(199, 288);
+            this.button2.Location = new System.Drawing.Point(182, 270);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 23);
+            this.button2.Size = new System.Drawing.Size(120, 23);
             this.button2.TabIndex = 19;
-            this.button2.Text = "button2";
+            this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
@@ -155,9 +236,34 @@
             this.cowBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.cowBindingNavigator.Name = "cowBindingNavigator";
             this.cowBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.cowBindingNavigator.Size = new System.Drawing.Size(747, 25);
+            this.cowBindingNavigator.Size = new System.Drawing.Size(318, 25);
             this.cowBindingNavigator.TabIndex = 20;
             this.cowBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -191,17 +297,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 15);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -209,7 +308,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -218,49 +317,22 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // cowBindingNavigatorSaveItem
             // 
             this.cowBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.cowBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("cowBindingNavigatorSaveItem.Image")));
             this.cowBindingNavigatorSaveItem.Name = "cowBindingNavigatorSaveItem";
-            this.cowBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.cowBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.cowBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.cowBindingNavigatorSaveItem.Click += new System.EventHandler(this.cowBindingNavigatorSaveItem_Click_1);
-            // 
-            // id_cowLabel
-            // 
-            id_cowLabel.AutoSize = true;
-            id_cowLabel.Location = new System.Drawing.Point(20, 31);
-            id_cowLabel.Name = "id_cowLabel";
-            id_cowLabel.Size = new System.Drawing.Size(41, 13);
-            id_cowLabel.TabIndex = 20;
-            id_cowLabel.Text = "id cow:";
             // 
             // id_cowTextBox
             // 
@@ -270,15 +342,6 @@
             this.id_cowTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_cowTextBox.TabIndex = 21;
             // 
-            // klichkaLabel
-            // 
-            klichkaLabel.AutoSize = true;
-            klichkaLabel.Location = new System.Drawing.Point(20, 57);
-            klichkaLabel.Name = "klichkaLabel";
-            klichkaLabel.Size = new System.Drawing.Size(44, 13);
-            klichkaLabel.TabIndex = 22;
-            klichkaLabel.Text = "klichka:";
-            // 
             // klichkaTextBox
             // 
             this.klichkaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource, "klichka", true));
@@ -286,15 +349,6 @@
             this.klichkaTextBox.Name = "klichkaTextBox";
             this.klichkaTextBox.Size = new System.Drawing.Size(200, 20);
             this.klichkaTextBox.TabIndex = 23;
-            // 
-            // polLabel
-            // 
-            polLabel.AutoSize = true;
-            polLabel.Location = new System.Drawing.Point(20, 83);
-            polLabel.Name = "polLabel";
-            polLabel.Size = new System.Drawing.Size(24, 13);
-            polLabel.TabIndex = 24;
-            polLabel.Text = "pol:";
             // 
             // polTextBox
             // 
@@ -304,15 +358,6 @@
             this.polTextBox.Size = new System.Drawing.Size(200, 20);
             this.polTextBox.TabIndex = 25;
             // 
-            // data_birthdayLabel
-            // 
-            data_birthdayLabel.AutoSize = true;
-            data_birthdayLabel.Location = new System.Drawing.Point(20, 110);
-            data_birthdayLabel.Name = "data_birthdayLabel";
-            data_birthdayLabel.Size = new System.Drawing.Size(71, 13);
-            data_birthdayLabel.TabIndex = 26;
-            data_birthdayLabel.Text = "data birthday:";
-            // 
             // data_birthdayDateTimePicker
             // 
             this.data_birthdayDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.cowBindingSource, "data_birthday", true));
@@ -320,15 +365,6 @@
             this.data_birthdayDateTimePicker.Name = "data_birthdayDateTimePicker";
             this.data_birthdayDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.data_birthdayDateTimePicker.TabIndex = 27;
-            // 
-            // kodLabel
-            // 
-            kodLabel.AutoSize = true;
-            kodLabel.Location = new System.Drawing.Point(20, 135);
-            kodLabel.Name = "kodLabel";
-            kodLabel.Size = new System.Drawing.Size(28, 13);
-            kodLabel.TabIndex = 28;
-            kodLabel.Text = "kod:";
             // 
             // kodTextBox
             // 
@@ -338,15 +374,6 @@
             this.kodTextBox.Size = new System.Drawing.Size(200, 20);
             this.kodTextBox.TabIndex = 29;
             // 
-            // inwert_numberLabel
-            // 
-            inwert_numberLabel.AutoSize = true;
-            inwert_numberLabel.Location = new System.Drawing.Point(20, 161);
-            inwert_numberLabel.Name = "inwert_numberLabel";
-            inwert_numberLabel.Size = new System.Drawing.Size(76, 13);
-            inwert_numberLabel.TabIndex = 30;
-            inwert_numberLabel.Text = "inwert number:";
-            // 
             // inwert_numberTextBox
             // 
             this.inwert_numberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource, "inwert_number", true));
@@ -354,15 +381,6 @@
             this.inwert_numberTextBox.Name = "inwert_numberTextBox";
             this.inwert_numberTextBox.Size = new System.Drawing.Size(200, 20);
             this.inwert_numberTextBox.TabIndex = 31;
-            // 
-            // id_doyarkaLabel
-            // 
-            id_doyarkaLabel.AutoSize = true;
-            id_doyarkaLabel.Location = new System.Drawing.Point(20, 187);
-            id_doyarkaLabel.Name = "id_doyarkaLabel";
-            id_doyarkaLabel.Size = new System.Drawing.Size(59, 13);
-            id_doyarkaLabel.TabIndex = 32;
-            id_doyarkaLabel.Text = "id doyarka:";
             // 
             // id_doyarkaTextBox
             // 
@@ -372,15 +390,6 @@
             this.id_doyarkaTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_doyarkaTextBox.TabIndex = 33;
             // 
-            // id_mestoLabel
-            // 
-            id_mestoLabel.AutoSize = true;
-            id_mestoLabel.Location = new System.Drawing.Point(20, 213);
-            id_mestoLabel.Name = "id_mestoLabel";
-            id_mestoLabel.Size = new System.Drawing.Size(49, 13);
-            id_mestoLabel.TabIndex = 34;
-            id_mestoLabel.Text = "id mesto:";
-            // 
             // id_mestoTextBox
             // 
             this.id_mestoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.cowBindingSource, "id_mesto", true));
@@ -388,15 +397,6 @@
             this.id_mestoTextBox.Name = "id_mestoTextBox";
             this.id_mestoTextBox.Size = new System.Drawing.Size(200, 20);
             this.id_mestoTextBox.TabIndex = 35;
-            // 
-            // privivkaLabel
-            // 
-            privivkaLabel.AutoSize = true;
-            privivkaLabel.Location = new System.Drawing.Point(20, 239);
-            privivkaLabel.Name = "privivkaLabel";
-            privivkaLabel.Size = new System.Drawing.Size(47, 13);
-            privivkaLabel.TabIndex = 36;
-            privivkaLabel.Text = "privivka:";
             // 
             // privivkaTextBox
             // 
@@ -410,7 +410,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(747, 366);
+            this.ClientSize = new System.Drawing.Size(318, 305);
             this.Controls.Add(id_cowLabel);
             this.Controls.Add(this.id_cowTextBox);
             this.Controls.Add(klichkaLabel);

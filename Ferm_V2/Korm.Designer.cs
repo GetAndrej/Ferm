@@ -144,12 +144,12 @@
             // 
             // b_infirmation
             // 
-            this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 13F);
             this.b_infirmation.Location = new System.Drawing.Point(12, 348);
             this.b_infirmation.Name = "b_infirmation";
             this.b_infirmation.Size = new System.Drawing.Size(100, 50);
             this.b_infirmation.TabIndex = 17;
-            this.b_infirmation.Text = "Информация";
+            this.b_infirmation.Text = "Претензия";
             this.b_infirmation.UseVisualStyleBackColor = true;
             this.b_infirmation.Click += new System.EventHandler(this.b_infirmation_Click);
             // 
@@ -189,7 +189,7 @@
             // b_korm
             // 
             this.b_korm.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_korm.Location = new System.Drawing.Point(12, 124);
+            this.b_korm.Location = new System.Drawing.Point(12, 12);
             this.b_korm.Name = "b_korm";
             this.b_korm.Size = new System.Drawing.Size(100, 50);
             this.b_korm.TabIndex = 13;
@@ -211,7 +211,7 @@
             // b_personal
             // 
             this.b_personal.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_personal.Location = new System.Drawing.Point(12, 12);
+            this.b_personal.Location = new System.Drawing.Point(12, 124);
             this.b_personal.Name = "b_personal";
             this.b_personal.Size = new System.Drawing.Size(100, 50);
             this.b_personal.TabIndex = 11;
@@ -222,7 +222,7 @@
             // b_udalit
             // 
             this.b_udalit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_udalit.Location = new System.Drawing.Point(346, 12);
+            this.b_udalit.Location = new System.Drawing.Point(391, 12);
             this.b_udalit.Name = "b_udalit";
             this.b_udalit.Size = new System.Drawing.Size(100, 40);
             this.b_udalit.TabIndex = 21;
@@ -235,7 +235,7 @@
             this.b_redactirovat.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.b_redactirovat.Location = new System.Drawing.Point(240, 12);
             this.b_redactirovat.Name = "b_redactirovat";
-            this.b_redactirovat.Size = new System.Drawing.Size(100, 40);
+            this.b_redactirovat.Size = new System.Drawing.Size(145, 40);
             this.b_redactirovat.TabIndex = 20;
             this.b_redactirovat.Text = "Редактировать";
             this.b_redactirovat.UseVisualStyleBackColor = true;

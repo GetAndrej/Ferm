@@ -215,21 +215,21 @@
             // 
             // b_infirmation
             // 
-            this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 13F);
             this.b_infirmation.Location = new System.Drawing.Point(12, 347);
             this.b_infirmation.Name = "b_infirmation";
             this.b_infirmation.Size = new System.Drawing.Size(100, 50);
             this.b_infirmation.TabIndex = 10;
-            this.b_infirmation.Text = "Информация";
+            this.b_infirmation.Text = "Претензия";
             this.b_infirmation.UseVisualStyleBackColor = true;
             this.b_infirmation.Click += new System.EventHandler(this.b_infirmation_Click);
             // 
             // b_dobavit
             // 
             this.b_dobavit.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_dobavit.Location = new System.Drawing.Point(259, 11);
+            this.b_dobavit.Location = new System.Drawing.Point(329, 10);
             this.b_dobavit.Name = "b_dobavit";
-            this.b_dobavit.Size = new System.Drawing.Size(100, 40);
+            this.b_dobavit.Size = new System.Drawing.Size(136, 40);
             this.b_dobavit.TabIndex = 12;
             this.b_dobavit.Text = "Редактировать";
             this.b_dobavit.UseVisualStyleBackColor = true;
@@ -238,7 +238,7 @@
             // b_redactirovat
             // 
             this.b_redactirovat.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_redactirovat.Location = new System.Drawing.Point(365, 11);
+            this.b_redactirovat.Location = new System.Drawing.Point(223, 11);
             this.b_redactirovat.Name = "b_redactirovat";
             this.b_redactirovat.Size = new System.Drawing.Size(100, 40);
             this.b_redactirovat.TabIndex = 14;
@@ -289,7 +289,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.button1.Location = new System.Drawing.Point(118, 12);
+            this.button1.Location = new System.Drawing.Point(118, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 46);
             this.button1.TabIndex = 20;
