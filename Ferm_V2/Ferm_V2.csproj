@@ -90,11 +90,6 @@
     <Compile Include="Dob_Zarp.Designer.cs">
       <DependentUpon>Dob_Zarp.cs</DependentUpon>
     </Compile>
-    <Compile Include="fermDataSetEasy.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>fermDataSetEasy.xsd</DependentUpon>
-    </Compile>
     <Compile Include="fermDataSetLastV.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -310,17 +305,6 @@
     </None>
     <None Include="fermDataSet1.xss">
       <DependentUpon>fermDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="fermDataSetEasy.xsc">
-      <DependentUpon>fermDataSetEasy.xsd</DependentUpon>
-    </None>
-    <None Include="fermDataSetEasy.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>fermDataSetEasy.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="fermDataSetEasy.xss">
-      <DependentUpon>fermDataSetEasy.xsd</DependentUpon>
     </None>
     <None Include="fermDataSetLastV.xsc">
       <DependentUpon>fermDataSetLastV.xsd</DependentUpon>
