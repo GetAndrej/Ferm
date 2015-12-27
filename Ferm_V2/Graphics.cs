@@ -17,20 +17,21 @@ namespace Ferm_V2
         public Graphics()
         {
             InitializeComponent();
-            
-            
+
+
         }
 
         private void Graphics_Load(object sender, EventArgs e)
         {
-          
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+    
+        private void button2_Click(object sender, EventArgs e)
         {
             string constring = "server=localhost;user=root;database=ferm;port=3306;password=123456789;";
             MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDataBase = new MySqlCommand("SELECT * FROM ferm.personal; ", conDataBase);
+            MySqlCommand cmdDataBase = new MySqlCommand("SELECT * FROM ferm.milk; ", conDataBase);
             MySqlDataReader myReader;
             try
             {
@@ -39,7 +40,7 @@ namespace Ferm_V2
 
                 while (myReader.Read())
                 {
-                    this.chart1.Series["Series1"].Points.AddXY(myReader.GetString("name"), myReader.GetUInt32("zarplata"));
+                    this.chart1.Series["Series1"].Points.AddXY(myReader.GetString("data"), myReader.GetUInt32("vsego_day"));
                 }
                 conDataBase.Close();
             }
@@ -48,6 +49,5 @@ namespace Ferm_V2
                 MessageBox.Show("Не удается подключить соединение с Базой Данных");
             }
         }
-
     }
 }

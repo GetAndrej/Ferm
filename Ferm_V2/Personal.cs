@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Ferm_V2
 {
@@ -38,7 +39,20 @@ namespace Ferm_V2
 
         private void b_poisk_Click(object sender, EventArgs e)
         {
+            string constring = "server=localhost;user=root;database=ferm;port=3306;password=123456789;";
+            MySqlConnection con = new MySqlConnection(constring);
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from personal where name like('%" + textBox1.Text + "%')";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
 
+
+            con.Close();
         }
 
         private void b_redactirovat_Click(object sender, EventArgs e)

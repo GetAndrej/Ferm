@@ -49,10 +49,6 @@ namespace Ferm_V2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // сделать редактирование
-            //Convert.ToInt32(id_cowTextBox1.Text), klichkaTextBox1.Text, Convert.ToInt32(polTextBox1.Text), dateTimePicker1.Text, Convert.ToInt32(kodTextBox1.Text), Convert.ToInt32(inwert_numberTextBox1.Text), Convert.ToInt32(id_doyarkaTextBox1.Text), Convert.ToInt32(id_mestoTextBox1.Text), privivkaTextBox1.Text);
-
-            // cowTableAdapter.UpdateQuery2(Convert.ToInt32(id_cow.Text), klichka.Text, Convert.ToInt32(pol.Text), data_birthday.Text, Convert.ToInt32(kod.Text), Convert.ToInt32(inwert_number.Text), Convert.ToInt32(id_doyarka.Text), privivka.Text);
             try
             {
                 cowTableAdapter1.InsertQuery(Convert.ToInt32(id_cow.Text), klichka.Text, pol.Text, data_birthday.Value, Convert.ToInt32(kod.Text), Convert.ToInt32(inwert_number.Text), Convert.ToInt32(id_doyarka.Text), Convert.ToInt32(id_mesto.Text), privivka.Text);
@@ -67,12 +63,6 @@ namespace Ferm_V2
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void Dobavlenie_Load(object sender, EventArgs e)
-        {
-           
-
         }
     }
 }

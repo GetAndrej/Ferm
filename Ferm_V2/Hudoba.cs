@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Ferm_V2
 {
+    
     public partial class Hudoba : Form
     {
-     
+        string constring = "server=localhost;user=root;database=ferm;port=3306;password=123456789;";
 
         public Hudoba()
         {
@@ -100,8 +102,19 @@ namespace Ferm_V2
 
         private void b_obnovit_Click(object sender, EventArgs e)
         {
-            cowTableAdapter1.Fill(fermDataSetLastV.cow);
-            fermDataSetLastV.AcceptChanges();
+            MySqlConnection con = new MySqlConnection(constring);
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from cow";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+
+            con.Close();
         }
 
         private void b_otchet_Click(object sender, EventArgs e)
@@ -127,6 +140,26 @@ namespace Ferm_V2
             Milk milk = new Milk();
             milk.Show();
             Hide();
+        }
+
+       
+
+        private void b_poisk_Click(object sender, EventArgs e)
+        {
+           
+            MySqlConnection con = new MySqlConnection(constring);
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from cow where klichka like('%" + textBox1.Text + "%')";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+
+            con.Close();
         }
     }
 }

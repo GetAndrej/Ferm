@@ -271,7 +271,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Dobavlenie";
             this.Text = "Dobavlenie";
-            this.Load += new System.EventHandler(this.Dobavlenie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
             this.ResumeLayout(false);

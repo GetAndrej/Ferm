@@ -36,14 +36,6 @@
             this.b_otchet = new System.Windows.Forms.Button();
             this.b_grafik = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.b_infirmation = new System.Windows.Forms.Button();
-            this.b_dobavit = new System.Windows.Forms.Button();
-            this.b_redactirovat = new System.Windows.Forms.Button();
-            this.b_udalit = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.b_poisk = new System.Windows.Forms.Button();
-            this.b_obnovit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,14 +45,22 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
             this.cowBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
+            this.b_infirmation = new System.Windows.Forms.Button();
+            this.b_dobavit = new System.Windows.Forms.Button();
+            this.b_redactirovat = new System.Windows.Forms.Button();
+            this.b_udalit = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.b_poisk = new System.Windows.Forms.Button();
+            this.b_obnovit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.cowTableAdapter1 = new Ferm_V2.fermDataSetLastVTableAdapters.cowTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // b_personal
@@ -149,6 +149,70 @@
             this.dataGridView1.Size = new System.Drawing.Size(946, 398);
             this.dataGridView1.TabIndex = 9;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_cow";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id_cow";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "klichka";
+            this.dataGridViewTextBoxColumn2.HeaderText = "klichka";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "pol";
+            this.dataGridViewTextBoxColumn3.HeaderText = "pol";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "data_birthday";
+            this.dataGridViewTextBoxColumn4.HeaderText = "data_birthday";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "kod";
+            this.dataGridViewTextBoxColumn5.HeaderText = "kod";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "inwert_number";
+            this.dataGridViewTextBoxColumn6.HeaderText = "inwert_number";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "id_doyarka";
+            this.dataGridViewTextBoxColumn7.HeaderText = "id_doyarka";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "id_mesto";
+            this.dataGridViewTextBoxColumn8.HeaderText = "id_mesto";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "privivka";
+            this.dataGridViewTextBoxColumn9.HeaderText = "privivka";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // cowBindingSource1
+            // 
+            this.cowBindingSource1.DataMember = "cow";
+            this.cowBindingSource1.DataSource = this.fermDataSetLastV;
+            // 
+            // fermDataSetLastV
+            // 
+            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
+            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // b_infirmation
             // 
             this.b_infirmation.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -209,6 +273,7 @@
             this.b_poisk.TabIndex = 18;
             this.b_poisk.Text = "Поиск";
             this.b_poisk.UseVisualStyleBackColor = true;
+            this.b_poisk.Click += new System.EventHandler(this.b_poisk_Click);
             // 
             // b_obnovit
             // 
@@ -232,73 +297,9 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_cow";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_cow";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "klichka";
-            this.dataGridViewTextBoxColumn2.HeaderText = "klichka";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "pol";
-            this.dataGridViewTextBoxColumn3.HeaderText = "pol";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "data_birthday";
-            this.dataGridViewTextBoxColumn4.HeaderText = "data_birthday";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "kod";
-            this.dataGridViewTextBoxColumn5.HeaderText = "kod";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "inwert_number";
-            this.dataGridViewTextBoxColumn6.HeaderText = "inwert_number";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "id_doyarka";
-            this.dataGridViewTextBoxColumn7.HeaderText = "id_doyarka";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "id_mesto";
-            this.dataGridViewTextBoxColumn8.HeaderText = "id_mesto";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "privivka";
-            this.dataGridViewTextBoxColumn9.HeaderText = "privivka";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
             // bindingSource1
             // 
             this.bindingSource1.DataSource = this.cowBindingSource1;
-            // 
-            // fermDataSetLastV
-            // 
-            this.fermDataSetLastV.DataSetName = "fermDataSetLastV";
-            this.fermDataSetLastV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cowBindingSource1
-            // 
-            this.cowBindingSource1.DataMember = "cow";
-            this.cowBindingSource1.DataSource = this.fermDataSetLastV;
             // 
             // cowTableAdapter1
             // 
@@ -329,9 +330,9 @@
             this.Text = "Hudoba";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

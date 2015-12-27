@@ -79,6 +79,7 @@
             this.b_udalit = new System.Windows.Forms.Button();
             this.b_redactirovat = new System.Windows.Forms.Button();
             this.b_dobavit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSet)).BeginInit();
@@ -465,11 +466,22 @@
             this.b_dobavit.Text = "Добавить";
             this.b_dobavit.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(470, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Tabel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1011, 457);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.b_poisk);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.b_udalit);
@@ -548,5 +560,6 @@
         private System.Windows.Forms.Button b_udalit;
         private System.Windows.Forms.Button b_redactirovat;
         private System.Windows.Forms.Button b_dobavit;
+        private System.Windows.Forms.Button button1;
     }
 }

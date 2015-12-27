@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MySql.Data.MySqlClient;
 namespace Ferm_V2
 {
     public partial class Tabel : Form
     {
+
         public Tabel()
         {
             InitializeComponent();
@@ -67,6 +68,24 @@ namespace Ferm_V2
         {
             Contact con = new Contact();
             con.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string constring = "server=localhost;user=root;database=ferm;port=3306;password=123456789;";
+            MySqlConnection con = new MySqlConnection(constring);
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from tabel";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+
+            con.Close();
         }
     }
 }

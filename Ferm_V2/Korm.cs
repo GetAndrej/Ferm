@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Ferm_V2
 {
@@ -19,10 +20,9 @@ namespace Ferm_V2
 
         private void Korm_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetLastV.korm". При необходимости она может быть перемещена или удалена.
-            this.kormTableAdapter.Fill(this.fermDataSetLastV.korm);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSet.korm". При необходимости она может быть перемещена или удалена.
-            this.kormTableAdapter.Fill(this.fermDataSetLastV.korm);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "fermDataSetLastV1.korm". При необходимости она может быть перемещена или удалена.
+            this.kormTableAdapter1.Fill(this.fermDataSetLastV1.korm);
+           
 
         }
 
@@ -56,14 +56,14 @@ namespace Ferm_V2
 
                 try
                 {
-                    kormTableAdapter.DeleteQuery(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
+                    kormTableAdapter1.DeleteQuery(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
                 }
                 catch (Exception)
                 {
                     MessageBox.Show("Выберите пожалуйста полностью строку");
                 }
-                kormTableAdapter.Fill(fermDataSetLastV.korm);
-                fermDataSetLastV.AcceptChanges();
+                kormTableAdapter1.Fill(fermDataSetLastV1.korm);
+                fermDataSetLastV1.AcceptChanges();
             }
         }
 
@@ -111,6 +111,24 @@ namespace Ferm_V2
         {
             Contact con = new Contact();
             con.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string constring = "server=localhost;user=root;database=ferm;port=3306;password=123456789;";
+            MySqlConnection con = new MySqlConnection(constring);
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from korm";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+
+            con.Close();
         }
     }
 }
