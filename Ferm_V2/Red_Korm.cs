@@ -40,7 +40,7 @@ namespace Ferm_V2
                 kormBindingSource.EndEdit();
                 kormTableAdapter.UpdateQuery(Convert.ToInt32(id_kormTextBox.Text), dataDateTimePicker.Value, Convert.ToInt32(makuhaTextBox.Text), Convert.ToInt32(otrubTextBox.Text), Convert.ToInt32(kukuruzaTextBox.Text), Convert.ToInt32(ovesTextBox.Text), Convert.ToInt32(yachminTextBox.Text), Convert.ToInt32(sinoTextBox.Text), Convert.ToInt32(solomaTextBox.Text));
 
-                Hide();
+                Close();
 
             }
         }

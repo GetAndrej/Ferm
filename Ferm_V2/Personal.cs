@@ -91,7 +91,7 @@ namespace Ferm_V2
         {
             Hudoba hud = new Hudoba();
             hud.Show();
-            Hide();
+            Close();
         }
 
         private void b_otchet_Click(object sender, EventArgs e)
@@ -105,35 +105,35 @@ namespace Ferm_V2
         {
             Korm corm = new Korm();
             corm.Show();
-            Hide();
+            Close();
         }
 
         private void b_tabel_Click(object sender, EventArgs e)
         {
             Tabel tab = new Tabel();
             tab.Show();
-            Hide();
+            Close();
         }
 
         private void b_grafik_Click(object sender, EventArgs e)
         {
             Graphics gr = new Graphics();
             gr.Show();
-            Hide();
+            Close();
         }
 
         private void b_infirmation_Click(object sender, EventArgs e)
         {
             Contact contact = new Contact();
             contact.Show();
-            Hide();
+            Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Zarplata zar = new Zarplata();
             zar.Show();
-            Hide();
+            Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

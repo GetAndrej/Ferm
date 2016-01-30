@@ -193,6 +193,8 @@
             // 
             // b_personal
             // 
+            this.b_personal.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.b_personal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.b_personal.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.b_personal.Location = new System.Drawing.Point(12, 12);
             this.b_personal.Name = "b_personal";

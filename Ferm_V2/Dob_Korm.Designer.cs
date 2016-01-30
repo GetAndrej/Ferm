@@ -292,6 +292,7 @@
             this.Controls.Add(solomaLabel);
             this.Controls.Add(this.solomaTextBox);
             this.Name = "Dob_Korm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dob_Korm";
             this.Load += new System.EventHandler(this.Dob_Korm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();

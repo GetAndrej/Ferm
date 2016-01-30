@@ -28,7 +28,7 @@ namespace Ferm_V2
         {
             Hudoba hud = new Hudoba();
             hud.Show();
-            Hide();
+            Close();
         }
 
         private void button4_Click(object sender, EventArgs e)

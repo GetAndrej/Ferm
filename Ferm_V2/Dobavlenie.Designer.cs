@@ -40,7 +40,6 @@
             this.id_cow = new System.Windows.Forms.TextBox();
             this.klichka = new System.Windows.Forms.TextBox();
             this.pol = new System.Windows.Forms.ComboBox();
-            this.data_birthday = new System.Windows.Forms.DateTimePicker();
             this.kod = new System.Windows.Forms.TextBox();
             this.inwert_number = new System.Windows.Forms.TextBox();
             this.id_doyarka = new System.Windows.Forms.ComboBox();
@@ -52,6 +51,7 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.fermDataSetLastV = new Ferm_V2.fermDataSetLastV();
             this.cowTableAdapter1 = new Ferm_V2.fermDataSetLastVTableAdapters.cowTableAdapter();
+            this.data_birthday = new System.Windows.Forms.MonthCalendar();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).BeginInit();
             this.SuspendLayout();
@@ -86,7 +86,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 96);
+            this.label4.Location = new System.Drawing.Point(351, 17);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 3;
@@ -95,7 +95,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 122);
+            this.label5.Location = new System.Drawing.Point(15, 102);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 13);
             this.label5.TabIndex = 4;
@@ -104,7 +104,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 148);
+            this.label6.Location = new System.Drawing.Point(15, 128);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(84, 13);
             this.label6.TabIndex = 5;
@@ -113,7 +113,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 174);
+            this.label7.Location = new System.Drawing.Point(15, 154);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 13);
             this.label7.TabIndex = 6;
@@ -122,7 +122,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 228);
+            this.label8.Location = new System.Drawing.Point(15, 208);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 13);
             this.label8.TabIndex = 7;
@@ -153,23 +153,16 @@
             this.pol.Size = new System.Drawing.Size(200, 21);
             this.pol.TabIndex = 10;
             // 
-            // data_birthday
-            // 
-            this.data_birthday.Location = new System.Drawing.Point(127, 96);
-            this.data_birthday.Name = "data_birthday";
-            this.data_birthday.Size = new System.Drawing.Size(200, 20);
-            this.data_birthday.TabIndex = 11;
-            // 
             // kod
             // 
-            this.kod.Location = new System.Drawing.Point(127, 122);
+            this.kod.Location = new System.Drawing.Point(127, 102);
             this.kod.Name = "kod";
             this.kod.Size = new System.Drawing.Size(200, 20);
             this.kod.TabIndex = 12;
             // 
             // inwert_number
             // 
-            this.inwert_number.Location = new System.Drawing.Point(127, 148);
+            this.inwert_number.Location = new System.Drawing.Point(127, 128);
             this.inwert_number.Name = "inwert_number";
             this.inwert_number.Size = new System.Drawing.Size(200, 20);
             this.inwert_number.TabIndex = 13;
@@ -178,7 +171,7 @@
             // 
             this.id_doyarka.DisplayMember = "id";
             this.id_doyarka.FormattingEnabled = true;
-            this.id_doyarka.Location = new System.Drawing.Point(127, 174);
+            this.id_doyarka.Location = new System.Drawing.Point(127, 154);
             this.id_doyarka.Name = "id_doyarka";
             this.id_doyarka.Size = new System.Drawing.Size(200, 21);
             this.id_doyarka.TabIndex = 14;
@@ -186,14 +179,14 @@
             // 
             // privivka
             // 
-            this.privivka.Location = new System.Drawing.Point(127, 228);
+            this.privivka.Location = new System.Drawing.Point(127, 208);
             this.privivka.Name = "privivka";
             this.privivka.Size = new System.Drawing.Size(200, 20);
             this.privivka.TabIndex = 16;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 254);
+            this.button1.Location = new System.Drawing.Point(15, 234);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 23);
             this.button1.TabIndex = 17;
@@ -203,7 +196,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(186, 254);
+            this.button2.Location = new System.Drawing.Point(186, 234);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(138, 23);
             this.button2.TabIndex = 18;
@@ -214,7 +207,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(15, 201);
+            this.label9.Location = new System.Drawing.Point(15, 181);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(39, 13);
             this.label9.TabIndex = 18;
@@ -224,7 +217,7 @@
             // 
             this.id_mesto.DisplayMember = "id_mest";
             this.id_mesto.FormattingEnabled = true;
-            this.id_mesto.Location = new System.Drawing.Point(127, 201);
+            this.id_mesto.Location = new System.Drawing.Point(127, 181);
             this.id_mesto.Name = "id_mesto";
             this.id_mesto.Size = new System.Drawing.Size(200, 21);
             this.id_mesto.TabIndex = 15;
@@ -244,11 +237,18 @@
             // 
             this.cowTableAdapter1.ClearBeforeFill = true;
             // 
+            // data_birthday
+            // 
+            this.data_birthday.Location = new System.Drawing.Point(354, 43);
+            this.data_birthday.Name = "data_birthday";
+            this.data_birthday.TabIndex = 19;
+            // 
             // Dobavlenie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 296);
+            this.ClientSize = new System.Drawing.Size(578, 296);
+            this.Controls.Add(this.data_birthday);
             this.Controls.Add(this.id_mesto);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button2);
@@ -257,7 +257,6 @@
             this.Controls.Add(this.id_doyarka);
             this.Controls.Add(this.inwert_number);
             this.Controls.Add(this.kod);
-            this.Controls.Add(this.data_birthday);
             this.Controls.Add(this.pol);
             this.Controls.Add(this.klichka);
             this.Controls.Add(this.id_cow);
@@ -270,6 +269,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Dobavlenie";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dobavlenie";
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();
@@ -291,7 +291,6 @@
         private System.Windows.Forms.TextBox id_cow;
         private System.Windows.Forms.TextBox klichka;
         private System.Windows.Forms.ComboBox pol;
-        private System.Windows.Forms.DateTimePicker data_birthday;
         private System.Windows.Forms.TextBox kod;
         private System.Windows.Forms.TextBox inwert_number;
         private System.Windows.Forms.ComboBox id_doyarka;
@@ -303,5 +302,6 @@
         private System.Windows.Forms.BindingSource bindingSource1;
         private fermDataSetLastV fermDataSetLastV;
         private fermDataSetLastVTableAdapters.cowTableAdapter cowTableAdapter1;
+        private System.Windows.Forms.MonthCalendar data_birthday;
     }
 }

@@ -38,7 +38,7 @@ namespace Ferm_V2
                     pol.SelectedIndex = 0;
                     break;
             }
-            data_birthday.Value = data_birthday1;
+            data_birthday.SelectionStart = data_birthday1;
             kod.Text = kod1;
             inwert_number.Text = inwert_number1;
             id_doyarka.SelectedValue = id_doyarka1;
@@ -51,8 +51,8 @@ namespace Ferm_V2
         {
             try
             {
-                cowTableAdapter1.InsertQuery(Convert.ToInt32(id_cow.Text), klichka.Text, pol.Text, data_birthday.Value, Convert.ToInt32(kod.Text), Convert.ToInt32(inwert_number.Text), Convert.ToInt32(id_doyarka.Text), Convert.ToInt32(id_mesto.Text), privivka.Text);
-            Hide();
+                cowTableAdapter1.InsertQuery(Convert.ToInt32(id_cow.Text), klichka.Text, pol.Text, data_birthday.SelectionStart, Convert.ToInt32(kod.Text), Convert.ToInt32(inwert_number.Text), Convert.ToInt32(id_doyarka.Text), Convert.ToInt32(id_mesto.Text), privivka.Text);
+                Close();
             }
             catch (Exception) {
                 MessageBox.Show("Проверьте на правильность ввода");

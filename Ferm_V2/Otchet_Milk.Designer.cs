@@ -71,6 +71,7 @@
             this.ClientSize = new System.Drawing.Size(919, 425);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Otchet_Milk";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Otchet_Milk";
             this.Load += new System.EventHandler(this.Otchet_Milk_Load);
             ((System.ComponentModel.ISupportInitialize)(this.milkBindingSource)).EndInit();

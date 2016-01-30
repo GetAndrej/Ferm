@@ -358,6 +358,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Dob_Milk";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dob_Milk";
             this.Load += new System.EventHandler(this.Dob_Milk_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();

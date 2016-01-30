@@ -226,6 +226,7 @@
             this.Controls.Add(telephoneLabel);
             this.Controls.Add(this.telephoneTextBox);
             this.Name = "Dob_Pers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dob_Pers";
             this.Load += new System.EventHandler(this.Dob_Pers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();

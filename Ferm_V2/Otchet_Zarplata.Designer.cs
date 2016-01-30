@@ -71,6 +71,7 @@
             this.ClientSize = new System.Drawing.Size(900, 457);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Otchet_Zarplata";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Otchet_Zarplata";
             this.Load += new System.EventHandler(this.Otchet_Zarplata_Load);
             ((System.ComponentModel.ISupportInitialize)(this.zarplataBindingSource)).EndInit();

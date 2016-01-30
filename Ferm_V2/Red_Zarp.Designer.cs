@@ -367,6 +367,7 @@
             this.Controls.Add(this.primechanieTextBox);
             this.Controls.Add(this.zarplataBindingNavigator);
             this.Name = "Red_Zarp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Red_Zarp";
             this.Load += new System.EventHandler(this.Red_Zarp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();

@@ -187,6 +187,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Zarplata";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Zarplata";
             this.Load += new System.EventHandler(this.Zarplata_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

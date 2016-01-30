@@ -61,23 +61,67 @@ namespace Ferm_V2
 
         }
 
+        
+        public string a;
+        public string b;
+        public string c;
+        public string d;
+        public string q;
+        public string w;
+        public string p;
+        public string r;
+        public string t;
+
         private void b_dobavit_Click(object sender, EventArgs e)
         {
 
-            Red_Hud dob = new Red_Hud();
-            dob.Show();
-            cowTableAdapter1.Fill(fermDataSetLastV.cow);
-            fermDataSetLastV.AcceptChanges();
+            // for (int i = 0; i < dataGridView1.ColumnCount; i++)
+            //  krs[i] = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[i].Value.ToString();
 
+            //for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            //{
+            //    krs[i] += dataGridView1.CurrentRow.Cells[i].Value.ToString();
+            //}
+
+            a = dataGridView1[0, dataGridView1.CurrentRow.Index].Value.ToString();
+            b = dataGridView1[1, dataGridView1.CurrentRow.Index].Value.ToString();
+            c = dataGridView1[2, dataGridView1.CurrentRow.Index].Value.ToString();
+            d = dataGridView1[3, dataGridView1.CurrentRow.Index].Value.ToString();
+            q = dataGridView1[4, dataGridView1.CurrentRow.Index].Value.ToString();
+            w = dataGridView1[5, dataGridView1.CurrentRow.Index].Value.ToString();
+            p = dataGridView1[6, dataGridView1.CurrentRow.Index].Value.ToString();
+            r = dataGridView1[7, dataGridView1.CurrentRow.Index].Value.ToString();
+            t = dataGridView1[8, dataGridView1.CurrentRow.Index].Value.ToString();
+
+            Red_Hud red = new Red_Hud();
+            red.Owner = this;
+            red.Show();
+
+            //var st = new fermDataSetLastV.cowDataTable();
+            //cowTableAdapter1.FillBy(st,
+            //Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
+            //object[] row = st.Rows[0].ItemArray;
+            //var edt = new Red_Hud(
+            //    Convert.ToInt32(row[0]),
+            //    row[1].ToString(),
+            //    row[2].ToString(),
+            //    Convert.ToDateTime(row[3]),
+            //    Convert.ToInt32(row[4]),
+            //    Convert.ToInt32(row[5]),
+            //    Convert.ToInt32(row[6]),
+            //    Convert.ToInt32(row[7]),
+            //    row[8].ToString()
+            //);
+            //edt.ShowDialog();
+            //cowTableAdapter1.Fill(fermDataSetLastV.cow);
+            //fermDataSetLastV.AcceptChanges();
         }
 
         private void b_redactirovat_Click(object sender, EventArgs e)
-        {
-           
-            Dobavlenie reda = new Dobavlenie();
-            reda.Show();
-            cowTableAdapter1.Fill(fermDataSetLastV.cow);
-            fermDataSetLastV.AcceptChanges();
+        { 
+
+            Dobavlenie dob = new Dobavlenie();
+            dob.Show();
 
         }
 
@@ -145,9 +189,16 @@ namespace Ferm_V2
 
        
 
-        private void b_poisk_Click(object sender, EventArgs e)
+       
+        private void button2_Click(object sender, EventArgs e)
         {
-           
+            Dov_zapros_DB dd = new Dov_zapros_DB();
+            dd.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
             MySqlConnection con = new MySqlConnection(constring);
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
@@ -163,25 +214,9 @@ namespace Ferm_V2
             con.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Dov_zapros_DB dd = new Dov_zapros_DB();
-            dd.Show();
-        }
-
-
-
         private void button3_Click(object sender, EventArgs e)
         {
-
-            try
-            {
-                dataGridView1.Sort(dataGridView1.Columns[Convert.ToInt32(textBox2.Text)], ListSortDirection.Ascending);
-            }
-            catch {
-                MessageBox.Show("Ведите от 1 до 9!");
-            }
-                   
+            Application.Exit();
         }
     }
 }

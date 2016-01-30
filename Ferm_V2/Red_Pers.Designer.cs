@@ -367,6 +367,7 @@
             this.Controls.Add(this.telephoneTextBox);
             this.Controls.Add(this.personalBindingNavigator);
             this.Name = "Red_Pers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Red_Pers";
             this.Load += new System.EventHandler(this.Red_Pers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV1)).EndInit();

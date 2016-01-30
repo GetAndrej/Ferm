@@ -39,7 +39,7 @@ namespace Ferm_V2
 
                 zarplataBindingSource.EndEdit();
                 zarplataTableAdapter.UpdateQuery(Convert.ToInt32(id_zarplataTextBox.Text), dataDateTimePicker.Value, Convert.ToInt32(id_persTextBox.Text), Convert.ToInt32(zarp_milkTextBox.Text), Convert.ToInt32(zarp_moneyTextBox.Text), primechanieTextBox.Text);
-                Hide();
+                Close();
 
             }
         }

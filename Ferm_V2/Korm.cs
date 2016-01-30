@@ -71,14 +71,14 @@ namespace Ferm_V2
         {
             Personal per = new Personal();
             per.Show();
-            Hide();
+            Close();
         }
 
         private void b_hudoba_Click(object sender, EventArgs e)
         {
             Hudoba hud = new Hudoba();
             hud.Show();
-            Hide();
+            Close();
         }
 
         private void b_korm_Click(object sender, EventArgs e)
@@ -90,7 +90,7 @@ namespace Ferm_V2
         {
             Tabel tab = new Tabel();
             tab.Show();
-            Hide();
+            Close();
         }
 
         private void b_otchet_Click(object sender, EventArgs e)

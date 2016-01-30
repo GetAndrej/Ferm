@@ -41,7 +41,7 @@ namespace Ferm_V2
                 milkBindingSource.EndEdit();
                 milkTableAdapter.UpdateQuery(dataDateTimePicker.Value, Convert.ToInt32(id_personTextBox.Text), Convert.ToInt32(utroTextBox.Text), Convert.ToInt32(obedTextBox.Text), Convert.ToInt32(vechirTextBox.Text), pogolovTextBox.Text, Convert.ToInt32(vipoy_telTextBox.Text), obratTextBox.Text, Convert.ToInt32(zhirTextBox.Text), Convert.ToInt32(zavodTextBox.Text), Convert.ToInt32(otpravkaTextBox.Text), Convert.ToInt32(vsego_dayTextBox.Text));
 
-                Hide();
+                Close();
 
 
 

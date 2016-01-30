@@ -58,6 +58,7 @@
             this.ClientSize = new System.Drawing.Size(991, 459);
             this.Controls.Add(this.reportViewer2);
             this.Name = "Otchet_Hudoba";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Отчет по худобе";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cowBindingSource)).EndInit();

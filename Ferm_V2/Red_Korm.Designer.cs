@@ -433,6 +433,7 @@
             this.Controls.Add(this.solomaTextBox);
             this.Controls.Add(this.kormBindingNavigator);
             this.Name = "Red_Korm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Red_Korm";
             this.Load += new System.EventHandler(this.Red_Korm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();

@@ -55,7 +55,7 @@ namespace Ferm_V2
                 personalBindingSource.EndEdit();
                 personalTableAdapter1.UpdateQuery(Convert.ToInt32(idTextBox.Text), nameTextBox.Text, positionTextBox.Text, birthdayDateTimePicker.Value, _addressTextBox.Text, telephoneTextBox.Text);
 
-                Hide();
+                Close();
 
             }
         }

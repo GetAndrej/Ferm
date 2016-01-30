@@ -226,6 +226,7 @@
             this.Controls.Add(primechanieLabel);
             this.Controls.Add(this.primechanieTextBox);
             this.Name = "Dob_Zarp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dob_Zarp";
             this.Load += new System.EventHandler(this.Dob_Zarp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();

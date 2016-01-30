@@ -31,7 +31,7 @@ namespace Ferm_V2
             try
             {
                 personalTableAdapter.InsertQuery(Convert.ToInt32(idTextBox.Text), nameTextBox.Text, positionTextBox.Text, birthdayDateTimePicker.Value, _addressTextBox.Text, telephoneTextBox.Text );
-                Hide();
+                Close();
             }
             catch (Exception)
             {

@@ -46,6 +46,7 @@
             this.ClientSize = new System.Drawing.Size(797, 489);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Otch_Korm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Otch_Korm";
             this.Load += new System.EventHandler(this.Otch_Korm_Load);
             this.ResumeLayout(false);

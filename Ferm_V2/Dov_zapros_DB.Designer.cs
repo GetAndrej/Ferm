@@ -129,6 +129,7 @@
             this.Controls.Add(this.mysql);
             this.Controls.Add(this.Tex);
             this.Name = "Dov_zapros_DB";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dov_zapros_DB";
             ((System.ComponentModel.ISupportInitialize)(this.dGV)).EndInit();
             this.ResumeLayout(false);
