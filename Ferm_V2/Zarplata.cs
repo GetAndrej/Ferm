@@ -27,9 +27,7 @@ namespace Ferm_V2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Personal per = new Personal();
-            per.Show();
-            Hide();
+            Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -67,51 +67,14 @@ namespace Ferm_V2
             }
         }
 
-        private void b_personal_Click(object sender, EventArgs e)
-        {
-            Personal per = new Personal();
-            per.Show();
-            Close();
-        }
+      
 
         private void b_hudoba_Click(object sender, EventArgs e)
         {
-            Hudoba hud = new Hudoba();
-            hud.Show();
             Close();
         }
 
-        private void b_korm_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Вы находитесь в разделе Корм");
-        }
-
-        private void b_tabel_Click(object sender, EventArgs e)
-        {
-            Tabel tab = new Tabel();
-            tab.Show();
-            Close();
-        }
-
-        private void b_otchet_Click(object sender, EventArgs e)
-        {
-            Otchets otch = new Otchets();
-            otch.Show();
-            
-        }
-
-        private void b_grafik_Click(object sender, EventArgs e)
-        {
-            Graphics gr = new Graphics();
-            gr.Show();
-            
-        }
-
-        private void b_infirmation_Click(object sender, EventArgs e)
-        {
-            Contact con = new Contact();
-            con.Show();
-        }
+      
 
         private void button1_Click(object sender, EventArgs e)
         {

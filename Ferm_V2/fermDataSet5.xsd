@@ -87,7 +87,7 @@
               <Mapping SourceColumn="privivka" DataSetColumn="privivka" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQueryyy" Modifier="Public" Name="DeleteQueryyy" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DeleteQueryyy">
+              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQueryyy" Modifier="Public" Name="DeleteQueryyy" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQueryyy">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM `cow` WHERE (`id_cow` = @p1) </CommandText>
@@ -97,7 +97,7 @@
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQueryyy" Modifier="Public" Name="InsertQueryyy" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQueryyy">
+              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQueryyy" Modifier="Public" Name="InsertQueryyy" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertQueryyy">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO `cow` (`id_cow`, `klichka`, `pol`, `data_birthday`, `kod`, `inwert_number`, `id_doyarka`, `id_mesto`, `privivka`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)</CommandText>
@@ -115,7 +115,7 @@
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQueryyy" Modifier="Public" Name="UpdateQueryyy" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateQueryyy">
+              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQueryyy" Modifier="Public" Name="UpdateQueryyy" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateQueryyy">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE `cow` SET `id_cow` , `klichka` , `pol` , `data_birthday` , `kod` , `inwert_number` , `id_doyarka` , `id_mesto` , `privivka` WHERE ((`id_cow` = @p1) AND (`klichka` = @p2) AND (`pol` = @p3) AND (`data_birthday` = @p4) AND (`kod` = @p5) AND (`inwert_number` = @p6) AND (`id_doyarka` = @p7) AND (`id_mesto` = @p8) AND (`privivka` = @p9))</CommandText>

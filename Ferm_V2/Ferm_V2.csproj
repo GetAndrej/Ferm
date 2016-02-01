@@ -90,11 +90,10 @@
     <Compile Include="Dob_Zarp.Designer.cs">
       <DependentUpon>Dob_Zarp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dov_zapros_DB.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dov_zapros_DB.Designer.cs">
-      <DependentUpon>Dov_zapros_DB.cs</DependentUpon>
+    <Compile Include="fermDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fermDataSet5.xsd</DependentUpon>
     </Compile>
     <Compile Include="fermDataSetLastV.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -118,12 +117,6 @@
     </Compile>
     <Compile Include="Otchet_Hudoba.Designer.cs">
       <DependentUpon>Otchet_Hudoba.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Otchets.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Otchets.Designer.cs">
-      <DependentUpon>Otchets.cs</DependentUpon>
     </Compile>
     <Compile Include="fermDataSet1.cs">
       <DependentUpon>fermDataSet1.xsd</DependentUpon>
@@ -234,9 +227,6 @@
     <EmbeddedResource Include="Dob_Zarp.resx">
       <DependentUpon>Dob_Zarp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dov_zapros_DB.resx">
-      <DependentUpon>Dov_zapros_DB.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Graphics.resx">
       <DependentUpon>Graphics.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,9 +235,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Otchet_Hudoba.resx">
       <DependentUpon>Otchet_Hudoba.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Otchets.resx">
-      <DependentUpon>Otchets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hudoba.resx">
       <DependentUpon>Hudoba.cs</DependentUpon>
@@ -314,6 +301,17 @@
     </None>
     <None Include="fermDataSet1.xss">
       <DependentUpon>fermDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="fermDataSet5.xsc">
+      <DependentUpon>fermDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="fermDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>fermDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="fermDataSet5.xss">
+      <DependentUpon>fermDataSet5.xsd</DependentUpon>
     </None>
     <None Include="fermDataSetLastV.xsc">
       <DependentUpon>fermDataSetLastV.xsd</DependentUpon>
