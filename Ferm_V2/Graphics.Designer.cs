@@ -71,7 +71,7 @@
             this.Controls.Add(this.chart1);
             this.Name = "Graphics";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Graphics";
+            this.Text = "Графики";
             this.Load += new System.EventHandler(this.Graphics_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);

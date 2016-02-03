@@ -448,7 +448,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Tabel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tabel";
+            this.Text = "Табель";
             this.Load += new System.EventHandler(this.Tabel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabelBindingSource)).EndInit();

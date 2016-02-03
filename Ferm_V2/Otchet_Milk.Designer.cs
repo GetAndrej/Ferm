@@ -72,7 +72,7 @@
             this.Controls.Add(this.reportViewer1);
             this.Name = "Otchet_Milk";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Otchet_Milk";
+            this.Text = "Отчет по молоку";
             this.Load += new System.EventHandler(this.Otchet_Milk_Load);
             ((System.ComponentModel.ISupportInitialize)(this.milkBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();

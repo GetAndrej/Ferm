@@ -47,7 +47,7 @@
             this.Controls.Add(this.reportViewer1);
             this.Name = "Otch_Korm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Otch_Korm";
+            this.Text = "Отчет по кормах";
             this.Load += new System.EventHandler(this.Otch_Korm_Load);
             this.ResumeLayout(false);
 

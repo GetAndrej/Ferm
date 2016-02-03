@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace Ferm_V2
 {
     
     public partial class Hudoba : Form
     {
+
         string constring = "server=localhost;user=root;database=ferm;port=3306;password=123456789;";
 
 
@@ -49,11 +51,7 @@ namespace Ferm_V2
            
         }
 
-        private void b_hudoba_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Вы находитесь в разделе Худоба");
-        }
-
+       
         private void b_korm_Click(object sender, EventArgs e)
         {
             Korm korm = new Korm();
@@ -113,43 +111,10 @@ namespace Ferm_V2
             con.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                MySqlConnection con = new MySqlConnection(constring);
-                con.Open();
-                MySqlCommand cmd = con.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "";
-                cmd.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                da.Fill(dt);
-                dataGridView1.DataSource = dt;
-                con.Close();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("dow");
-            }
-        
-
-           
-        }
-
         private void выходToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Contact con = new Contact();
-            con.Show();
-        }
-
-      
+        }   
 
         private void удалитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -234,6 +199,82 @@ namespace Ferm_V2
 
             Graphics grap = new Graphics();
             grap.Show();
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+            string file = "";   // "D:\\ferm_backup.sql";
+
+            FolderBrowserDialog dl = new FolderBrowserDialog();
+            if (dl.ShowDialog() == DialogResult.OK)
+            {
+                file = dl.SelectedPath + "\\ferm" + DateTime.UtcNow.ToFileTime() + ".sql";
+
+                using (MySqlConnection conn = new MySqlConnection(constring))
+                {
+
+                    using (MySqlCommand cmd = new MySqlCommand())
+                    {
+                        using (MySqlBackup mb = new MySqlBackup(cmd))
+                        {
+                            cmd.Connection = conn;
+                            conn.Open();
+
+                            mb.ExportToFile(file);
+                            conn.Close();
+                            MessageBox.Show("Сохранено!");
+
+                        }
+                    }
+                }
+            }
+           
+
+           
+
+
+        }
+
+        private void извлечьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string fil = "";
+
+            OpenFileDialog fil1 = new OpenFileDialog();
+            fil1.Filter = "Backup Files(*.sql)|*.sql|All Files(*.*)|*.*";
+            fil1.FilterIndex = 0;
+
+            if (fil1.ShowDialog() == DialogResult.OK)
+            {
+                fil = fil1.FileName;
+                using (MySqlConnection conn = new MySqlConnection(constring))
+                {
+                    using (MySqlCommand cmd = new MySqlCommand())
+                    {
+                        using (MySqlBackup mb = new MySqlBackup(cmd))
+                        {
+                            cmd.Connection = conn;
+                            conn.Open();
+                            mb.ImportFromFile(fil);
+                            conn.Close();
+                            MessageBox.Show("Извлечено успешно!");
+                        }
+                    }
+                }
+            }
+        }
+
+
+        private void отправитьСообщениеToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Contact con = new Contact();
+            con.Show();
+        }
+
+        private void информацияToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            info.Show();
         }
     }
 }

@@ -66,7 +66,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(743, 386);
+            this.dataGridView1.Size = new System.Drawing.Size(743, 452);
             this.dataGridView1.TabIndex = 0;
             // 
             // idzarplataDataGridViewTextBoxColumn
@@ -179,7 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(758, 468);
+            this.ClientSize = new System.Drawing.Size(758, 534);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -188,7 +188,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Zarplata";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Zarplata";
+            this.Text = "Зарплата";
             this.Load += new System.EventHandler(this.Zarplata_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zarplataBindingSource)).EndInit();

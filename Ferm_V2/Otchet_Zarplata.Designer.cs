@@ -72,7 +72,7 @@
             this.Controls.Add(this.reportViewer1);
             this.Name = "Otchet_Zarplata";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Otchet_Zarplata";
+            this.Text = "Отчет по зарплате";
             this.Load += new System.EventHandler(this.Otchet_Zarplata_Load);
             ((System.ComponentModel.ISupportInitialize)(this.zarplataBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fermDataSetLastV)).EndInit();

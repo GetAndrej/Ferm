@@ -32,5 +32,15 @@ namespace Ferm_V2.Properties {
                 return ((string)(this["fermConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=ferm;persistsecurityinfo=True")]
+        public string fermConnectionString1 {
+            get {
+                return ((string)(this["fermConnectionString1"]));
+            }
+        }
     }
 }

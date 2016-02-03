@@ -125,7 +125,7 @@
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery1" Modifier="Public" Name="InsertQuery1" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="InsertQuery1">
+              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery1" Modifier="Public" Name="InsertQuery1" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="InsertQuery1">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO `cow` (`id_cow`, `klichka`, `pol`, `data_birthday`, `kod`, `inwert_number`, `id_doyarka`, `id_mesto`, `privivka`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)</CommandText>
@@ -143,7 +143,7 @@
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuery" Modifier="Public" Name="UpdateQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateQuery">
+              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuery" Modifier="Public" Name="UpdateQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="UpdateQuery">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE `cow` SET `id_cow` = @p1, `klichka` = @p2, `pol` = @p3, `data_birthday` = @p4, `kod` = @p5, `inwert_number` = @p6, `id_doyarka` = @p7, `id_mesto` = @p8, `privivka` = @p9</CommandText>
@@ -161,7 +161,7 @@
                   </DbCommand>
                 </UpdateCommand>
               </DbSource>
-              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuery1" Modifier="Public" Name="UpdateQuery1" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="UpdateQuery1">
+              <DbSource ConnectionRef="fermConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuery1" Modifier="Public" Name="UpdateQuery1" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="UpdateQuery1">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE `cow` SET  `klichka` = @p2, `pol` = @p3, `data_birthday` = @p4, `kod` = @p5, `inwert_number` = @p6, `id_doyarka` = @p7, `id_mesto` = @p8, `privivka` = @p9 WHERE (`id_cow` = @p1)</CommandText>
@@ -1084,7 +1084,7 @@
   <xs:element name="fermDataSetLastV" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="fermDataSetLastV" msprop:Generator_UserDSName="fermDataSetLastV">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="cow" msprop:Generator_TableClassName="cowDataTable" msprop:Generator_TableVarName="tablecow" msprop:Generator_RowChangedName="cowRowChanged" msprop:Generator_TablePropName="cow" msprop:Generator_RowDeletingName="cowRowDeleting" msprop:Generator_RowChangingName="cowRowChanging" msprop:Generator_RowEvHandlerName="cowRowChangeEventHandler" msprop:Generator_RowDeletedName="cowRowDeleted" msprop:Generator_RowClassName="cowRow" msprop:Generator_UserTableName="cow" msprop:Generator_RowEvArgName="cowRowChangeEvent">
+        <xs:element name="cow" msprop:Generator_TableClassName="cowDataTable" msprop:Generator_TableVarName="tablecow" msprop:Generator_TablePropName="cow" msprop:Generator_RowDeletingName="cowRowDeleting" msprop:Generator_RowChangingName="cowRowChanging" msprop:Generator_RowEvHandlerName="cowRowChangeEventHandler" msprop:Generator_RowDeletedName="cowRowDeleted" msprop:Generator_UserTableName="cow" msprop:Generator_RowChangedName="cowRowChanged" msprop:Generator_RowEvArgName="cowRowChangeEvent" msprop:Generator_RowClassName="cowRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_cow" msprop:Generator_ColumnVarNameInTable="columnid_cow" msprop:Generator_ColumnPropNameInRow="id_cow" msprop:Generator_ColumnPropNameInTable="id_cowColumn" msprop:Generator_UserColumnName="id_cow" type="xs:int" />
@@ -1117,7 +1117,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="korm" msprop:Generator_TableClassName="kormDataTable" msprop:Generator_TableVarName="tablekorm" msprop:Generator_RowChangedName="kormRowChanged" msprop:Generator_TablePropName="korm" msprop:Generator_RowDeletingName="kormRowDeleting" msprop:Generator_RowChangingName="kormRowChanging" msprop:Generator_RowEvHandlerName="kormRowChangeEventHandler" msprop:Generator_RowDeletedName="kormRowDeleted" msprop:Generator_RowClassName="kormRow" msprop:Generator_UserTableName="korm" msprop:Generator_RowEvArgName="kormRowChangeEvent">
+        <xs:element name="korm" msprop:Generator_TableClassName="kormDataTable" msprop:Generator_TableVarName="tablekorm" msprop:Generator_TablePropName="korm" msprop:Generator_RowDeletingName="kormRowDeleting" msprop:Generator_RowChangingName="kormRowChanging" msprop:Generator_RowEvHandlerName="kormRowChangeEventHandler" msprop:Generator_RowDeletedName="kormRowDeleted" msprop:Generator_UserTableName="korm" msprop:Generator_RowChangedName="kormRowChanged" msprop:Generator_RowEvArgName="kormRowChangeEvent" msprop:Generator_RowClassName="kormRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_korm" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_korm" msprop:Generator_ColumnPropNameInRow="id_korm" msprop:Generator_ColumnPropNameInTable="id_kormColumn" msprop:Generator_UserColumnName="id_korm" type="xs:int" />
@@ -1132,7 +1132,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="login" msprop:Generator_TableClassName="loginDataTable" msprop:Generator_TableVarName="tablelogin" msprop:Generator_RowChangedName="loginRowChanged" msprop:Generator_TablePropName="login" msprop:Generator_RowDeletingName="loginRowDeleting" msprop:Generator_RowChangingName="loginRowChanging" msprop:Generator_RowEvHandlerName="loginRowChangeEventHandler" msprop:Generator_RowDeletedName="loginRowDeleted" msprop:Generator_RowClassName="loginRow" msprop:Generator_UserTableName="login" msprop:Generator_RowEvArgName="loginRowChangeEvent">
+        <xs:element name="login" msprop:Generator_TableClassName="loginDataTable" msprop:Generator_TableVarName="tablelogin" msprop:Generator_TablePropName="login" msprop:Generator_RowDeletingName="loginRowDeleting" msprop:Generator_RowChangingName="loginRowChanging" msprop:Generator_RowEvHandlerName="loginRowChangeEventHandler" msprop:Generator_RowDeletedName="loginRowDeleted" msprop:Generator_UserTableName="login" msprop:Generator_RowChangedName="loginRowChanged" msprop:Generator_RowEvArgName="loginRowChangeEvent" msprop:Generator_RowClassName="loginRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_login" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_login" msprop:Generator_ColumnPropNameInRow="id_login" msprop:Generator_ColumnPropNameInTable="id_loginColumn" msprop:Generator_UserColumnName="id_login" type="xs:int" />
@@ -1153,7 +1153,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mesto_cor" msprop:Generator_TableClassName="mesto_corDataTable" msprop:Generator_TableVarName="tablemesto_cor" msprop:Generator_RowChangedName="mesto_corRowChanged" msprop:Generator_TablePropName="mesto_cor" msprop:Generator_RowDeletingName="mesto_corRowDeleting" msprop:Generator_RowChangingName="mesto_corRowChanging" msprop:Generator_RowEvHandlerName="mesto_corRowChangeEventHandler" msprop:Generator_RowDeletedName="mesto_corRowDeleted" msprop:Generator_RowClassName="mesto_corRow" msprop:Generator_UserTableName="mesto_cor" msprop:Generator_RowEvArgName="mesto_corRowChangeEvent">
+        <xs:element name="mesto_cor" msprop:Generator_TableClassName="mesto_corDataTable" msprop:Generator_TableVarName="tablemesto_cor" msprop:Generator_TablePropName="mesto_cor" msprop:Generator_RowDeletingName="mesto_corRowDeleting" msprop:Generator_RowChangingName="mesto_corRowChanging" msprop:Generator_RowEvHandlerName="mesto_corRowChangeEventHandler" msprop:Generator_RowDeletedName="mesto_corRowDeleted" msprop:Generator_UserTableName="mesto_cor" msprop:Generator_RowChangedName="mesto_corRowChanged" msprop:Generator_RowEvArgName="mesto_corRowChangeEvent" msprop:Generator_RowClassName="mesto_corRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_mest" msprop:Generator_ColumnVarNameInTable="columnid_mest" msprop:Generator_ColumnPropNameInRow="id_mest" msprop:Generator_ColumnPropNameInTable="id_mestColumn" msprop:Generator_UserColumnName="id_mest" type="xs:int" />
@@ -1167,7 +1167,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="milk" msprop:Generator_TableClassName="milkDataTable" msprop:Generator_TableVarName="tablemilk" msprop:Generator_RowChangedName="milkRowChanged" msprop:Generator_TablePropName="milk" msprop:Generator_RowDeletingName="milkRowDeleting" msprop:Generator_RowChangingName="milkRowChanging" msprop:Generator_RowEvHandlerName="milkRowChangeEventHandler" msprop:Generator_RowDeletedName="milkRowDeleted" msprop:Generator_RowClassName="milkRow" msprop:Generator_UserTableName="milk" msprop:Generator_RowEvArgName="milkRowChangeEvent">
+        <xs:element name="milk" msprop:Generator_TableClassName="milkDataTable" msprop:Generator_TableVarName="tablemilk" msprop:Generator_TablePropName="milk" msprop:Generator_RowDeletingName="milkRowDeleting" msprop:Generator_RowChangingName="milkRowChanging" msprop:Generator_RowEvHandlerName="milkRowChangeEventHandler" msprop:Generator_RowDeletedName="milkRowDeleted" msprop:Generator_UserTableName="milk" msprop:Generator_RowChangedName="milkRowChanged" msprop:Generator_RowEvArgName="milkRowChangeEvent" msprop:Generator_RowClassName="milkRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="data" msprop:Generator_ColumnVarNameInTable="columndata" msprop:Generator_ColumnPropNameInRow="data" msprop:Generator_ColumnPropNameInTable="dataColumn" msprop:Generator_UserColumnName="data" type="xs:dateTime" />
@@ -1197,7 +1197,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="personal" msprop:Generator_TableClassName="personalDataTable" msprop:Generator_TableVarName="tablepersonal" msprop:Generator_RowChangedName="personalRowChanged" msprop:Generator_TablePropName="personal" msprop:Generator_RowDeletingName="personalRowDeleting" msprop:Generator_RowChangingName="personalRowChanging" msprop:Generator_RowEvHandlerName="personalRowChangeEventHandler" msprop:Generator_RowDeletedName="personalRowDeleted" msprop:Generator_RowClassName="personalRow" msprop:Generator_UserTableName="personal" msprop:Generator_RowEvArgName="personalRowChangeEvent">
+        <xs:element name="personal" msprop:Generator_TableClassName="personalDataTable" msprop:Generator_TableVarName="tablepersonal" msprop:Generator_TablePropName="personal" msprop:Generator_RowDeletingName="personalRowDeleting" msprop:Generator_RowChangingName="personalRowChanging" msprop:Generator_RowEvHandlerName="personalRowChangeEventHandler" msprop:Generator_RowDeletedName="personalRowDeleted" msprop:Generator_UserTableName="personal" msprop:Generator_RowChangedName="personalRowChanged" msprop:Generator_RowEvArgName="personalRowChangeEvent" msprop:Generator_RowClassName="personalRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -1233,7 +1233,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tabel" msprop:Generator_TableClassName="tabelDataTable" msprop:Generator_TableVarName="tabletabel" msprop:Generator_RowChangedName="tabelRowChanged" msprop:Generator_TablePropName="tabel" msprop:Generator_RowDeletingName="tabelRowDeleting" msprop:Generator_RowChangingName="tabelRowChanging" msprop:Generator_RowEvHandlerName="tabelRowChangeEventHandler" msprop:Generator_RowDeletedName="tabelRowDeleted" msprop:Generator_RowClassName="tabelRow" msprop:Generator_UserTableName="tabel" msprop:Generator_RowEvArgName="tabelRowChangeEvent">
+        <xs:element name="tabel" msprop:Generator_TableClassName="tabelDataTable" msprop:Generator_TableVarName="tabletabel" msprop:Generator_TablePropName="tabel" msprop:Generator_RowDeletingName="tabelRowDeleting" msprop:Generator_RowChangingName="tabelRowChanging" msprop:Generator_RowEvHandlerName="tabelRowChangeEventHandler" msprop:Generator_RowDeletedName="tabelRowDeleted" msprop:Generator_UserTableName="tabel" msprop:Generator_RowChangedName="tabelRowChanged" msprop:Generator_RowEvArgName="tabelRowChangeEvent" msprop:Generator_RowClassName="tabelRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="пор__x2116_" msprop:Generator_ColumnVarNameInTable="_columnпор__" msprop:Generator_ColumnPropNameInRow="_пор__" msprop:Generator_ColumnPropNameInTable="_пор__Column" msprop:Generator_UserColumnName="пор_№" type="xs:int" />
@@ -1464,7 +1464,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="zarplata" msprop:Generator_TableClassName="zarplataDataTable" msprop:Generator_TableVarName="tablezarplata" msprop:Generator_RowChangedName="zarplataRowChanged" msprop:Generator_TablePropName="zarplata" msprop:Generator_RowDeletingName="zarplataRowDeleting" msprop:Generator_RowChangingName="zarplataRowChanging" msprop:Generator_RowEvHandlerName="zarplataRowChangeEventHandler" msprop:Generator_RowDeletedName="zarplataRowDeleted" msprop:Generator_RowClassName="zarplataRow" msprop:Generator_UserTableName="zarplata" msprop:Generator_RowEvArgName="zarplataRowChangeEvent">
+        <xs:element name="zarplata" msprop:Generator_TableClassName="zarplataDataTable" msprop:Generator_TableVarName="tablezarplata" msprop:Generator_TablePropName="zarplata" msprop:Generator_RowDeletingName="zarplataRowDeleting" msprop:Generator_RowChangingName="zarplataRowChanging" msprop:Generator_RowEvHandlerName="zarplataRowChangeEventHandler" msprop:Generator_RowDeletedName="zarplataRowDeleted" msprop:Generator_UserTableName="zarplata" msprop:Generator_RowChangedName="zarplataRowChanged" msprop:Generator_RowEvArgName="zarplataRowChangeEvent" msprop:Generator_RowClassName="zarplataRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_zarplata" msprop:Generator_ColumnVarNameInTable="columnid_zarplata" msprop:Generator_ColumnPropNameInRow="id_zarplata" msprop:Generator_ColumnPropNameInTable="id_zarplataColumn" msprop:Generator_UserColumnName="id_zarplata" type="xs:int" />
@@ -1523,10 +1523,10 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="doy" msdata:parent="personal" msdata:child="cow" msdata:parentkey="id" msdata:childkey="id_doyarka" msprop:Generator_UserChildTable="cow" msprop:Generator_ChildPropName="GetcowRows" msprop:Generator_UserRelationName="doy" msprop:Generator_ParentPropName="personalRow" msprop:Generator_RelationVarName="relationdoy" msprop:Generator_UserParentTable="personal" />
-      <msdata:Relationship name="mes" msdata:parent="mesto_cor" msdata:child="cow" msdata:parentkey="id_mest" msdata:childkey="id_mesto" msprop:Generator_UserChildTable="cow" msprop:Generator_ChildPropName="GetcowRows" msprop:Generator_UserRelationName="mes" msprop:Generator_ParentPropName="mesto_corRow" msprop:Generator_RelationVarName="relationmes" msprop:Generator_UserParentTable="mesto_cor" />
-      <msdata:Relationship name="milk" msdata:parent="personal" msdata:child="milk" msdata:parentkey="id" msdata:childkey="id_person" msprop:Generator_UserChildTable="milk" msprop:Generator_ChildPropName="GetmilkRows" msprop:Generator_UserRelationName="milk" msprop:Generator_ParentPropName="personalRow" msprop:Generator_RelationVarName="relationmilk" msprop:Generator_UserParentTable="personal" />
-      <msdata:Relationship name="zarp" msdata:parent="personal" msdata:child="zarplata" msdata:parentkey="id" msdata:childkey="id_pers" msprop:Generator_UserChildTable="zarplata" msprop:Generator_ChildPropName="GetzarplataRows" msprop:Generator_UserRelationName="zarp" msprop:Generator_RelationVarName="relationzarp" msprop:Generator_UserParentTable="personal" msprop:Generator_ParentPropName="personalRow" />
+      <msdata:Relationship name="doy" msdata:parent="personal" msdata:child="cow" msdata:parentkey="id" msdata:childkey="id_doyarka" msprop:Generator_UserChildTable="cow" msprop:Generator_ChildPropName="GetcowRows" msprop:Generator_UserRelationName="doy" msprop:Generator_RelationVarName="relationdoy" msprop:Generator_UserParentTable="personal" msprop:Generator_ParentPropName="personalRow" />
+      <msdata:Relationship name="mes" msdata:parent="mesto_cor" msdata:child="cow" msdata:parentkey="id_mest" msdata:childkey="id_mesto" msprop:Generator_UserChildTable="cow" msprop:Generator_ChildPropName="GetcowRows" msprop:Generator_UserRelationName="mes" msprop:Generator_RelationVarName="relationmes" msprop:Generator_UserParentTable="mesto_cor" msprop:Generator_ParentPropName="mesto_corRow" />
+      <msdata:Relationship name="milk" msdata:parent="personal" msdata:child="milk" msdata:parentkey="id" msdata:childkey="id_person" msprop:Generator_UserChildTable="milk" msprop:Generator_ChildPropName="GetmilkRows" msprop:Generator_UserRelationName="milk" msprop:Generator_RelationVarName="relationmilk" msprop:Generator_UserParentTable="personal" msprop:Generator_ParentPropName="personalRow" />
+      <msdata:Relationship name="zarp" msdata:parent="personal" msdata:child="zarplata" msdata:parentkey="id" msdata:childkey="id_pers" msprop:Generator_UserChildTable="zarplata" msprop:Generator_ChildPropName="GetzarplataRows" msprop:Generator_UserRelationName="zarp" msprop:Generator_ParentPropName="personalRow" msprop:Generator_RelationVarName="relationzarp" msprop:Generator_UserParentTable="personal" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

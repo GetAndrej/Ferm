@@ -246,7 +246,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Milk";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Milk";
+            this.Text = "Молоко";
             this.Load += new System.EventHandler(this.Milk_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.milkBindingSource)).EndInit();

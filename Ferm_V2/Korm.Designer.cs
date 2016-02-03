@@ -208,7 +208,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Korm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Korm";
+            this.Text = "Корм";
             this.Load += new System.EventHandler(this.Korm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kormBindingSource1)).EndInit();

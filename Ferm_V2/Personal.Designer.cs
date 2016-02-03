@@ -213,7 +213,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Personal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Personal";
+            this.Text = "Персонал";
             this.Load += new System.EventHandler(this.Personal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personalBindingSource)).EndInit();
